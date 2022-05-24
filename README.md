@@ -38,3 +38,7 @@
 | ------------- | --- | ---- | --------- |
 | Mon1a         | Mon | 9:00 | Online    |
 | Mon1b         | Mon | 9:00 | In Person |
+
+## Sample Data
+* Tutorials: Should be straight-forwards
+* preferences: I am not sure what the number exactly means... I will clarify. From CASTLE it comes back as either x.y where x is the availability and is either 0 = impossible, 1 = dislike, 2 = possible 3 = preferred. Also need to clarify how y works but I think it indicates if in person or online.
