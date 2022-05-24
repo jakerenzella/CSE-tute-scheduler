@@ -30,7 +30,7 @@
 
 ## Example Input
 
-| Tutor Name    | Prev Term Tute Exp | Prev Term Tute Exp | Availability           | Capacity Tutorials | Capacity Assistant | Prefer Tutorial |
+| Tutor Name    | Prev Term Tute Exp (cumulative) | Prev Term Lab Exp (cumulative) | Availability           | Capacity Tutorials | Capacity Assistant | Prefer Tutorial |
 | ------------- | ------------------ | ------------------ | ---------------------- | ------------------ | ------------------ | --------------- |
 | Jake Renzella | 2                  | 1                  | [0, 0, 1.1, 3.1, 3, 0] | 1                  | 1                  | Y               |
 
