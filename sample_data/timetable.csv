@@ -1,5 +1,4 @@
-Class Desc,Times,In Person,"Room
-",Day,Time,Code,Tutor,Assistant
+Class Desc,Times,In Person,"Room",Day,Time,Code,Tutor,Assistant
 M13A,"Mon 13 (w1-2,4-5,7-10, Quad G026); Mon 14-16 (w1-2,4-5,7-10, SitarME306)",TRUE,a,M,13,mon13a,,
 M17A,"Mon 17 (w1-2,4-5,7-10, Online); Mon 18-20 (w1-2,4-5,7-10, Online)",FALSE,a,M,17,mon17a,,
 M17B,,TRUE,b,M,17,mon17b,,
