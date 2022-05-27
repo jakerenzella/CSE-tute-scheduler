@@ -3,6 +3,7 @@
 import pathlib
 import csv
 
+lower_first =  lambda s: s[:1].lower() + s[1:] if s else ''
 
 def clear_file(output_dir: str, filename: str):
     """Clears a given file
@@ -41,7 +42,7 @@ def fact_builder(functor: str, *args: list) -> str:
     Returns:
         str: The fact statement
     """
-    args = [str(x).lower() for x in args]
+    args = [lower_first(str(x)) for x in args]
     return f"{functor}({', '.join(args)})."
 
 
