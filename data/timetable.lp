@@ -1,35 +1,35 @@
-class(m17a, false, a, m, 17, mon17a).
-class(m17b, true, b, m, 17, mon17b).
-class(t13a, true, a, t, 13, tue13a).
-class(t13b, true, b, t, 13, tue13b).
-class(t15a, true, a, t, 15, tue15a).
-class(t15b, true, b, t, 15, tue15b).
-class(t17a, false, a, t, 17, tue17a).
-class(t17b, true, b, t, 17, tue17b).
-class(w09a, true, a, w, 9, wed09a).
-class(w09b, true, b, w, 9, wed09b).
-class(w11a, true, a, w, 11, wed11a).
-class(w11b, true, b, w, 11, wed11b).
-class(w17a, true, a, w, 17, wed17a).
-class(w17b, false, b, w, 17, wed17b).
-class(h09a, true, a, h, 9, thu09a).
-class(h09b, true, b, h, 9, thu09b).
-class(h11a, true, a, h, 11, thu11a).
-class(h11b, true, b, h, 11, thu11b).
-class(h13a, true, a, h, 13, thu13a).
-class(h13b, true, b, h, 13, thu13b).
-class(h13c, false, c, h, 13, thu13c).
-class(h15a, true, a, h, 15, thu15a).
-class(h15b, true, b, h, 15, thu15b).
-class(h15c, false, c, h, 15, thu15c).
-class(h17a, true, a, h, 17, thu17a).
-class(h17b, false, b, h, 17, thu17b).
-class(f09a, true, a, f, 9, fri09a).
-class(f09b, true, b, f, 9, fri09b).
-class(f11a, true, a, f, 11, fri11a).
-class(f11b, true, b, f, 11, fri11b).
-class(f11c, false, c, f, 11, fri11c).
-class(f13a, true, a, f, 13, fri13a).
-class(f13b, true, b, f, 13, fri13b).
-class(f15a, false, a, f, 15, fri15a).
-class(f15b, true, b, f, 15, fri15b).
+class(m17a, false, a, m, 17).
+class(m17b, true, b, m, 17).
+class(t13a, true, a, t, 13).
+class(t13b, true, b, t, 13).
+class(t15a, true, a, t, 15).
+class(t15b, true, b, t, 15).
+class(t17a, false, a, t, 17).
+class(t17b, true, b, t, 17).
+class(w09a, true, a, w, 9).
+class(w09b, true, b, w, 9).
+class(w11a, true, a, w, 11).
+class(w11b, true, b, w, 11).
+class(w17a, true, a, w, 17).
+class(w17b, false, b, w, 17).
+class(h09a, true, a, h, 9).
+class(h09b, true, b, h, 9).
+class(h11a, true, a, h, 11).
+class(h11b, true, b, h, 11).
+class(h13a, true, a, h, 13).
+class(h13b, true, b, h, 13).
+class(h13c, false, c, h, 13).
+class(h15a, true, a, h, 15).
+class(h15b, true, b, h, 15).
+class(h15c, false, c, h, 15).
+class(h17a, true, a, h, 17).
+class(h17b, false, b, h, 17).
+class(f09a, true, a, f, 9).
+class(f09b, true, b, f, 9).
+class(f11a, true, a, f, 11).
+class(f11b, true, b, f, 11).
+class(f11c, false, c, f, 11).
+class(f13a, true, a, f, 13).
+class(f13b, true, b, f, 13).
+class(f15a, false, a, f, 15).
+class(f15b, true, b, f, 15).
