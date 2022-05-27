@@ -26,19 +26,6 @@ KEY_TO_PREF = {
 }
 
 
-def preferences_dict_to_lp(preferences: list) -> list:
-    """Iterates through the list of preferences and converts them to .lp format
-
-    Args:
-        preferences (list): the list of preferences
-
-    Returns:
-        list: the list of .lp formatted preferences
-    """
-    # Unpacking the list of preferences per tutor as we go
-    return list(chain.from_iterable([preference_entry_to_lps(x) for x in preferences]))
-
-
 def preference_entry_to_lps(preference_entry: dict) -> list[str]:
     """Converts a single preference entry to a .lp format
 
@@ -74,6 +61,19 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
     result.append(fact_builder('capacityAsst', z_id, 1))
     result.append(fact_builder('preferTutorial', z_id, 1))
     return result
+
+
+def preferences_dict_to_lp(preferences: list) -> list:
+    """Iterates through the list of preferences and converts them to .lp format
+
+    Args:
+        preferences (list): the list of preferences
+
+    Returns:
+        list: the list of .lp formatted preferences
+    """
+    # Unpacking the list of preferences per tutor as we go
+    return list(chain.from_iterable([preference_entry_to_lps(x) for x in preferences]))
 
 
 def timetable_entry_to_lp(timetable_entry: dict) -> str:
