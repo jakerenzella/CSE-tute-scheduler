@@ -1,6 +1,7 @@
 """Converts a timetable CSV to a .lp format for use with the solver
 """
 
+from itertools import chain
 import pathlib
 from fact_builder import fact_builder, save_lp, csv_to_dict, clear_file
 
@@ -34,7 +35,8 @@ def preferences_dict_to_lp(preferences: list) -> list:
     Returns:
         list: the list of .lp formatted preferences
     """
-    return [preference_entry_to_lps(x) for x in preferences]
+    # Unpacking the list of preferences per tutor as we go
+    return list(chain.from_iterable([preference_entry_to_lps(x) for x in preferences]))
 
 
 def preference_entry_to_lps(preference_entry: dict) -> list[str]:
@@ -64,7 +66,7 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
         except KeyError:
             # Seems as though there are more times available in CASTLE than the tutors complete,
             # so some preferences are not available. In this case return impossible
-            pref = ['impossible', False]
+            pref = ('impossible', False)
         result.append(fact_builder('preference', z_id, *key, *pref))
 
     # These are just stubbed for now
@@ -103,14 +105,19 @@ def timetable_dict_to_lp(timetable: list) -> list:
 
 
 if __name__ == '__main__':
+    print("Converting timetable to .lp format")
     timetable_lps = timetable_dict_to_lp(
         csv_to_dict(DATA_DIR, 'timetable.csv'))
+
+    print("Converting preferences to .lp format")
     preferences_lps = preferences_dict_to_lp(
         csv_to_dict(DATA_DIR, 'preferences_castle.csv'))
-    preferences_lps = [item for sublist in preferences_lps for item in sublist]
 
+    print("Clearing existing .lp files")
     clear_file(OUTPUT_DIR, 'preferences.lp')
     clear_file(OUTPUT_DIR, 'timetable.lp')
 
+    print(f"Saving .lp files to {OUTPUT_DIR / 'timetable.lp'}")
     save_lp(timetable_lps, OUTPUT_DIR, 'timetable.lp')
+    print(f"Saving .lp files to {OUTPUT_DIR / 'preferences.lp'}")
     save_lp(preferences_lps, OUTPUT_DIR, 'preferences.lp')
