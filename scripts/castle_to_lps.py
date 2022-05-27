@@ -14,14 +14,14 @@ TIMES = ["08", "09", "10", "11", "12", "13",
 DAY_TIMES = [(x, y) for x in DAYS for y in TIMES]
 
 KEY_TO_PREF = {
-    '0': ('impossible', False),
-    '0.1': ('impossible', True),
-    '1': ('dislike', False),
-    '1.1': ('dislike', True),
-    '2': ('possible', False),
-    '2.1': ('possible', True),
-    '3': ('preferred', False),
-    '3.1': ('preferred', True),
+    '0': ('impossible', 'onlineOrPerson'),
+    '0.1': ('impossible', 'onlineOnly'),
+    '1': ('dislike', 'onlineOrPerson'),
+    '1.1': ('dislike', 'onlineOnly'),
+    '2': ('possible', 'onlineOrPerson'),
+    '2.1': ('possible', 'onlineOnly'),
+    '3': ('preferred', 'onlineOrPerson'),
+    '3.1': ('preferred', 'onlineOnly'),
 }
 
 
@@ -47,10 +47,10 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
         str: the lp format of the preference entry
     """
 
-    z_id = preference_entry['zid'].lower()
+    z_id = preference_entry['zid']
 
     result = []
-    result.append(fact_builder('teacher', preference_entry['zid'].lower()))
+    result.append(fact_builder('teacher', preference_entry['zid']))
     result.append(fact_builder('previousTuteExperience',
                   z_id, "1511" in preference_entry['previous_experience']))
 
