@@ -1,2590 +1,3352 @@
 teacher(z1000001).
-previousTuteExperience(z1000001, true).
-preference(z1000001, m, 08, dislike, onlineOnly).
-preference(z1000001, m, 09, dislike, onlineOnly).
-preference(z1000001, m, 10, dislike, onlineOnly).
-preference(z1000001, m, 11, dislike, onlineOnly).
-preference(z1000001, m, 12, dislike, onlineOnly).
-preference(z1000001, m, 13, dislike, onlineOnly).
-preference(z1000001, m, 14, dislike, onlineOnly).
-preference(z1000001, m, 15, dislike, onlineOnly).
-preference(z1000001, m, 16, dislike, onlineOnly).
-preference(z1000001, m, 17, dislike, onlineOnly).
-preference(z1000001, m, 18, dislike, onlineOnly).
-preference(z1000001, m, 19, dislike, onlineOnly).
-preference(z1000001, m, 20, dislike, onlineOnly).
-preference(z1000001, t, 08, dislike, onlineOnly).
-preference(z1000001, t, 09, possible, onlineOnly).
-preference(z1000001, t, 10, possible, onlineOnly).
-preference(z1000001, t, 11, possible, onlineOnly).
-preference(z1000001, t, 12, possible, onlineOnly).
-preference(z1000001, t, 13, possible, onlineOnly).
-preference(z1000001, t, 14, possible, onlineOnly).
-preference(z1000001, t, 15, possible, onlineOnly).
-preference(z1000001, t, 16, dislike, onlineOnly).
-preference(z1000001, t, 17, dislike, onlineOnly).
-preference(z1000001, t, 18, dislike, onlineOnly).
-preference(z1000001, t, 19, dislike, onlineOnly).
-preference(z1000001, t, 20, dislike, onlineOnly).
-preference(z1000001, w, 08, possible, onlineOnly).
-preference(z1000001, w, 09, preferred, onlineOnly).
-preference(z1000001, w, 10, preferred, onlineOnly).
-preference(z1000001, w, 11, preferred, onlineOnly).
-preference(z1000001, w, 12, preferred, onlineOnly).
-preference(z1000001, w, 13, preferred, onlineOnly).
-preference(z1000001, w, 14, preferred, onlineOnly).
-preference(z1000001, w, 15, preferred, onlineOnly).
-preference(z1000001, w, 16, possible, onlineOnly).
-preference(z1000001, w, 17, possible, onlineOnly).
-preference(z1000001, w, 18, dislike, onlineOnly).
-preference(z1000001, w, 19, dislike, onlineOnly).
-preference(z1000001, w, 20, dislike, onlineOnly).
-preference(z1000001, h, 08, possible, onlineOnly).
-preference(z1000001, h, 09, preferred, onlineOnly).
-preference(z1000001, h, 10, preferred, onlineOnly).
-preference(z1000001, h, 11, preferred, onlineOnly).
-preference(z1000001, h, 12, preferred, onlineOnly).
-preference(z1000001, h, 13, preferred, onlineOnly).
-preference(z1000001, h, 14, preferred, onlineOnly).
-preference(z1000001, h, 15, preferred, onlineOnly).
-preference(z1000001, h, 16, possible, onlineOnly).
-preference(z1000001, h, 17, possible, onlineOnly).
-preference(z1000001, h, 18, dislike, onlineOnly).
-preference(z1000001, h, 19, dislike, onlineOnly).
-preference(z1000001, h, 20, dislike, onlineOnly).
-preference(z1000001, f, 08, dislike, onlineOnly).
-preference(z1000001, f, 09, dislike, onlineOnly).
-preference(z1000001, f, 10, dislike, onlineOnly).
-preference(z1000001, f, 11, dislike, onlineOnly).
-preference(z1000001, f, 12, dislike, onlineOnly).
-preference(z1000001, f, 13, dislike, onlineOnly).
-preference(z1000001, f, 14, dislike, onlineOnly).
-preference(z1000001, f, 15, dislike, onlineOnly).
-preference(z1000001, f, 16, dislike, onlineOnly).
-preference(z1000001, f, 17, dislike, onlineOnly).
-preference(z1000001, f, 18, dislike, onlineOnly).
-preference(z1000001, f, 19, dislike, onlineOnly).
-preference(z1000001, f, 20, dislike, onlineOnly).
-capacityTute(z1000001, 1).
-capacityAsst(z1000001, 1).
-preferTutorial(z1000001, 1).
+experience(z1000001, tute).
+experience(z1000001, asst).
+available(z1000001, online, m, 8).
+desire(z1000001, dislike, m, 8).
+available(z1000001, online, m, 9).
+desire(z1000001, dislike, m, 9).
+available(z1000001, online, m, 10).
+desire(z1000001, dislike, m, 10).
+available(z1000001, online, m, 11).
+desire(z1000001, dislike, m, 11).
+available(z1000001, online, m, 12).
+desire(z1000001, dislike, m, 12).
+available(z1000001, online, m, 13).
+desire(z1000001, dislike, m, 13).
+available(z1000001, online, m, 14).
+desire(z1000001, dislike, m, 14).
+available(z1000001, online, m, 15).
+desire(z1000001, dislike, m, 15).
+available(z1000001, online, m, 16).
+desire(z1000001, dislike, m, 16).
+available(z1000001, online, m, 17).
+desire(z1000001, dislike, m, 17).
+available(z1000001, online, m, 18).
+desire(z1000001, dislike, m, 18).
+available(z1000001, online, m, 19).
+desire(z1000001, dislike, m, 19).
+available(z1000001, online, m, 20).
+desire(z1000001, dislike, m, 20).
+available(z1000001, online, t, 8).
+desire(z1000001, dislike, t, 8).
+available(z1000001, online, t, 9).
+desire(z1000001, possible, t, 9).
+available(z1000001, online, t, 10).
+desire(z1000001, possible, t, 10).
+available(z1000001, online, t, 11).
+desire(z1000001, possible, t, 11).
+available(z1000001, online, t, 12).
+desire(z1000001, possible, t, 12).
+available(z1000001, online, t, 13).
+desire(z1000001, possible, t, 13).
+available(z1000001, online, t, 14).
+desire(z1000001, possible, t, 14).
+available(z1000001, online, t, 15).
+desire(z1000001, possible, t, 15).
+available(z1000001, online, t, 16).
+desire(z1000001, dislike, t, 16).
+available(z1000001, online, t, 17).
+desire(z1000001, dislike, t, 17).
+available(z1000001, online, t, 18).
+desire(z1000001, dislike, t, 18).
+available(z1000001, online, t, 19).
+desire(z1000001, dislike, t, 19).
+available(z1000001, online, t, 20).
+desire(z1000001, dislike, t, 20).
+available(z1000001, online, w, 8).
+desire(z1000001, possible, w, 8).
+available(z1000001, online, w, 9).
+desire(z1000001, preferred, w, 9).
+available(z1000001, online, w, 10).
+desire(z1000001, preferred, w, 10).
+available(z1000001, online, w, 11).
+desire(z1000001, preferred, w, 11).
+available(z1000001, online, w, 12).
+desire(z1000001, preferred, w, 12).
+available(z1000001, online, w, 13).
+desire(z1000001, preferred, w, 13).
+available(z1000001, online, w, 14).
+desire(z1000001, preferred, w, 14).
+available(z1000001, online, w, 15).
+desire(z1000001, preferred, w, 15).
+available(z1000001, online, w, 16).
+desire(z1000001, possible, w, 16).
+available(z1000001, online, w, 17).
+desire(z1000001, possible, w, 17).
+available(z1000001, online, w, 18).
+desire(z1000001, dislike, w, 18).
+available(z1000001, online, w, 19).
+desire(z1000001, dislike, w, 19).
+available(z1000001, online, w, 20).
+desire(z1000001, dislike, w, 20).
+available(z1000001, online, h, 8).
+desire(z1000001, possible, h, 8).
+available(z1000001, online, h, 9).
+desire(z1000001, preferred, h, 9).
+available(z1000001, online, h, 10).
+desire(z1000001, preferred, h, 10).
+available(z1000001, online, h, 11).
+desire(z1000001, preferred, h, 11).
+available(z1000001, online, h, 12).
+desire(z1000001, preferred, h, 12).
+available(z1000001, online, h, 13).
+desire(z1000001, preferred, h, 13).
+available(z1000001, online, h, 14).
+desire(z1000001, preferred, h, 14).
+available(z1000001, online, h, 15).
+desire(z1000001, preferred, h, 15).
+available(z1000001, online, h, 16).
+desire(z1000001, possible, h, 16).
+available(z1000001, online, h, 17).
+desire(z1000001, possible, h, 17).
+available(z1000001, online, h, 18).
+desire(z1000001, dislike, h, 18).
+available(z1000001, online, h, 19).
+desire(z1000001, dislike, h, 19).
+available(z1000001, online, h, 20).
+desire(z1000001, dislike, h, 20).
+available(z1000001, online, f, 8).
+desire(z1000001, dislike, f, 8).
+available(z1000001, online, f, 9).
+desire(z1000001, dislike, f, 9).
+available(z1000001, online, f, 10).
+desire(z1000001, dislike, f, 10).
+available(z1000001, online, f, 11).
+desire(z1000001, dislike, f, 11).
+available(z1000001, online, f, 12).
+desire(z1000001, dislike, f, 12).
+available(z1000001, online, f, 13).
+desire(z1000001, dislike, f, 13).
+available(z1000001, online, f, 14).
+desire(z1000001, dislike, f, 14).
+available(z1000001, online, f, 15).
+desire(z1000001, dislike, f, 15).
+available(z1000001, online, f, 16).
+desire(z1000001, dislike, f, 16).
+available(z1000001, online, f, 17).
+desire(z1000001, dislike, f, 17).
+available(z1000001, online, f, 18).
+desire(z1000001, dislike, f, 18).
+available(z1000001, online, f, 19).
+desire(z1000001, dislike, f, 19).
+available(z1000001, online, f, 20).
+desire(z1000001, dislike, f, 20).
+capacity(z1000001, tute, 1).
+capacity(z1000001, asst, 1).
+prefer(z1000001, tute).
 teacher(z1000002).
-previousTuteExperience(z1000002, true).
-preference(z1000002, m, 08, preferred, onlineOrPerson).
-preference(z1000002, m, 09, preferred, onlineOrPerson).
-preference(z1000002, m, 10, preferred, onlineOrPerson).
-preference(z1000002, m, 11, preferred, onlineOrPerson).
-preference(z1000002, m, 12, preferred, onlineOrPerson).
-preference(z1000002, m, 13, preferred, onlineOrPerson).
-preference(z1000002, m, 14, preferred, onlineOrPerson).
-preference(z1000002, m, 15, preferred, onlineOrPerson).
-preference(z1000002, m, 16, preferred, onlineOrPerson).
-preference(z1000002, m, 17, preferred, onlineOrPerson).
-preference(z1000002, m, 18, preferred, onlineOrPerson).
-preference(z1000002, m, 19, preferred, onlineOrPerson).
-preference(z1000002, m, 20, preferred, onlineOrPerson).
-preference(z1000002, t, 08, impossible, onlineOrPerson).
-preference(z1000002, t, 09, impossible, onlineOrPerson).
-preference(z1000002, t, 10, impossible, onlineOrPerson).
-preference(z1000002, t, 11, impossible, onlineOrPerson).
-preference(z1000002, t, 12, impossible, onlineOrPerson).
-preference(z1000002, t, 13, impossible, onlineOrPerson).
-preference(z1000002, t, 14, impossible, onlineOrPerson).
-preference(z1000002, t, 15, preferred, onlineOnly).
-preference(z1000002, t, 16, preferred, onlineOnly).
-preference(z1000002, t, 17, preferred, onlineOnly).
-preference(z1000002, t, 18, impossible, onlineOrPerson).
-preference(z1000002, t, 19, impossible, onlineOrPerson).
-preference(z1000002, t, 20, impossible, onlineOrPerson).
-preference(z1000002, w, 08, preferred, onlineOrPerson).
-preference(z1000002, w, 09, preferred, onlineOrPerson).
-preference(z1000002, w, 10, preferred, onlineOrPerson).
-preference(z1000002, w, 11, preferred, onlineOrPerson).
-preference(z1000002, w, 12, preferred, onlineOrPerson).
-preference(z1000002, w, 13, preferred, onlineOrPerson).
-preference(z1000002, w, 14, preferred, onlineOrPerson).
-preference(z1000002, w, 15, preferred, onlineOrPerson).
-preference(z1000002, w, 16, preferred, onlineOrPerson).
-preference(z1000002, w, 17, preferred, onlineOrPerson).
-preference(z1000002, w, 18, preferred, onlineOrPerson).
-preference(z1000002, w, 19, preferred, onlineOrPerson).
-preference(z1000002, w, 20, preferred, onlineOrPerson).
-preference(z1000002, h, 08, impossible, onlineOrPerson).
-preference(z1000002, h, 09, impossible, onlineOrPerson).
-preference(z1000002, h, 10, impossible, onlineOrPerson).
-preference(z1000002, h, 11, dislike, onlineOnly).
-preference(z1000002, h, 12, possible, onlineOnly).
-preference(z1000002, h, 13, possible, onlineOnly).
-preference(z1000002, h, 14, possible, onlineOnly).
-preference(z1000002, h, 15, possible, onlineOnly).
-preference(z1000002, h, 16, dislike, onlineOnly).
-preference(z1000002, h, 17, dislike, onlineOnly).
-preference(z1000002, h, 18, dislike, onlineOnly).
-preference(z1000002, h, 19, dislike, onlineOnly).
-preference(z1000002, h, 20, dislike, onlineOnly).
-preference(z1000002, f, 08, possible, onlineOnly).
-preference(z1000002, f, 09, possible, onlineOnly).
-preference(z1000002, f, 10, possible, onlineOnly).
-preference(z1000002, f, 11, impossible, onlineOrPerson).
-preference(z1000002, f, 12, impossible, onlineOrPerson).
-preference(z1000002, f, 13, impossible, onlineOrPerson).
-preference(z1000002, f, 14, impossible, onlineOrPerson).
-preference(z1000002, f, 15, possible, onlineOnly).
-preference(z1000002, f, 16, preferred, onlineOnly).
-preference(z1000002, f, 17, preferred, onlineOnly).
-preference(z1000002, f, 18, preferred, onlineOnly).
-preference(z1000002, f, 19, preferred, onlineOnly).
-preference(z1000002, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000002, 1).
-capacityAsst(z1000002, 1).
-preferTutorial(z1000002, 1).
+experience(z1000002, tute).
+experience(z1000002, asst).
+available(z1000002, online, m, 8).
+available(z1000002, inPerson, m, 8).
+desire(z1000002, preferred, m, 8).
+available(z1000002, online, m, 9).
+available(z1000002, inPerson, m, 9).
+desire(z1000002, preferred, m, 9).
+available(z1000002, online, m, 10).
+available(z1000002, inPerson, m, 10).
+desire(z1000002, preferred, m, 10).
+available(z1000002, online, m, 11).
+available(z1000002, inPerson, m, 11).
+desire(z1000002, preferred, m, 11).
+available(z1000002, online, m, 12).
+available(z1000002, inPerson, m, 12).
+desire(z1000002, preferred, m, 12).
+available(z1000002, online, m, 13).
+available(z1000002, inPerson, m, 13).
+desire(z1000002, preferred, m, 13).
+available(z1000002, online, m, 14).
+available(z1000002, inPerson, m, 14).
+desire(z1000002, preferred, m, 14).
+available(z1000002, online, m, 15).
+available(z1000002, inPerson, m, 15).
+desire(z1000002, preferred, m, 15).
+available(z1000002, online, m, 16).
+available(z1000002, inPerson, m, 16).
+desire(z1000002, preferred, m, 16).
+available(z1000002, online, m, 17).
+available(z1000002, inPerson, m, 17).
+desire(z1000002, preferred, m, 17).
+available(z1000002, online, m, 18).
+available(z1000002, inPerson, m, 18).
+desire(z1000002, preferred, m, 18).
+available(z1000002, online, m, 19).
+available(z1000002, inPerson, m, 19).
+desire(z1000002, preferred, m, 19).
+available(z1000002, online, m, 20).
+available(z1000002, inPerson, m, 20).
+desire(z1000002, preferred, m, 20).
+available(z1000002, online, t, 15).
+desire(z1000002, preferred, t, 15).
+available(z1000002, online, t, 16).
+desire(z1000002, preferred, t, 16).
+available(z1000002, online, t, 17).
+desire(z1000002, preferred, t, 17).
+available(z1000002, online, w, 8).
+available(z1000002, inPerson, w, 8).
+desire(z1000002, preferred, w, 8).
+available(z1000002, online, w, 9).
+available(z1000002, inPerson, w, 9).
+desire(z1000002, preferred, w, 9).
+available(z1000002, online, w, 10).
+available(z1000002, inPerson, w, 10).
+desire(z1000002, preferred, w, 10).
+available(z1000002, online, w, 11).
+available(z1000002, inPerson, w, 11).
+desire(z1000002, preferred, w, 11).
+available(z1000002, online, w, 12).
+available(z1000002, inPerson, w, 12).
+desire(z1000002, preferred, w, 12).
+available(z1000002, online, w, 13).
+available(z1000002, inPerson, w, 13).
+desire(z1000002, preferred, w, 13).
+available(z1000002, online, w, 14).
+available(z1000002, inPerson, w, 14).
+desire(z1000002, preferred, w, 14).
+available(z1000002, online, w, 15).
+available(z1000002, inPerson, w, 15).
+desire(z1000002, preferred, w, 15).
+available(z1000002, online, w, 16).
+available(z1000002, inPerson, w, 16).
+desire(z1000002, preferred, w, 16).
+available(z1000002, online, w, 17).
+available(z1000002, inPerson, w, 17).
+desire(z1000002, preferred, w, 17).
+available(z1000002, online, w, 18).
+available(z1000002, inPerson, w, 18).
+desire(z1000002, preferred, w, 18).
+available(z1000002, online, w, 19).
+available(z1000002, inPerson, w, 19).
+desire(z1000002, preferred, w, 19).
+available(z1000002, online, w, 20).
+available(z1000002, inPerson, w, 20).
+desire(z1000002, preferred, w, 20).
+available(z1000002, online, h, 11).
+desire(z1000002, dislike, h, 11).
+available(z1000002, online, h, 12).
+desire(z1000002, possible, h, 12).
+available(z1000002, online, h, 13).
+desire(z1000002, possible, h, 13).
+available(z1000002, online, h, 14).
+desire(z1000002, possible, h, 14).
+available(z1000002, online, h, 15).
+desire(z1000002, possible, h, 15).
+available(z1000002, online, h, 16).
+desire(z1000002, dislike, h, 16).
+available(z1000002, online, h, 17).
+desire(z1000002, dislike, h, 17).
+available(z1000002, online, h, 18).
+desire(z1000002, dislike, h, 18).
+available(z1000002, online, h, 19).
+desire(z1000002, dislike, h, 19).
+available(z1000002, online, h, 20).
+desire(z1000002, dislike, h, 20).
+available(z1000002, online, f, 8).
+desire(z1000002, possible, f, 8).
+available(z1000002, online, f, 9).
+desire(z1000002, possible, f, 9).
+available(z1000002, online, f, 10).
+desire(z1000002, possible, f, 10).
+available(z1000002, online, f, 15).
+desire(z1000002, possible, f, 15).
+available(z1000002, online, f, 16).
+desire(z1000002, preferred, f, 16).
+available(z1000002, online, f, 17).
+desire(z1000002, preferred, f, 17).
+available(z1000002, online, f, 18).
+desire(z1000002, preferred, f, 18).
+available(z1000002, online, f, 19).
+desire(z1000002, preferred, f, 19).
+capacity(z1000002, tute, 1).
+capacity(z1000002, asst, 1).
+prefer(z1000002, tute).
 teacher(z1000003).
-previousTuteExperience(z1000003, true).
-preference(z1000003, m, 08, impossible, onlineOrPerson).
-preference(z1000003, m, 09, dislike, onlineOrPerson).
-preference(z1000003, m, 10, possible, onlineOrPerson).
-preference(z1000003, m, 11, preferred, onlineOnly).
-preference(z1000003, m, 12, preferred, onlineOnly).
-preference(z1000003, m, 13, preferred, onlineOnly).
-preference(z1000003, m, 14, preferred, onlineOnly).
-preference(z1000003, m, 15, preferred, onlineOnly).
-preference(z1000003, m, 16, preferred, onlineOnly).
-preference(z1000003, m, 17, preferred, onlineOnly).
-preference(z1000003, m, 18, possible, onlineOnly).
-preference(z1000003, m, 19, possible, onlineOnly).
-preference(z1000003, m, 20, possible, onlineOnly).
-preference(z1000003, t, 08, impossible, onlineOrPerson).
-preference(z1000003, t, 09, impossible, onlineOrPerson).
-preference(z1000003, t, 10, impossible, onlineOrPerson).
-preference(z1000003, t, 11, dislike, onlineOnly).
-preference(z1000003, t, 12, preferred, onlineOnly).
-preference(z1000003, t, 13, preferred, onlineOnly).
-preference(z1000003, t, 14, preferred, onlineOnly).
-preference(z1000003, t, 15, preferred, onlineOnly).
-preference(z1000003, t, 16, preferred, onlineOnly).
-preference(z1000003, t, 17, preferred, onlineOnly).
-preference(z1000003, t, 18, possible, onlineOnly).
-preference(z1000003, t, 19, possible, onlineOnly).
-preference(z1000003, t, 20, possible, onlineOnly).
-preference(z1000003, w, 08, impossible, onlineOrPerson).
-preference(z1000003, w, 09, dislike, onlineOrPerson).
-preference(z1000003, w, 10, possible, onlineOrPerson).
-preference(z1000003, w, 11, preferred, onlineOnly).
-preference(z1000003, w, 12, preferred, onlineOnly).
-preference(z1000003, w, 13, preferred, onlineOnly).
-preference(z1000003, w, 14, preferred, onlineOnly).
-preference(z1000003, w, 15, preferred, onlineOnly).
-preference(z1000003, w, 16, preferred, onlineOnly).
-preference(z1000003, w, 17, preferred, onlineOnly).
-preference(z1000003, w, 18, possible, onlineOnly).
-preference(z1000003, w, 19, possible, onlineOnly).
-preference(z1000003, w, 20, possible, onlineOnly).
-preference(z1000003, h, 08, impossible, onlineOrPerson).
-preference(z1000003, h, 09, impossible, onlineOrPerson).
-preference(z1000003, h, 10, impossible, onlineOrPerson).
-preference(z1000003, h, 11, dislike, onlineOnly).
-preference(z1000003, h, 12, preferred, onlineOnly).
-preference(z1000003, h, 13, preferred, onlineOnly).
-preference(z1000003, h, 14, preferred, onlineOnly).
-preference(z1000003, h, 15, preferred, onlineOnly).
-preference(z1000003, h, 16, preferred, onlineOnly).
-preference(z1000003, h, 17, preferred, onlineOnly).
-preference(z1000003, h, 18, possible, onlineOnly).
-preference(z1000003, h, 19, possible, onlineOnly).
-preference(z1000003, h, 20, possible, onlineOnly).
-preference(z1000003, f, 08, impossible, onlineOrPerson).
-preference(z1000003, f, 09, dislike, onlineOrPerson).
-preference(z1000003, f, 10, possible, onlineOrPerson).
-preference(z1000003, f, 11, preferred, onlineOnly).
-preference(z1000003, f, 12, preferred, onlineOnly).
-preference(z1000003, f, 13, preferred, onlineOnly).
-preference(z1000003, f, 14, impossible, onlineOrPerson).
-preference(z1000003, f, 15, possible, onlineOnly).
-preference(z1000003, f, 16, preferred, onlineOnly).
-preference(z1000003, f, 17, preferred, onlineOnly).
-preference(z1000003, f, 18, possible, onlineOnly).
-preference(z1000003, f, 19, possible, onlineOnly).
-preference(z1000003, f, 20, possible, onlineOnly).
-capacityTute(z1000003, 1).
-capacityAsst(z1000003, 1).
-preferTutorial(z1000003, 1).
+experience(z1000003, tute).
+experience(z1000003, asst).
+available(z1000003, online, m, 9).
+available(z1000003, inPerson, m, 9).
+desire(z1000003, dislike, m, 9).
+available(z1000003, online, m, 10).
+available(z1000003, inPerson, m, 10).
+desire(z1000003, possible, m, 10).
+available(z1000003, online, m, 11).
+desire(z1000003, preferred, m, 11).
+available(z1000003, online, m, 12).
+desire(z1000003, preferred, m, 12).
+available(z1000003, online, m, 13).
+desire(z1000003, preferred, m, 13).
+available(z1000003, online, m, 14).
+desire(z1000003, preferred, m, 14).
+available(z1000003, online, m, 15).
+desire(z1000003, preferred, m, 15).
+available(z1000003, online, m, 16).
+desire(z1000003, preferred, m, 16).
+available(z1000003, online, m, 17).
+desire(z1000003, preferred, m, 17).
+available(z1000003, online, m, 18).
+desire(z1000003, possible, m, 18).
+available(z1000003, online, m, 19).
+desire(z1000003, possible, m, 19).
+available(z1000003, online, m, 20).
+desire(z1000003, possible, m, 20).
+available(z1000003, online, t, 11).
+desire(z1000003, dislike, t, 11).
+available(z1000003, online, t, 12).
+desire(z1000003, preferred, t, 12).
+available(z1000003, online, t, 13).
+desire(z1000003, preferred, t, 13).
+available(z1000003, online, t, 14).
+desire(z1000003, preferred, t, 14).
+available(z1000003, online, t, 15).
+desire(z1000003, preferred, t, 15).
+available(z1000003, online, t, 16).
+desire(z1000003, preferred, t, 16).
+available(z1000003, online, t, 17).
+desire(z1000003, preferred, t, 17).
+available(z1000003, online, t, 18).
+desire(z1000003, possible, t, 18).
+available(z1000003, online, t, 19).
+desire(z1000003, possible, t, 19).
+available(z1000003, online, t, 20).
+desire(z1000003, possible, t, 20).
+available(z1000003, online, w, 9).
+available(z1000003, inPerson, w, 9).
+desire(z1000003, dislike, w, 9).
+available(z1000003, online, w, 10).
+available(z1000003, inPerson, w, 10).
+desire(z1000003, possible, w, 10).
+available(z1000003, online, w, 11).
+desire(z1000003, preferred, w, 11).
+available(z1000003, online, w, 12).
+desire(z1000003, preferred, w, 12).
+available(z1000003, online, w, 13).
+desire(z1000003, preferred, w, 13).
+available(z1000003, online, w, 14).
+desire(z1000003, preferred, w, 14).
+available(z1000003, online, w, 15).
+desire(z1000003, preferred, w, 15).
+available(z1000003, online, w, 16).
+desire(z1000003, preferred, w, 16).
+available(z1000003, online, w, 17).
+desire(z1000003, preferred, w, 17).
+available(z1000003, online, w, 18).
+desire(z1000003, possible, w, 18).
+available(z1000003, online, w, 19).
+desire(z1000003, possible, w, 19).
+available(z1000003, online, w, 20).
+desire(z1000003, possible, w, 20).
+available(z1000003, online, h, 11).
+desire(z1000003, dislike, h, 11).
+available(z1000003, online, h, 12).
+desire(z1000003, preferred, h, 12).
+available(z1000003, online, h, 13).
+desire(z1000003, preferred, h, 13).
+available(z1000003, online, h, 14).
+desire(z1000003, preferred, h, 14).
+available(z1000003, online, h, 15).
+desire(z1000003, preferred, h, 15).
+available(z1000003, online, h, 16).
+desire(z1000003, preferred, h, 16).
+available(z1000003, online, h, 17).
+desire(z1000003, preferred, h, 17).
+available(z1000003, online, h, 18).
+desire(z1000003, possible, h, 18).
+available(z1000003, online, h, 19).
+desire(z1000003, possible, h, 19).
+available(z1000003, online, h, 20).
+desire(z1000003, possible, h, 20).
+available(z1000003, online, f, 9).
+available(z1000003, inPerson, f, 9).
+desire(z1000003, dislike, f, 9).
+available(z1000003, online, f, 10).
+available(z1000003, inPerson, f, 10).
+desire(z1000003, possible, f, 10).
+available(z1000003, online, f, 11).
+desire(z1000003, preferred, f, 11).
+available(z1000003, online, f, 12).
+desire(z1000003, preferred, f, 12).
+available(z1000003, online, f, 13).
+desire(z1000003, preferred, f, 13).
+available(z1000003, online, f, 15).
+desire(z1000003, possible, f, 15).
+available(z1000003, online, f, 16).
+desire(z1000003, preferred, f, 16).
+available(z1000003, online, f, 17).
+desire(z1000003, preferred, f, 17).
+available(z1000003, online, f, 18).
+desire(z1000003, possible, f, 18).
+available(z1000003, online, f, 19).
+desire(z1000003, possible, f, 19).
+available(z1000003, online, f, 20).
+desire(z1000003, possible, f, 20).
+capacity(z1000003, tute, 1).
+capacity(z1000003, asst, 1).
+prefer(z1000003, tute).
 teacher(z1000004).
-previousTuteExperience(z1000004, true).
-preference(z1000004, m, 08, impossible, onlineOrPerson).
-preference(z1000004, m, 09, possible, onlineOnly).
-preference(z1000004, m, 10, preferred, onlineOnly).
-preference(z1000004, m, 11, preferred, onlineOnly).
-preference(z1000004, m, 12, dislike, onlineOnly).
-preference(z1000004, m, 13, dislike, onlineOnly).
-preference(z1000004, m, 14, preferred, onlineOnly).
-preference(z1000004, m, 15, preferred, onlineOnly).
-preference(z1000004, m, 16, preferred, onlineOnly).
-preference(z1000004, m, 17, preferred, onlineOnly).
-preference(z1000004, m, 18, possible, onlineOnly).
-preference(z1000004, m, 19, possible, onlineOnly).
-preference(z1000004, m, 20, impossible, onlineOrPerson).
-preference(z1000004, t, 08, impossible, onlineOrPerson).
-preference(z1000004, t, 09, impossible, onlineOrPerson).
-preference(z1000004, t, 10, impossible, onlineOrPerson).
-preference(z1000004, t, 11, impossible, onlineOrPerson).
-preference(z1000004, t, 12, impossible, onlineOrPerson).
-preference(z1000004, t, 13, impossible, onlineOrPerson).
-preference(z1000004, t, 14, impossible, onlineOrPerson).
-preference(z1000004, t, 15, impossible, onlineOrPerson).
-preference(z1000004, t, 16, impossible, onlineOrPerson).
-preference(z1000004, t, 17, impossible, onlineOrPerson).
-preference(z1000004, t, 18, possible, onlineOnly).
-preference(z1000004, t, 19, possible, onlineOnly).
-preference(z1000004, t, 20, impossible, onlineOrPerson).
-preference(z1000004, w, 08, impossible, onlineOrPerson).
-preference(z1000004, w, 09, possible, onlineOnly).
-preference(z1000004, w, 10, preferred, onlineOnly).
-preference(z1000004, w, 11, preferred, onlineOnly).
-preference(z1000004, w, 12, dislike, onlineOnly).
-preference(z1000004, w, 13, dislike, onlineOnly).
-preference(z1000004, w, 14, preferred, onlineOnly).
-preference(z1000004, w, 15, preferred, onlineOnly).
-preference(z1000004, w, 16, preferred, onlineOnly).
-preference(z1000004, w, 17, preferred, onlineOnly).
-preference(z1000004, w, 18, possible, onlineOnly).
-preference(z1000004, w, 19, possible, onlineOnly).
-preference(z1000004, w, 20, impossible, onlineOrPerson).
-preference(z1000004, h, 08, impossible, onlineOrPerson).
-preference(z1000004, h, 09, preferred, onlineOrPerson).
-preference(z1000004, h, 10, preferred, onlineOrPerson).
-preference(z1000004, h, 11, preferred, onlineOrPerson).
-preference(z1000004, h, 12, impossible, onlineOrPerson).
-preference(z1000004, h, 13, dislike, onlineOrPerson).
-preference(z1000004, h, 14, preferred, onlineOrPerson).
-preference(z1000004, h, 15, preferred, onlineOrPerson).
-preference(z1000004, h, 16, preferred, onlineOrPerson).
-preference(z1000004, h, 17, preferred, onlineOrPerson).
-preference(z1000004, h, 18, possible, onlineOrPerson).
-preference(z1000004, h, 19, possible, onlineOrPerson).
-preference(z1000004, h, 20, impossible, onlineOrPerson).
-preference(z1000004, f, 08, impossible, onlineOrPerson).
-preference(z1000004, f, 09, impossible, onlineOrPerson).
-preference(z1000004, f, 10, impossible, onlineOrPerson).
-preference(z1000004, f, 11, impossible, onlineOrPerson).
-preference(z1000004, f, 12, impossible, onlineOrPerson).
-preference(z1000004, f, 13, impossible, onlineOrPerson).
-preference(z1000004, f, 14, preferred, onlineOnly).
-preference(z1000004, f, 15, preferred, onlineOnly).
-preference(z1000004, f, 16, preferred, onlineOnly).
-preference(z1000004, f, 17, preferred, onlineOnly).
-preference(z1000004, f, 18, possible, onlineOnly).
-preference(z1000004, f, 19, possible, onlineOnly).
-preference(z1000004, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000004, 1).
-capacityAsst(z1000004, 1).
-preferTutorial(z1000004, 1).
+experience(z1000004, tute).
+experience(z1000004, asst).
+available(z1000004, online, m, 9).
+desire(z1000004, possible, m, 9).
+available(z1000004, online, m, 10).
+desire(z1000004, preferred, m, 10).
+available(z1000004, online, m, 11).
+desire(z1000004, preferred, m, 11).
+available(z1000004, online, m, 12).
+desire(z1000004, dislike, m, 12).
+available(z1000004, online, m, 13).
+desire(z1000004, dislike, m, 13).
+available(z1000004, online, m, 14).
+desire(z1000004, preferred, m, 14).
+available(z1000004, online, m, 15).
+desire(z1000004, preferred, m, 15).
+available(z1000004, online, m, 16).
+desire(z1000004, preferred, m, 16).
+available(z1000004, online, m, 17).
+desire(z1000004, preferred, m, 17).
+available(z1000004, online, m, 18).
+desire(z1000004, possible, m, 18).
+available(z1000004, online, m, 19).
+desire(z1000004, possible, m, 19).
+available(z1000004, online, t, 18).
+desire(z1000004, possible, t, 18).
+available(z1000004, online, t, 19).
+desire(z1000004, possible, t, 19).
+available(z1000004, online, w, 9).
+desire(z1000004, possible, w, 9).
+available(z1000004, online, w, 10).
+desire(z1000004, preferred, w, 10).
+available(z1000004, online, w, 11).
+desire(z1000004, preferred, w, 11).
+available(z1000004, online, w, 12).
+desire(z1000004, dislike, w, 12).
+available(z1000004, online, w, 13).
+desire(z1000004, dislike, w, 13).
+available(z1000004, online, w, 14).
+desire(z1000004, preferred, w, 14).
+available(z1000004, online, w, 15).
+desire(z1000004, preferred, w, 15).
+available(z1000004, online, w, 16).
+desire(z1000004, preferred, w, 16).
+available(z1000004, online, w, 17).
+desire(z1000004, preferred, w, 17).
+available(z1000004, online, w, 18).
+desire(z1000004, possible, w, 18).
+available(z1000004, online, w, 19).
+desire(z1000004, possible, w, 19).
+available(z1000004, online, h, 9).
+available(z1000004, inPerson, h, 9).
+desire(z1000004, preferred, h, 9).
+available(z1000004, online, h, 10).
+available(z1000004, inPerson, h, 10).
+desire(z1000004, preferred, h, 10).
+available(z1000004, online, h, 11).
+available(z1000004, inPerson, h, 11).
+desire(z1000004, preferred, h, 11).
+available(z1000004, online, h, 13).
+available(z1000004, inPerson, h, 13).
+desire(z1000004, dislike, h, 13).
+available(z1000004, online, h, 14).
+available(z1000004, inPerson, h, 14).
+desire(z1000004, preferred, h, 14).
+available(z1000004, online, h, 15).
+available(z1000004, inPerson, h, 15).
+desire(z1000004, preferred, h, 15).
+available(z1000004, online, h, 16).
+available(z1000004, inPerson, h, 16).
+desire(z1000004, preferred, h, 16).
+available(z1000004, online, h, 17).
+available(z1000004, inPerson, h, 17).
+desire(z1000004, preferred, h, 17).
+available(z1000004, online, h, 18).
+available(z1000004, inPerson, h, 18).
+desire(z1000004, possible, h, 18).
+available(z1000004, online, h, 19).
+available(z1000004, inPerson, h, 19).
+desire(z1000004, possible, h, 19).
+available(z1000004, online, f, 14).
+desire(z1000004, preferred, f, 14).
+available(z1000004, online, f, 15).
+desire(z1000004, preferred, f, 15).
+available(z1000004, online, f, 16).
+desire(z1000004, preferred, f, 16).
+available(z1000004, online, f, 17).
+desire(z1000004, preferred, f, 17).
+available(z1000004, online, f, 18).
+desire(z1000004, possible, f, 18).
+available(z1000004, online, f, 19).
+desire(z1000004, possible, f, 19).
+capacity(z1000004, tute, 1).
+capacity(z1000004, asst, 1).
+prefer(z1000004, tute).
 teacher(z1000005).
-previousTuteExperience(z1000005, true).
-preference(z1000005, m, 08, impossible, onlineOrPerson).
-preference(z1000005, m, 09, impossible, onlineOrPerson).
-preference(z1000005, m, 10, impossible, onlineOrPerson).
-preference(z1000005, m, 11, impossible, onlineOrPerson).
-preference(z1000005, m, 12, impossible, onlineOrPerson).
-preference(z1000005, m, 13, impossible, onlineOrPerson).
-preference(z1000005, m, 14, impossible, onlineOrPerson).
-preference(z1000005, m, 15, impossible, onlineOrPerson).
-preference(z1000005, m, 16, impossible, onlineOrPerson).
-preference(z1000005, m, 17, impossible, onlineOrPerson).
-preference(z1000005, m, 18, impossible, onlineOrPerson).
-preference(z1000005, m, 19, impossible, onlineOrPerson).
-preference(z1000005, m, 20, impossible, onlineOrPerson).
-preference(z1000005, t, 08, impossible, onlineOrPerson).
-preference(z1000005, t, 09, impossible, onlineOrPerson).
-preference(z1000005, t, 10, impossible, onlineOrPerson).
-preference(z1000005, t, 11, impossible, onlineOrPerson).
-preference(z1000005, t, 12, impossible, onlineOrPerson).
-preference(z1000005, t, 13, impossible, onlineOrPerson).
-preference(z1000005, t, 14, impossible, onlineOrPerson).
-preference(z1000005, t, 15, impossible, onlineOrPerson).
-preference(z1000005, t, 16, impossible, onlineOrPerson).
-preference(z1000005, t, 17, impossible, onlineOrPerson).
-preference(z1000005, t, 18, impossible, onlineOrPerson).
-preference(z1000005, t, 19, impossible, onlineOrPerson).
-preference(z1000005, t, 20, impossible, onlineOrPerson).
-preference(z1000005, w, 08, impossible, onlineOrPerson).
-preference(z1000005, w, 09, impossible, onlineOrPerson).
-preference(z1000005, w, 10, preferred, onlineOrPerson).
-preference(z1000005, w, 11, preferred, onlineOrPerson).
-preference(z1000005, w, 12, preferred, onlineOrPerson).
-preference(z1000005, w, 13, preferred, onlineOrPerson).
-preference(z1000005, w, 14, preferred, onlineOrPerson).
-preference(z1000005, w, 15, preferred, onlineOrPerson).
-preference(z1000005, w, 16, preferred, onlineOrPerson).
-preference(z1000005, w, 17, preferred, onlineOrPerson).
-preference(z1000005, w, 18, preferred, onlineOrPerson).
-preference(z1000005, w, 19, preferred, onlineOrPerson).
-preference(z1000005, w, 20, preferred, onlineOrPerson).
-preference(z1000005, h, 08, impossible, onlineOrPerson).
-preference(z1000005, h, 09, impossible, onlineOrPerson).
-preference(z1000005, h, 10, impossible, onlineOrPerson).
-preference(z1000005, h, 11, possible, onlineOnly).
-preference(z1000005, h, 12, possible, onlineOnly).
-preference(z1000005, h, 13, possible, onlineOnly).
-preference(z1000005, h, 14, possible, onlineOnly).
-preference(z1000005, h, 15, possible, onlineOnly).
-preference(z1000005, h, 16, impossible, onlineOrPerson).
-preference(z1000005, h, 17, impossible, onlineOrPerson).
-preference(z1000005, h, 18, impossible, onlineOrPerson).
-preference(z1000005, h, 19, impossible, onlineOrPerson).
-preference(z1000005, h, 20, impossible, onlineOrPerson).
-preference(z1000005, f, 08, impossible, onlineOrPerson).
-preference(z1000005, f, 09, impossible, onlineOrPerson).
-preference(z1000005, f, 10, preferred, onlineOrPerson).
-preference(z1000005, f, 11, preferred, onlineOrPerson).
-preference(z1000005, f, 12, preferred, onlineOrPerson).
-preference(z1000005, f, 13, preferred, onlineOrPerson).
-preference(z1000005, f, 14, preferred, onlineOrPerson).
-preference(z1000005, f, 15, preferred, onlineOrPerson).
-preference(z1000005, f, 16, preferred, onlineOrPerson).
-preference(z1000005, f, 17, preferred, onlineOrPerson).
-preference(z1000005, f, 18, preferred, onlineOrPerson).
-preference(z1000005, f, 19, preferred, onlineOrPerson).
-preference(z1000005, f, 20, preferred, onlineOrPerson).
-capacityTute(z1000005, 1).
-capacityAsst(z1000005, 1).
-preferTutorial(z1000005, 1).
+experience(z1000005, tute).
+experience(z1000005, asst).
+available(z1000005, online, w, 10).
+available(z1000005, inPerson, w, 10).
+desire(z1000005, preferred, w, 10).
+available(z1000005, online, w, 11).
+available(z1000005, inPerson, w, 11).
+desire(z1000005, preferred, w, 11).
+available(z1000005, online, w, 12).
+available(z1000005, inPerson, w, 12).
+desire(z1000005, preferred, w, 12).
+available(z1000005, online, w, 13).
+available(z1000005, inPerson, w, 13).
+desire(z1000005, preferred, w, 13).
+available(z1000005, online, w, 14).
+available(z1000005, inPerson, w, 14).
+desire(z1000005, preferred, w, 14).
+available(z1000005, online, w, 15).
+available(z1000005, inPerson, w, 15).
+desire(z1000005, preferred, w, 15).
+available(z1000005, online, w, 16).
+available(z1000005, inPerson, w, 16).
+desire(z1000005, preferred, w, 16).
+available(z1000005, online, w, 17).
+available(z1000005, inPerson, w, 17).
+desire(z1000005, preferred, w, 17).
+available(z1000005, online, w, 18).
+available(z1000005, inPerson, w, 18).
+desire(z1000005, preferred, w, 18).
+available(z1000005, online, w, 19).
+available(z1000005, inPerson, w, 19).
+desire(z1000005, preferred, w, 19).
+available(z1000005, online, w, 20).
+available(z1000005, inPerson, w, 20).
+desire(z1000005, preferred, w, 20).
+available(z1000005, online, h, 11).
+desire(z1000005, possible, h, 11).
+available(z1000005, online, h, 12).
+desire(z1000005, possible, h, 12).
+available(z1000005, online, h, 13).
+desire(z1000005, possible, h, 13).
+available(z1000005, online, h, 14).
+desire(z1000005, possible, h, 14).
+available(z1000005, online, h, 15).
+desire(z1000005, possible, h, 15).
+available(z1000005, online, f, 10).
+available(z1000005, inPerson, f, 10).
+desire(z1000005, preferred, f, 10).
+available(z1000005, online, f, 11).
+available(z1000005, inPerson, f, 11).
+desire(z1000005, preferred, f, 11).
+available(z1000005, online, f, 12).
+available(z1000005, inPerson, f, 12).
+desire(z1000005, preferred, f, 12).
+available(z1000005, online, f, 13).
+available(z1000005, inPerson, f, 13).
+desire(z1000005, preferred, f, 13).
+available(z1000005, online, f, 14).
+available(z1000005, inPerson, f, 14).
+desire(z1000005, preferred, f, 14).
+available(z1000005, online, f, 15).
+available(z1000005, inPerson, f, 15).
+desire(z1000005, preferred, f, 15).
+available(z1000005, online, f, 16).
+available(z1000005, inPerson, f, 16).
+desire(z1000005, preferred, f, 16).
+available(z1000005, online, f, 17).
+available(z1000005, inPerson, f, 17).
+desire(z1000005, preferred, f, 17).
+available(z1000005, online, f, 18).
+available(z1000005, inPerson, f, 18).
+desire(z1000005, preferred, f, 18).
+available(z1000005, online, f, 19).
+available(z1000005, inPerson, f, 19).
+desire(z1000005, preferred, f, 19).
+available(z1000005, online, f, 20).
+available(z1000005, inPerson, f, 20).
+desire(z1000005, preferred, f, 20).
+capacity(z1000005, tute, 1).
+capacity(z1000005, asst, 1).
+prefer(z1000005, tute).
 teacher(z1000006).
-previousTuteExperience(z1000006, true).
-preference(z1000006, m, 08, impossible, onlineOrPerson).
-preference(z1000006, m, 09, impossible, onlineOrPerson).
-preference(z1000006, m, 10, impossible, onlineOrPerson).
-preference(z1000006, m, 11, impossible, onlineOrPerson).
-preference(z1000006, m, 12, impossible, onlineOrPerson).
-preference(z1000006, m, 13, impossible, onlineOrPerson).
-preference(z1000006, m, 14, impossible, onlineOrPerson).
-preference(z1000006, m, 15, impossible, onlineOrPerson).
-preference(z1000006, m, 16, impossible, onlineOrPerson).
-preference(z1000006, m, 17, preferred, onlineOrPerson).
-preference(z1000006, m, 18, preferred, onlineOrPerson).
-preference(z1000006, m, 19, preferred, onlineOrPerson).
-preference(z1000006, m, 20, impossible, onlineOrPerson).
-preference(z1000006, t, 08, impossible, onlineOrPerson).
-preference(z1000006, t, 09, impossible, onlineOrPerson).
-preference(z1000006, t, 10, preferred, onlineOnly).
-preference(z1000006, t, 11, preferred, onlineOnly).
-preference(z1000006, t, 12, preferred, onlineOnly).
-preference(z1000006, t, 13, preferred, onlineOnly).
-preference(z1000006, t, 14, preferred, onlineOnly).
-preference(z1000006, t, 15, preferred, onlineOnly).
-preference(z1000006, t, 16, preferred, onlineOnly).
-preference(z1000006, t, 17, preferred, onlineOrPerson).
-preference(z1000006, t, 18, preferred, onlineOrPerson).
-preference(z1000006, t, 19, preferred, onlineOrPerson).
-preference(z1000006, t, 20, impossible, onlineOrPerson).
-preference(z1000006, w, 08, impossible, onlineOrPerson).
-preference(z1000006, w, 09, impossible, onlineOrPerson).
-preference(z1000006, w, 10, impossible, onlineOrPerson).
-preference(z1000006, w, 11, impossible, onlineOrPerson).
-preference(z1000006, w, 12, preferred, onlineOnly).
-preference(z1000006, w, 13, preferred, onlineOnly).
-preference(z1000006, w, 14, preferred, onlineOnly).
-preference(z1000006, w, 15, impossible, onlineOrPerson).
-preference(z1000006, w, 16, impossible, onlineOrPerson).
-preference(z1000006, w, 17, impossible, onlineOrPerson).
-preference(z1000006, w, 18, impossible, onlineOrPerson).
-preference(z1000006, w, 19, impossible, onlineOrPerson).
-preference(z1000006, w, 20, impossible, onlineOrPerson).
-preference(z1000006, h, 08, impossible, onlineOrPerson).
-preference(z1000006, h, 09, impossible, onlineOrPerson).
-preference(z1000006, h, 10, preferred, onlineOrPerson).
-preference(z1000006, h, 11, preferred, onlineOrPerson).
-preference(z1000006, h, 12, preferred, onlineOrPerson).
-preference(z1000006, h, 13, preferred, onlineOrPerson).
-preference(z1000006, h, 14, preferred, onlineOrPerson).
-preference(z1000006, h, 15, preferred, onlineOrPerson).
-preference(z1000006, h, 16, preferred, onlineOrPerson).
-preference(z1000006, h, 17, preferred, onlineOrPerson).
-preference(z1000006, h, 18, preferred, onlineOrPerson).
-preference(z1000006, h, 19, preferred, onlineOrPerson).
-preference(z1000006, h, 20, impossible, onlineOrPerson).
-preference(z1000006, f, 08, impossible, onlineOrPerson).
-preference(z1000006, f, 09, impossible, onlineOrPerson).
-preference(z1000006, f, 10, impossible, onlineOrPerson).
-preference(z1000006, f, 11, impossible, onlineOrPerson).
-preference(z1000006, f, 12, impossible, onlineOrPerson).
-preference(z1000006, f, 13, impossible, onlineOrPerson).
-preference(z1000006, f, 14, impossible, onlineOrPerson).
-preference(z1000006, f, 15, impossible, onlineOrPerson).
-preference(z1000006, f, 16, impossible, onlineOrPerson).
-preference(z1000006, f, 17, possible, onlineOrPerson).
-preference(z1000006, f, 18, possible, onlineOrPerson).
-preference(z1000006, f, 19, possible, onlineOrPerson).
-preference(z1000006, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000006, 1).
-capacityAsst(z1000006, 1).
-preferTutorial(z1000006, 1).
+experience(z1000006, tute).
+experience(z1000006, asst).
+available(z1000006, online, m, 17).
+available(z1000006, inPerson, m, 17).
+desire(z1000006, preferred, m, 17).
+available(z1000006, online, m, 18).
+available(z1000006, inPerson, m, 18).
+desire(z1000006, preferred, m, 18).
+available(z1000006, online, m, 19).
+available(z1000006, inPerson, m, 19).
+desire(z1000006, preferred, m, 19).
+available(z1000006, online, t, 10).
+desire(z1000006, preferred, t, 10).
+available(z1000006, online, t, 11).
+desire(z1000006, preferred, t, 11).
+available(z1000006, online, t, 12).
+desire(z1000006, preferred, t, 12).
+available(z1000006, online, t, 13).
+desire(z1000006, preferred, t, 13).
+available(z1000006, online, t, 14).
+desire(z1000006, preferred, t, 14).
+available(z1000006, online, t, 15).
+desire(z1000006, preferred, t, 15).
+available(z1000006, online, t, 16).
+desire(z1000006, preferred, t, 16).
+available(z1000006, online, t, 17).
+available(z1000006, inPerson, t, 17).
+desire(z1000006, preferred, t, 17).
+available(z1000006, online, t, 18).
+available(z1000006, inPerson, t, 18).
+desire(z1000006, preferred, t, 18).
+available(z1000006, online, t, 19).
+available(z1000006, inPerson, t, 19).
+desire(z1000006, preferred, t, 19).
+available(z1000006, online, w, 12).
+desire(z1000006, preferred, w, 12).
+available(z1000006, online, w, 13).
+desire(z1000006, preferred, w, 13).
+available(z1000006, online, w, 14).
+desire(z1000006, preferred, w, 14).
+available(z1000006, online, h, 10).
+available(z1000006, inPerson, h, 10).
+desire(z1000006, preferred, h, 10).
+available(z1000006, online, h, 11).
+available(z1000006, inPerson, h, 11).
+desire(z1000006, preferred, h, 11).
+available(z1000006, online, h, 12).
+available(z1000006, inPerson, h, 12).
+desire(z1000006, preferred, h, 12).
+available(z1000006, online, h, 13).
+available(z1000006, inPerson, h, 13).
+desire(z1000006, preferred, h, 13).
+available(z1000006, online, h, 14).
+available(z1000006, inPerson, h, 14).
+desire(z1000006, preferred, h, 14).
+available(z1000006, online, h, 15).
+available(z1000006, inPerson, h, 15).
+desire(z1000006, preferred, h, 15).
+available(z1000006, online, h, 16).
+available(z1000006, inPerson, h, 16).
+desire(z1000006, preferred, h, 16).
+available(z1000006, online, h, 17).
+available(z1000006, inPerson, h, 17).
+desire(z1000006, preferred, h, 17).
+available(z1000006, online, h, 18).
+available(z1000006, inPerson, h, 18).
+desire(z1000006, preferred, h, 18).
+available(z1000006, online, h, 19).
+available(z1000006, inPerson, h, 19).
+desire(z1000006, preferred, h, 19).
+available(z1000006, online, f, 17).
+available(z1000006, inPerson, f, 17).
+desire(z1000006, possible, f, 17).
+available(z1000006, online, f, 18).
+available(z1000006, inPerson, f, 18).
+desire(z1000006, possible, f, 18).
+available(z1000006, online, f, 19).
+available(z1000006, inPerson, f, 19).
+desire(z1000006, possible, f, 19).
+capacity(z1000006, tute, 1).
+capacity(z1000006, asst, 1).
+prefer(z1000006, tute).
 teacher(z1000007).
-previousTuteExperience(z1000007, true).
-preference(z1000007, m, 08, preferred, onlineOnly).
-preference(z1000007, m, 09, preferred, onlineOnly).
-preference(z1000007, m, 10, preferred, onlineOnly).
-preference(z1000007, m, 11, preferred, onlineOnly).
-preference(z1000007, m, 12, preferred, onlineOnly).
-preference(z1000007, m, 13, preferred, onlineOnly).
-preference(z1000007, m, 14, preferred, onlineOnly).
-preference(z1000007, m, 15, preferred, onlineOnly).
-preference(z1000007, m, 16, preferred, onlineOnly).
-preference(z1000007, m, 17, preferred, onlineOnly).
-preference(z1000007, m, 18, preferred, onlineOnly).
-preference(z1000007, m, 19, preferred, onlineOnly).
-preference(z1000007, m, 20, preferred, onlineOnly).
-preference(z1000007, t, 08, preferred, onlineOnly).
-preference(z1000007, t, 09, preferred, onlineOnly).
-preference(z1000007, t, 10, preferred, onlineOnly).
-preference(z1000007, t, 11, preferred, onlineOnly).
-preference(z1000007, t, 12, preferred, onlineOnly).
-preference(z1000007, t, 13, preferred, onlineOnly).
-preference(z1000007, t, 14, preferred, onlineOnly).
-preference(z1000007, t, 15, preferred, onlineOnly).
-preference(z1000007, t, 16, possible, onlineOnly).
-preference(z1000007, t, 17, possible, onlineOnly).
-preference(z1000007, t, 18, preferred, onlineOnly).
-preference(z1000007, t, 19, preferred, onlineOnly).
-preference(z1000007, t, 20, preferred, onlineOnly).
-preference(z1000007, w, 08, impossible, onlineOrPerson).
-preference(z1000007, w, 09, impossible, onlineOrPerson).
-preference(z1000007, w, 10, impossible, onlineOrPerson).
-preference(z1000007, w, 11, impossible, onlineOrPerson).
-preference(z1000007, w, 12, impossible, onlineOrPerson).
-preference(z1000007, w, 13, possible, onlineOnly).
-preference(z1000007, w, 14, possible, onlineOnly).
-preference(z1000007, w, 15, possible, onlineOnly).
-preference(z1000007, w, 16, impossible, onlineOrPerson).
-preference(z1000007, w, 17, impossible, onlineOrPerson).
-preference(z1000007, w, 18, impossible, onlineOrPerson).
-preference(z1000007, w, 19, impossible, onlineOrPerson).
-preference(z1000007, w, 20, impossible, onlineOrPerson).
-preference(z1000007, h, 08, preferred, onlineOnly).
-preference(z1000007, h, 09, preferred, onlineOnly).
-preference(z1000007, h, 10, preferred, onlineOnly).
-preference(z1000007, h, 11, possible, onlineOnly).
-preference(z1000007, h, 12, possible, onlineOnly).
-preference(z1000007, h, 13, preferred, onlineOnly).
-preference(z1000007, h, 14, preferred, onlineOnly).
-preference(z1000007, h, 15, preferred, onlineOnly).
-preference(z1000007, h, 16, preferred, onlineOnly).
-preference(z1000007, h, 17, preferred, onlineOnly).
-preference(z1000007, h, 18, preferred, onlineOnly).
-preference(z1000007, h, 19, preferred, onlineOnly).
-preference(z1000007, h, 20, preferred, onlineOnly).
-preference(z1000007, f, 08, preferred, onlineOnly).
-preference(z1000007, f, 09, preferred, onlineOnly).
-preference(z1000007, f, 10, preferred, onlineOnly).
-preference(z1000007, f, 11, preferred, onlineOnly).
-preference(z1000007, f, 12, preferred, onlineOnly).
-preference(z1000007, f, 13, preferred, onlineOnly).
-preference(z1000007, f, 14, preferred, onlineOnly).
-preference(z1000007, f, 15, preferred, onlineOnly).
-preference(z1000007, f, 16, preferred, onlineOnly).
-preference(z1000007, f, 17, preferred, onlineOnly).
-preference(z1000007, f, 18, preferred, onlineOnly).
-preference(z1000007, f, 19, preferred, onlineOnly).
-preference(z1000007, f, 20, preferred, onlineOnly).
-capacityTute(z1000007, 1).
-capacityAsst(z1000007, 1).
-preferTutorial(z1000007, 1).
+experience(z1000007, tute).
+experience(z1000007, asst).
+available(z1000007, online, m, 8).
+desire(z1000007, preferred, m, 8).
+available(z1000007, online, m, 9).
+desire(z1000007, preferred, m, 9).
+available(z1000007, online, m, 10).
+desire(z1000007, preferred, m, 10).
+available(z1000007, online, m, 11).
+desire(z1000007, preferred, m, 11).
+available(z1000007, online, m, 12).
+desire(z1000007, preferred, m, 12).
+available(z1000007, online, m, 13).
+desire(z1000007, preferred, m, 13).
+available(z1000007, online, m, 14).
+desire(z1000007, preferred, m, 14).
+available(z1000007, online, m, 15).
+desire(z1000007, preferred, m, 15).
+available(z1000007, online, m, 16).
+desire(z1000007, preferred, m, 16).
+available(z1000007, online, m, 17).
+desire(z1000007, preferred, m, 17).
+available(z1000007, online, m, 18).
+desire(z1000007, preferred, m, 18).
+available(z1000007, online, m, 19).
+desire(z1000007, preferred, m, 19).
+available(z1000007, online, m, 20).
+desire(z1000007, preferred, m, 20).
+available(z1000007, online, t, 8).
+desire(z1000007, preferred, t, 8).
+available(z1000007, online, t, 9).
+desire(z1000007, preferred, t, 9).
+available(z1000007, online, t, 10).
+desire(z1000007, preferred, t, 10).
+available(z1000007, online, t, 11).
+desire(z1000007, preferred, t, 11).
+available(z1000007, online, t, 12).
+desire(z1000007, preferred, t, 12).
+available(z1000007, online, t, 13).
+desire(z1000007, preferred, t, 13).
+available(z1000007, online, t, 14).
+desire(z1000007, preferred, t, 14).
+available(z1000007, online, t, 15).
+desire(z1000007, preferred, t, 15).
+available(z1000007, online, t, 16).
+desire(z1000007, possible, t, 16).
+available(z1000007, online, t, 17).
+desire(z1000007, possible, t, 17).
+available(z1000007, online, t, 18).
+desire(z1000007, preferred, t, 18).
+available(z1000007, online, t, 19).
+desire(z1000007, preferred, t, 19).
+available(z1000007, online, t, 20).
+desire(z1000007, preferred, t, 20).
+available(z1000007, online, w, 13).
+desire(z1000007, possible, w, 13).
+available(z1000007, online, w, 14).
+desire(z1000007, possible, w, 14).
+available(z1000007, online, w, 15).
+desire(z1000007, possible, w, 15).
+available(z1000007, online, h, 8).
+desire(z1000007, preferred, h, 8).
+available(z1000007, online, h, 9).
+desire(z1000007, preferred, h, 9).
+available(z1000007, online, h, 10).
+desire(z1000007, preferred, h, 10).
+available(z1000007, online, h, 11).
+desire(z1000007, possible, h, 11).
+available(z1000007, online, h, 12).
+desire(z1000007, possible, h, 12).
+available(z1000007, online, h, 13).
+desire(z1000007, preferred, h, 13).
+available(z1000007, online, h, 14).
+desire(z1000007, preferred, h, 14).
+available(z1000007, online, h, 15).
+desire(z1000007, preferred, h, 15).
+available(z1000007, online, h, 16).
+desire(z1000007, preferred, h, 16).
+available(z1000007, online, h, 17).
+desire(z1000007, preferred, h, 17).
+available(z1000007, online, h, 18).
+desire(z1000007, preferred, h, 18).
+available(z1000007, online, h, 19).
+desire(z1000007, preferred, h, 19).
+available(z1000007, online, h, 20).
+desire(z1000007, preferred, h, 20).
+available(z1000007, online, f, 8).
+desire(z1000007, preferred, f, 8).
+available(z1000007, online, f, 9).
+desire(z1000007, preferred, f, 9).
+available(z1000007, online, f, 10).
+desire(z1000007, preferred, f, 10).
+available(z1000007, online, f, 11).
+desire(z1000007, preferred, f, 11).
+available(z1000007, online, f, 12).
+desire(z1000007, preferred, f, 12).
+available(z1000007, online, f, 13).
+desire(z1000007, preferred, f, 13).
+available(z1000007, online, f, 14).
+desire(z1000007, preferred, f, 14).
+available(z1000007, online, f, 15).
+desire(z1000007, preferred, f, 15).
+available(z1000007, online, f, 16).
+desire(z1000007, preferred, f, 16).
+available(z1000007, online, f, 17).
+desire(z1000007, preferred, f, 17).
+available(z1000007, online, f, 18).
+desire(z1000007, preferred, f, 18).
+available(z1000007, online, f, 19).
+desire(z1000007, preferred, f, 19).
+available(z1000007, online, f, 20).
+desire(z1000007, preferred, f, 20).
+capacity(z1000007, tute, 1).
+capacity(z1000007, asst, 1).
+prefer(z1000007, tute).
 teacher(z1000008).
-previousTuteExperience(z1000008, true).
-preference(z1000008, m, 08, impossible, onlineOrPerson).
-preference(z1000008, m, 09, preferred, onlineOnly).
-preference(z1000008, m, 10, preferred, onlineOnly).
-preference(z1000008, m, 11, preferred, onlineOnly).
-preference(z1000008, m, 12, preferred, onlineOnly).
-preference(z1000008, m, 13, preferred, onlineOnly).
-preference(z1000008, m, 14, preferred, onlineOnly).
-preference(z1000008, m, 15, preferred, onlineOnly).
-preference(z1000008, m, 16, preferred, onlineOnly).
-preference(z1000008, m, 17, preferred, onlineOnly).
-preference(z1000008, m, 18, impossible, onlineOrPerson).
-preference(z1000008, m, 19, impossible, onlineOrPerson).
-preference(z1000008, m, 20, impossible, onlineOrPerson).
-preference(z1000008, t, 08, impossible, onlineOrPerson).
-preference(z1000008, t, 09, impossible, onlineOrPerson).
-preference(z1000008, t, 10, impossible, onlineOrPerson).
-preference(z1000008, t, 11, impossible, onlineOrPerson).
-preference(z1000008, t, 12, impossible, onlineOrPerson).
-preference(z1000008, t, 13, preferred, onlineOnly).
-preference(z1000008, t, 14, preferred, onlineOnly).
-preference(z1000008, t, 15, preferred, onlineOnly).
-preference(z1000008, t, 16, preferred, onlineOnly).
-preference(z1000008, t, 17, preferred, onlineOnly).
-preference(z1000008, t, 18, impossible, onlineOrPerson).
-preference(z1000008, t, 19, impossible, onlineOrPerson).
-preference(z1000008, t, 20, impossible, onlineOrPerson).
-preference(z1000008, w, 08, impossible, onlineOrPerson).
-preference(z1000008, w, 09, impossible, onlineOrPerson).
-preference(z1000008, w, 10, impossible, onlineOrPerson).
-preference(z1000008, w, 11, impossible, onlineOrPerson).
-preference(z1000008, w, 12, impossible, onlineOrPerson).
-preference(z1000008, w, 13, impossible, onlineOrPerson).
-preference(z1000008, w, 14, impossible, onlineOrPerson).
-preference(z1000008, w, 15, impossible, onlineOrPerson).
-preference(z1000008, w, 16, impossible, onlineOrPerson).
-preference(z1000008, w, 17, impossible, onlineOrPerson).
-preference(z1000008, w, 18, impossible, onlineOrPerson).
-preference(z1000008, w, 19, impossible, onlineOrPerson).
-preference(z1000008, w, 20, impossible, onlineOrPerson).
-preference(z1000008, h, 08, impossible, onlineOrPerson).
-preference(z1000008, h, 09, possible, onlineOnly).
-preference(z1000008, h, 10, possible, onlineOnly).
-preference(z1000008, h, 11, possible, onlineOnly).
-preference(z1000008, h, 12, impossible, onlineOrPerson).
-preference(z1000008, h, 13, preferred, onlineOnly).
-preference(z1000008, h, 14, preferred, onlineOnly).
-preference(z1000008, h, 15, preferred, onlineOnly).
-preference(z1000008, h, 16, preferred, onlineOnly).
-preference(z1000008, h, 17, preferred, onlineOnly).
-preference(z1000008, h, 18, impossible, onlineOrPerson).
-preference(z1000008, h, 19, impossible, onlineOrPerson).
-preference(z1000008, h, 20, impossible, onlineOrPerson).
-preference(z1000008, f, 08, impossible, onlineOrPerson).
-preference(z1000008, f, 09, preferred, onlineOnly).
-preference(z1000008, f, 10, preferred, onlineOnly).
-preference(z1000008, f, 11, preferred, onlineOnly).
-preference(z1000008, f, 12, preferred, onlineOnly).
-preference(z1000008, f, 13, preferred, onlineOnly).
-preference(z1000008, f, 14, preferred, onlineOnly).
-preference(z1000008, f, 15, preferred, onlineOnly).
-preference(z1000008, f, 16, preferred, onlineOnly).
-preference(z1000008, f, 17, preferred, onlineOnly).
-preference(z1000008, f, 18, impossible, onlineOrPerson).
-preference(z1000008, f, 19, impossible, onlineOrPerson).
-preference(z1000008, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000008, 1).
-capacityAsst(z1000008, 1).
-preferTutorial(z1000008, 1).
+experience(z1000008, tute).
+experience(z1000008, asst).
+available(z1000008, online, m, 9).
+desire(z1000008, preferred, m, 9).
+available(z1000008, online, m, 10).
+desire(z1000008, preferred, m, 10).
+available(z1000008, online, m, 11).
+desire(z1000008, preferred, m, 11).
+available(z1000008, online, m, 12).
+desire(z1000008, preferred, m, 12).
+available(z1000008, online, m, 13).
+desire(z1000008, preferred, m, 13).
+available(z1000008, online, m, 14).
+desire(z1000008, preferred, m, 14).
+available(z1000008, online, m, 15).
+desire(z1000008, preferred, m, 15).
+available(z1000008, online, m, 16).
+desire(z1000008, preferred, m, 16).
+available(z1000008, online, m, 17).
+desire(z1000008, preferred, m, 17).
+available(z1000008, online, t, 13).
+desire(z1000008, preferred, t, 13).
+available(z1000008, online, t, 14).
+desire(z1000008, preferred, t, 14).
+available(z1000008, online, t, 15).
+desire(z1000008, preferred, t, 15).
+available(z1000008, online, t, 16).
+desire(z1000008, preferred, t, 16).
+available(z1000008, online, t, 17).
+desire(z1000008, preferred, t, 17).
+available(z1000008, online, h, 9).
+desire(z1000008, possible, h, 9).
+available(z1000008, online, h, 10).
+desire(z1000008, possible, h, 10).
+available(z1000008, online, h, 11).
+desire(z1000008, possible, h, 11).
+available(z1000008, online, h, 13).
+desire(z1000008, preferred, h, 13).
+available(z1000008, online, h, 14).
+desire(z1000008, preferred, h, 14).
+available(z1000008, online, h, 15).
+desire(z1000008, preferred, h, 15).
+available(z1000008, online, h, 16).
+desire(z1000008, preferred, h, 16).
+available(z1000008, online, h, 17).
+desire(z1000008, preferred, h, 17).
+available(z1000008, online, f, 9).
+desire(z1000008, preferred, f, 9).
+available(z1000008, online, f, 10).
+desire(z1000008, preferred, f, 10).
+available(z1000008, online, f, 11).
+desire(z1000008, preferred, f, 11).
+available(z1000008, online, f, 12).
+desire(z1000008, preferred, f, 12).
+available(z1000008, online, f, 13).
+desire(z1000008, preferred, f, 13).
+available(z1000008, online, f, 14).
+desire(z1000008, preferred, f, 14).
+available(z1000008, online, f, 15).
+desire(z1000008, preferred, f, 15).
+available(z1000008, online, f, 16).
+desire(z1000008, preferred, f, 16).
+available(z1000008, online, f, 17).
+desire(z1000008, preferred, f, 17).
+capacity(z1000008, tute, 1).
+capacity(z1000008, asst, 1).
+prefer(z1000008, tute).
 teacher(z1000009).
-previousTuteExperience(z1000009, true).
-preference(z1000009, m, 08, preferred, onlineOnly).
-preference(z1000009, m, 09, preferred, onlineOnly).
-preference(z1000009, m, 10, preferred, onlineOnly).
-preference(z1000009, m, 11, preferred, onlineOnly).
-preference(z1000009, m, 12, preferred, onlineOnly).
-preference(z1000009, m, 13, preferred, onlineOnly).
-preference(z1000009, m, 14, impossible, onlineOrPerson).
-preference(z1000009, m, 15, impossible, onlineOrPerson).
-preference(z1000009, m, 16, preferred, onlineOnly).
-preference(z1000009, m, 17, preferred, onlineOnly).
-preference(z1000009, m, 18, preferred, onlineOnly).
-preference(z1000009, m, 19, preferred, onlineOnly).
-preference(z1000009, m, 20, impossible, onlineOrPerson).
-preference(z1000009, t, 08, possible, onlineOnly).
-preference(z1000009, t, 09, possible, onlineOnly).
-preference(z1000009, t, 10, possible, onlineOnly).
-preference(z1000009, t, 11, possible, onlineOnly).
-preference(z1000009, t, 12, possible, onlineOnly).
-preference(z1000009, t, 13, possible, onlineOnly).
-preference(z1000009, t, 14, possible, onlineOnly).
-preference(z1000009, t, 15, possible, onlineOnly).
-preference(z1000009, t, 16, possible, onlineOnly).
-preference(z1000009, t, 17, dislike, onlineOnly).
-preference(z1000009, t, 18, dislike, onlineOnly).
-preference(z1000009, t, 19, dislike, onlineOnly).
-preference(z1000009, t, 20, impossible, onlineOrPerson).
-preference(z1000009, w, 08, possible, onlineOnly).
-preference(z1000009, w, 09, possible, onlineOnly).
-preference(z1000009, w, 10, possible, onlineOnly).
-preference(z1000009, w, 11, possible, onlineOnly).
-preference(z1000009, w, 12, impossible, onlineOrPerson).
-preference(z1000009, w, 13, impossible, onlineOrPerson).
-preference(z1000009, w, 14, possible, onlineOnly).
-preference(z1000009, w, 15, preferred, onlineOnly).
-preference(z1000009, w, 16, preferred, onlineOnly).
-preference(z1000009, w, 17, preferred, onlineOnly).
-preference(z1000009, w, 18, preferred, onlineOnly).
-preference(z1000009, w, 19, preferred, onlineOnly).
-preference(z1000009, w, 20, preferred, onlineOnly).
-preference(z1000009, h, 08, possible, onlineOnly).
-preference(z1000009, h, 09, possible, onlineOnly).
-preference(z1000009, h, 10, possible, onlineOnly).
-preference(z1000009, h, 11, possible, onlineOnly).
-preference(z1000009, h, 12, possible, onlineOnly).
-preference(z1000009, h, 13, preferred, onlineOnly).
-preference(z1000009, h, 14, preferred, onlineOnly).
-preference(z1000009, h, 15, preferred, onlineOnly).
-preference(z1000009, h, 16, preferred, onlineOnly).
-preference(z1000009, h, 17, possible, onlineOnly).
-preference(z1000009, h, 18, possible, onlineOnly).
-preference(z1000009, h, 19, possible, onlineOnly).
-preference(z1000009, h, 20, possible, onlineOnly).
-preference(z1000009, f, 08, impossible, onlineOrPerson).
-preference(z1000009, f, 09, impossible, onlineOrPerson).
-preference(z1000009, f, 10, impossible, onlineOrPerson).
-preference(z1000009, f, 11, preferred, onlineOnly).
-preference(z1000009, f, 12, preferred, onlineOnly).
-preference(z1000009, f, 13, preferred, onlineOnly).
-preference(z1000009, f, 14, preferred, onlineOnly).
-preference(z1000009, f, 15, impossible, onlineOrPerson).
-preference(z1000009, f, 16, impossible, onlineOrPerson).
-preference(z1000009, f, 17, impossible, onlineOrPerson).
-preference(z1000009, f, 18, impossible, onlineOrPerson).
-preference(z1000009, f, 19, impossible, onlineOrPerson).
-preference(z1000009, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000009, 1).
-capacityAsst(z1000009, 1).
-preferTutorial(z1000009, 1).
+experience(z1000009, tute).
+experience(z1000009, asst).
+available(z1000009, online, m, 8).
+desire(z1000009, preferred, m, 8).
+available(z1000009, online, m, 9).
+desire(z1000009, preferred, m, 9).
+available(z1000009, online, m, 10).
+desire(z1000009, preferred, m, 10).
+available(z1000009, online, m, 11).
+desire(z1000009, preferred, m, 11).
+available(z1000009, online, m, 12).
+desire(z1000009, preferred, m, 12).
+available(z1000009, online, m, 13).
+desire(z1000009, preferred, m, 13).
+available(z1000009, online, m, 16).
+desire(z1000009, preferred, m, 16).
+available(z1000009, online, m, 17).
+desire(z1000009, preferred, m, 17).
+available(z1000009, online, m, 18).
+desire(z1000009, preferred, m, 18).
+available(z1000009, online, m, 19).
+desire(z1000009, preferred, m, 19).
+available(z1000009, online, t, 8).
+desire(z1000009, possible, t, 8).
+available(z1000009, online, t, 9).
+desire(z1000009, possible, t, 9).
+available(z1000009, online, t, 10).
+desire(z1000009, possible, t, 10).
+available(z1000009, online, t, 11).
+desire(z1000009, possible, t, 11).
+available(z1000009, online, t, 12).
+desire(z1000009, possible, t, 12).
+available(z1000009, online, t, 13).
+desire(z1000009, possible, t, 13).
+available(z1000009, online, t, 14).
+desire(z1000009, possible, t, 14).
+available(z1000009, online, t, 15).
+desire(z1000009, possible, t, 15).
+available(z1000009, online, t, 16).
+desire(z1000009, possible, t, 16).
+available(z1000009, online, t, 17).
+desire(z1000009, dislike, t, 17).
+available(z1000009, online, t, 18).
+desire(z1000009, dislike, t, 18).
+available(z1000009, online, t, 19).
+desire(z1000009, dislike, t, 19).
+available(z1000009, online, w, 8).
+desire(z1000009, possible, w, 8).
+available(z1000009, online, w, 9).
+desire(z1000009, possible, w, 9).
+available(z1000009, online, w, 10).
+desire(z1000009, possible, w, 10).
+available(z1000009, online, w, 11).
+desire(z1000009, possible, w, 11).
+available(z1000009, online, w, 14).
+desire(z1000009, possible, w, 14).
+available(z1000009, online, w, 15).
+desire(z1000009, preferred, w, 15).
+available(z1000009, online, w, 16).
+desire(z1000009, preferred, w, 16).
+available(z1000009, online, w, 17).
+desire(z1000009, preferred, w, 17).
+available(z1000009, online, w, 18).
+desire(z1000009, preferred, w, 18).
+available(z1000009, online, w, 19).
+desire(z1000009, preferred, w, 19).
+available(z1000009, online, w, 20).
+desire(z1000009, preferred, w, 20).
+available(z1000009, online, h, 8).
+desire(z1000009, possible, h, 8).
+available(z1000009, online, h, 9).
+desire(z1000009, possible, h, 9).
+available(z1000009, online, h, 10).
+desire(z1000009, possible, h, 10).
+available(z1000009, online, h, 11).
+desire(z1000009, possible, h, 11).
+available(z1000009, online, h, 12).
+desire(z1000009, possible, h, 12).
+available(z1000009, online, h, 13).
+desire(z1000009, preferred, h, 13).
+available(z1000009, online, h, 14).
+desire(z1000009, preferred, h, 14).
+available(z1000009, online, h, 15).
+desire(z1000009, preferred, h, 15).
+available(z1000009, online, h, 16).
+desire(z1000009, preferred, h, 16).
+available(z1000009, online, h, 17).
+desire(z1000009, possible, h, 17).
+available(z1000009, online, h, 18).
+desire(z1000009, possible, h, 18).
+available(z1000009, online, h, 19).
+desire(z1000009, possible, h, 19).
+available(z1000009, online, h, 20).
+desire(z1000009, possible, h, 20).
+available(z1000009, online, f, 11).
+desire(z1000009, preferred, f, 11).
+available(z1000009, online, f, 12).
+desire(z1000009, preferred, f, 12).
+available(z1000009, online, f, 13).
+desire(z1000009, preferred, f, 13).
+available(z1000009, online, f, 14).
+desire(z1000009, preferred, f, 14).
+capacity(z1000009, tute, 1).
+capacity(z1000009, asst, 1).
+prefer(z1000009, tute).
 teacher(z1000010).
-previousTuteExperience(z1000010, true).
-preference(z1000010, m, 08, impossible, onlineOrPerson).
-preference(z1000010, m, 09, impossible, onlineOrPerson).
-preference(z1000010, m, 10, impossible, onlineOrPerson).
-preference(z1000010, m, 11, impossible, onlineOrPerson).
-preference(z1000010, m, 12, impossible, onlineOrPerson).
-preference(z1000010, m, 13, preferred, onlineOrPerson).
-preference(z1000010, m, 14, preferred, onlineOrPerson).
-preference(z1000010, m, 15, preferred, onlineOrPerson).
-preference(z1000010, m, 16, preferred, onlineOrPerson).
-preference(z1000010, m, 17, preferred, onlineOrPerson).
-preference(z1000010, m, 18, preferred, onlineOrPerson).
-preference(z1000010, m, 19, preferred, onlineOrPerson).
-preference(z1000010, m, 20, impossible, false).
-preference(z1000010, t, 08, impossible, onlineOrPerson).
-preference(z1000010, t, 09, impossible, onlineOrPerson).
-preference(z1000010, t, 10, impossible, onlineOrPerson).
-preference(z1000010, t, 11, impossible, onlineOrPerson).
-preference(z1000010, t, 12, impossible, onlineOrPerson).
-preference(z1000010, t, 13, impossible, onlineOrPerson).
-preference(z1000010, t, 14, impossible, onlineOrPerson).
-preference(z1000010, t, 15, impossible, onlineOrPerson).
-preference(z1000010, t, 16, impossible, onlineOrPerson).
-preference(z1000010, t, 17, impossible, onlineOrPerson).
-preference(z1000010, t, 18, impossible, onlineOrPerson).
-preference(z1000010, t, 19, impossible, onlineOrPerson).
-preference(z1000010, t, 20, impossible, false).
-preference(z1000010, w, 08, impossible, onlineOrPerson).
-preference(z1000010, w, 09, impossible, onlineOrPerson).
-preference(z1000010, w, 10, impossible, onlineOrPerson).
-preference(z1000010, w, 11, impossible, onlineOrPerson).
-preference(z1000010, w, 12, impossible, onlineOrPerson).
-preference(z1000010, w, 13, preferred, onlineOnly).
-preference(z1000010, w, 14, preferred, onlineOnly).
-preference(z1000010, w, 15, preferred, onlineOnly).
-preference(z1000010, w, 16, preferred, onlineOnly).
-preference(z1000010, w, 17, preferred, onlineOnly).
-preference(z1000010, w, 18, preferred, onlineOnly).
-preference(z1000010, w, 19, preferred, onlineOnly).
-preference(z1000010, w, 20, impossible, false).
-preference(z1000010, h, 08, impossible, onlineOrPerson).
-preference(z1000010, h, 09, impossible, onlineOrPerson).
-preference(z1000010, h, 10, impossible, onlineOrPerson).
-preference(z1000010, h, 11, impossible, onlineOrPerson).
-preference(z1000010, h, 12, impossible, onlineOrPerson).
-preference(z1000010, h, 13, preferred, onlineOrPerson).
-preference(z1000010, h, 14, preferred, onlineOrPerson).
-preference(z1000010, h, 15, preferred, onlineOrPerson).
-preference(z1000010, h, 16, preferred, onlineOrPerson).
-preference(z1000010, h, 17, preferred, onlineOrPerson).
-preference(z1000010, h, 18, preferred, onlineOrPerson).
-preference(z1000010, h, 19, preferred, onlineOrPerson).
-preference(z1000010, h, 20, impossible, false).
-preference(z1000010, f, 08, impossible, onlineOrPerson).
-preference(z1000010, f, 09, impossible, onlineOrPerson).
-preference(z1000010, f, 10, impossible, onlineOrPerson).
-preference(z1000010, f, 11, impossible, onlineOrPerson).
-preference(z1000010, f, 12, impossible, onlineOrPerson).
-preference(z1000010, f, 13, impossible, onlineOrPerson).
-preference(z1000010, f, 14, impossible, onlineOrPerson).
-preference(z1000010, f, 15, impossible, onlineOrPerson).
-preference(z1000010, f, 16, impossible, onlineOrPerson).
-preference(z1000010, f, 17, impossible, onlineOrPerson).
-preference(z1000010, f, 18, impossible, onlineOrPerson).
-preference(z1000010, f, 19, impossible, onlineOrPerson).
-preference(z1000010, f, 20, impossible, false).
-capacityTute(z1000010, 1).
-capacityAsst(z1000010, 1).
-preferTutorial(z1000010, 1).
+experience(z1000010, tute).
+experience(z1000010, asst).
+available(z1000010, online, m, 13).
+available(z1000010, inPerson, m, 13).
+desire(z1000010, preferred, m, 13).
+available(z1000010, online, m, 14).
+available(z1000010, inPerson, m, 14).
+desire(z1000010, preferred, m, 14).
+available(z1000010, online, m, 15).
+available(z1000010, inPerson, m, 15).
+desire(z1000010, preferred, m, 15).
+available(z1000010, online, m, 16).
+available(z1000010, inPerson, m, 16).
+desire(z1000010, preferred, m, 16).
+available(z1000010, online, m, 17).
+available(z1000010, inPerson, m, 17).
+desire(z1000010, preferred, m, 17).
+available(z1000010, online, m, 18).
+available(z1000010, inPerson, m, 18).
+desire(z1000010, preferred, m, 18).
+available(z1000010, online, m, 19).
+available(z1000010, inPerson, m, 19).
+desire(z1000010, preferred, m, 19).
+available(z1000010, online, w, 13).
+desire(z1000010, preferred, w, 13).
+available(z1000010, online, w, 14).
+desire(z1000010, preferred, w, 14).
+available(z1000010, online, w, 15).
+desire(z1000010, preferred, w, 15).
+available(z1000010, online, w, 16).
+desire(z1000010, preferred, w, 16).
+available(z1000010, online, w, 17).
+desire(z1000010, preferred, w, 17).
+available(z1000010, online, w, 18).
+desire(z1000010, preferred, w, 18).
+available(z1000010, online, w, 19).
+desire(z1000010, preferred, w, 19).
+available(z1000010, online, h, 13).
+available(z1000010, inPerson, h, 13).
+desire(z1000010, preferred, h, 13).
+available(z1000010, online, h, 14).
+available(z1000010, inPerson, h, 14).
+desire(z1000010, preferred, h, 14).
+available(z1000010, online, h, 15).
+available(z1000010, inPerson, h, 15).
+desire(z1000010, preferred, h, 15).
+available(z1000010, online, h, 16).
+available(z1000010, inPerson, h, 16).
+desire(z1000010, preferred, h, 16).
+available(z1000010, online, h, 17).
+available(z1000010, inPerson, h, 17).
+desire(z1000010, preferred, h, 17).
+available(z1000010, online, h, 18).
+available(z1000010, inPerson, h, 18).
+desire(z1000010, preferred, h, 18).
+available(z1000010, online, h, 19).
+available(z1000010, inPerson, h, 19).
+desire(z1000010, preferred, h, 19).
+capacity(z1000010, tute, 1).
+capacity(z1000010, asst, 1).
+prefer(z1000010, tute).
 teacher(z1000011).
-previousTuteExperience(z1000011, true).
-preference(z1000011, m, 08, impossible, onlineOrPerson).
-preference(z1000011, m, 09, impossible, onlineOrPerson).
-preference(z1000011, m, 10, impossible, onlineOrPerson).
-preference(z1000011, m, 11, impossible, onlineOrPerson).
-preference(z1000011, m, 12, impossible, onlineOrPerson).
-preference(z1000011, m, 13, impossible, onlineOrPerson).
-preference(z1000011, m, 14, impossible, onlineOrPerson).
-preference(z1000011, m, 15, impossible, onlineOrPerson).
-preference(z1000011, m, 16, impossible, onlineOrPerson).
-preference(z1000011, m, 17, impossible, onlineOrPerson).
-preference(z1000011, m, 18, impossible, onlineOrPerson).
-preference(z1000011, m, 19, impossible, onlineOrPerson).
-preference(z1000011, m, 20, impossible, onlineOrPerson).
-preference(z1000011, t, 08, impossible, onlineOrPerson).
-preference(z1000011, t, 09, impossible, onlineOrPerson).
-preference(z1000011, t, 10, impossible, onlineOrPerson).
-preference(z1000011, t, 11, impossible, onlineOrPerson).
-preference(z1000011, t, 12, impossible, onlineOrPerson).
-preference(z1000011, t, 13, preferred, onlineOnly).
-preference(z1000011, t, 14, preferred, onlineOnly).
-preference(z1000011, t, 15, preferred, onlineOnly).
-preference(z1000011, t, 16, impossible, onlineOrPerson).
-preference(z1000011, t, 17, possible, onlineOrPerson).
-preference(z1000011, t, 18, possible, onlineOrPerson).
-preference(z1000011, t, 19, possible, onlineOrPerson).
-preference(z1000011, t, 20, impossible, onlineOrPerson).
-preference(z1000011, w, 08, impossible, onlineOrPerson).
-preference(z1000011, w, 09, impossible, onlineOrPerson).
-preference(z1000011, w, 10, impossible, onlineOrPerson).
-preference(z1000011, w, 11, impossible, onlineOrPerson).
-preference(z1000011, w, 12, impossible, onlineOrPerson).
-preference(z1000011, w, 13, impossible, onlineOrPerson).
-preference(z1000011, w, 14, impossible, onlineOrPerson).
-preference(z1000011, w, 15, impossible, onlineOrPerson).
-preference(z1000011, w, 16, impossible, onlineOrPerson).
-preference(z1000011, w, 17, impossible, onlineOrPerson).
-preference(z1000011, w, 18, impossible, onlineOrPerson).
-preference(z1000011, w, 19, impossible, onlineOrPerson).
-preference(z1000011, w, 20, impossible, onlineOrPerson).
-preference(z1000011, h, 08, preferred, onlineOnly).
-preference(z1000011, h, 09, preferred, onlineOnly).
-preference(z1000011, h, 10, preferred, onlineOnly).
-preference(z1000011, h, 11, preferred, onlineOnly).
-preference(z1000011, h, 12, preferred, onlineOnly).
-preference(z1000011, h, 13, preferred, onlineOnly).
-preference(z1000011, h, 14, impossible, onlineOrPerson).
-preference(z1000011, h, 15, impossible, onlineOrPerson).
-preference(z1000011, h, 16, impossible, onlineOrPerson).
-preference(z1000011, h, 17, impossible, onlineOrPerson).
-preference(z1000011, h, 18, impossible, onlineOrPerson).
-preference(z1000011, h, 19, impossible, onlineOrPerson).
-preference(z1000011, h, 20, impossible, onlineOrPerson).
-preference(z1000011, f, 08, impossible, onlineOrPerson).
-preference(z1000011, f, 09, impossible, onlineOrPerson).
-preference(z1000011, f, 10, impossible, onlineOrPerson).
-preference(z1000011, f, 11, impossible, onlineOrPerson).
-preference(z1000011, f, 12, impossible, onlineOrPerson).
-preference(z1000011, f, 13, impossible, onlineOrPerson).
-preference(z1000011, f, 14, impossible, onlineOrPerson).
-preference(z1000011, f, 15, impossible, onlineOrPerson).
-preference(z1000011, f, 16, impossible, onlineOrPerson).
-preference(z1000011, f, 17, impossible, onlineOrPerson).
-preference(z1000011, f, 18, impossible, onlineOrPerson).
-preference(z1000011, f, 19, impossible, onlineOrPerson).
-preference(z1000011, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000011, 1).
-capacityAsst(z1000011, 1).
-preferTutorial(z1000011, 1).
+experience(z1000011, tute).
+experience(z1000011, asst).
+available(z1000011, online, t, 13).
+desire(z1000011, preferred, t, 13).
+available(z1000011, online, t, 14).
+desire(z1000011, preferred, t, 14).
+available(z1000011, online, t, 15).
+desire(z1000011, preferred, t, 15).
+available(z1000011, online, t, 17).
+available(z1000011, inPerson, t, 17).
+desire(z1000011, possible, t, 17).
+available(z1000011, online, t, 18).
+available(z1000011, inPerson, t, 18).
+desire(z1000011, possible, t, 18).
+available(z1000011, online, t, 19).
+available(z1000011, inPerson, t, 19).
+desire(z1000011, possible, t, 19).
+available(z1000011, online, h, 8).
+desire(z1000011, preferred, h, 8).
+available(z1000011, online, h, 9).
+desire(z1000011, preferred, h, 9).
+available(z1000011, online, h, 10).
+desire(z1000011, preferred, h, 10).
+available(z1000011, online, h, 11).
+desire(z1000011, preferred, h, 11).
+available(z1000011, online, h, 12).
+desire(z1000011, preferred, h, 12).
+available(z1000011, online, h, 13).
+desire(z1000011, preferred, h, 13).
+capacity(z1000011, tute, 1).
+capacity(z1000011, asst, 1).
+prefer(z1000011, tute).
 teacher(z1000012).
-previousTuteExperience(z1000012, true).
-preference(z1000012, m, 08, impossible, onlineOrPerson).
-preference(z1000012, m, 09, impossible, onlineOrPerson).
-preference(z1000012, m, 10, possible, onlineOnly).
-preference(z1000012, m, 11, preferred, onlineOnly).
-preference(z1000012, m, 12, preferred, onlineOnly).
-preference(z1000012, m, 13, preferred, onlineOnly).
-preference(z1000012, m, 14, impossible, onlineOrPerson).
-preference(z1000012, m, 15, impossible, onlineOrPerson).
-preference(z1000012, m, 16, impossible, onlineOrPerson).
-preference(z1000012, m, 17, impossible, onlineOrPerson).
-preference(z1000012, m, 18, impossible, onlineOrPerson).
-preference(z1000012, m, 19, impossible, onlineOrPerson).
-preference(z1000012, m, 20, impossible, onlineOrPerson).
-preference(z1000012, t, 08, impossible, onlineOrPerson).
-preference(z1000012, t, 09, impossible, onlineOrPerson).
-preference(z1000012, t, 10, possible, onlineOrPerson).
-preference(z1000012, t, 11, possible, onlineOrPerson).
-preference(z1000012, t, 12, possible, onlineOrPerson).
-preference(z1000012, t, 13, possible, onlineOrPerson).
-preference(z1000012, t, 14, possible, onlineOrPerson).
-preference(z1000012, t, 15, possible, onlineOrPerson).
-preference(z1000012, t, 16, possible, onlineOrPerson).
-preference(z1000012, t, 17, possible, onlineOrPerson).
-preference(z1000012, t, 18, dislike, onlineOrPerson).
-preference(z1000012, t, 19, dislike, onlineOrPerson).
-preference(z1000012, t, 20, impossible, onlineOrPerson).
-preference(z1000012, w, 08, impossible, onlineOrPerson).
-preference(z1000012, w, 09, impossible, onlineOrPerson).
-preference(z1000012, w, 10, possible, onlineOrPerson).
-preference(z1000012, w, 11, possible, onlineOrPerson).
-preference(z1000012, w, 12, possible, onlineOrPerson).
-preference(z1000012, w, 13, possible, onlineOrPerson).
-preference(z1000012, w, 14, possible, onlineOrPerson).
-preference(z1000012, w, 15, possible, onlineOrPerson).
-preference(z1000012, w, 16, possible, onlineOrPerson).
-preference(z1000012, w, 17, possible, onlineOrPerson).
-preference(z1000012, w, 18, dislike, onlineOrPerson).
-preference(z1000012, w, 19, dislike, onlineOrPerson).
-preference(z1000012, w, 20, impossible, onlineOrPerson).
-preference(z1000012, h, 08, impossible, onlineOrPerson).
-preference(z1000012, h, 09, impossible, onlineOrPerson).
-preference(z1000012, h, 10, impossible, onlineOrPerson).
-preference(z1000012, h, 11, impossible, onlineOrPerson).
-preference(z1000012, h, 12, impossible, onlineOrPerson).
-preference(z1000012, h, 13, preferred, onlineOnly).
-preference(z1000012, h, 14, preferred, onlineOnly).
-preference(z1000012, h, 15, preferred, onlineOnly).
-preference(z1000012, h, 16, impossible, onlineOrPerson).
-preference(z1000012, h, 17, impossible, onlineOrPerson).
-preference(z1000012, h, 18, impossible, onlineOrPerson).
-preference(z1000012, h, 19, impossible, onlineOrPerson).
-preference(z1000012, h, 20, impossible, onlineOrPerson).
-preference(z1000012, f, 08, impossible, onlineOrPerson).
-preference(z1000012, f, 09, impossible, onlineOrPerson).
-preference(z1000012, f, 10, possible, onlineOrPerson).
-preference(z1000012, f, 11, possible, onlineOrPerson).
-preference(z1000012, f, 12, possible, onlineOrPerson).
-preference(z1000012, f, 13, possible, onlineOrPerson).
-preference(z1000012, f, 14, possible, onlineOrPerson).
-preference(z1000012, f, 15, possible, onlineOrPerson).
-preference(z1000012, f, 16, possible, onlineOrPerson).
-preference(z1000012, f, 17, possible, onlineOrPerson).
-preference(z1000012, f, 18, dislike, onlineOrPerson).
-preference(z1000012, f, 19, dislike, onlineOrPerson).
-preference(z1000012, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000012, 1).
-capacityAsst(z1000012, 1).
-preferTutorial(z1000012, 1).
+experience(z1000012, tute).
+experience(z1000012, asst).
+available(z1000012, online, m, 10).
+desire(z1000012, possible, m, 10).
+available(z1000012, online, m, 11).
+desire(z1000012, preferred, m, 11).
+available(z1000012, online, m, 12).
+desire(z1000012, preferred, m, 12).
+available(z1000012, online, m, 13).
+desire(z1000012, preferred, m, 13).
+available(z1000012, online, t, 10).
+available(z1000012, inPerson, t, 10).
+desire(z1000012, possible, t, 10).
+available(z1000012, online, t, 11).
+available(z1000012, inPerson, t, 11).
+desire(z1000012, possible, t, 11).
+available(z1000012, online, t, 12).
+available(z1000012, inPerson, t, 12).
+desire(z1000012, possible, t, 12).
+available(z1000012, online, t, 13).
+available(z1000012, inPerson, t, 13).
+desire(z1000012, possible, t, 13).
+available(z1000012, online, t, 14).
+available(z1000012, inPerson, t, 14).
+desire(z1000012, possible, t, 14).
+available(z1000012, online, t, 15).
+available(z1000012, inPerson, t, 15).
+desire(z1000012, possible, t, 15).
+available(z1000012, online, t, 16).
+available(z1000012, inPerson, t, 16).
+desire(z1000012, possible, t, 16).
+available(z1000012, online, t, 17).
+available(z1000012, inPerson, t, 17).
+desire(z1000012, possible, t, 17).
+available(z1000012, online, t, 18).
+available(z1000012, inPerson, t, 18).
+desire(z1000012, dislike, t, 18).
+available(z1000012, online, t, 19).
+available(z1000012, inPerson, t, 19).
+desire(z1000012, dislike, t, 19).
+available(z1000012, online, w, 10).
+available(z1000012, inPerson, w, 10).
+desire(z1000012, possible, w, 10).
+available(z1000012, online, w, 11).
+available(z1000012, inPerson, w, 11).
+desire(z1000012, possible, w, 11).
+available(z1000012, online, w, 12).
+available(z1000012, inPerson, w, 12).
+desire(z1000012, possible, w, 12).
+available(z1000012, online, w, 13).
+available(z1000012, inPerson, w, 13).
+desire(z1000012, possible, w, 13).
+available(z1000012, online, w, 14).
+available(z1000012, inPerson, w, 14).
+desire(z1000012, possible, w, 14).
+available(z1000012, online, w, 15).
+available(z1000012, inPerson, w, 15).
+desire(z1000012, possible, w, 15).
+available(z1000012, online, w, 16).
+available(z1000012, inPerson, w, 16).
+desire(z1000012, possible, w, 16).
+available(z1000012, online, w, 17).
+available(z1000012, inPerson, w, 17).
+desire(z1000012, possible, w, 17).
+available(z1000012, online, w, 18).
+available(z1000012, inPerson, w, 18).
+desire(z1000012, dislike, w, 18).
+available(z1000012, online, w, 19).
+available(z1000012, inPerson, w, 19).
+desire(z1000012, dislike, w, 19).
+available(z1000012, online, h, 13).
+desire(z1000012, preferred, h, 13).
+available(z1000012, online, h, 14).
+desire(z1000012, preferred, h, 14).
+available(z1000012, online, h, 15).
+desire(z1000012, preferred, h, 15).
+available(z1000012, online, f, 10).
+available(z1000012, inPerson, f, 10).
+desire(z1000012, possible, f, 10).
+available(z1000012, online, f, 11).
+available(z1000012, inPerson, f, 11).
+desire(z1000012, possible, f, 11).
+available(z1000012, online, f, 12).
+available(z1000012, inPerson, f, 12).
+desire(z1000012, possible, f, 12).
+available(z1000012, online, f, 13).
+available(z1000012, inPerson, f, 13).
+desire(z1000012, possible, f, 13).
+available(z1000012, online, f, 14).
+available(z1000012, inPerson, f, 14).
+desire(z1000012, possible, f, 14).
+available(z1000012, online, f, 15).
+available(z1000012, inPerson, f, 15).
+desire(z1000012, possible, f, 15).
+available(z1000012, online, f, 16).
+available(z1000012, inPerson, f, 16).
+desire(z1000012, possible, f, 16).
+available(z1000012, online, f, 17).
+available(z1000012, inPerson, f, 17).
+desire(z1000012, possible, f, 17).
+available(z1000012, online, f, 18).
+available(z1000012, inPerson, f, 18).
+desire(z1000012, dislike, f, 18).
+available(z1000012, online, f, 19).
+available(z1000012, inPerson, f, 19).
+desire(z1000012, dislike, f, 19).
+capacity(z1000012, tute, 1).
+capacity(z1000012, asst, 1).
+prefer(z1000012, tute).
 teacher(z1000013).
-previousTuteExperience(z1000013, true).
-preference(z1000013, m, 08, preferred, onlineOnly).
-preference(z1000013, m, 09, preferred, onlineOnly).
-preference(z1000013, m, 10, preferred, onlineOnly).
-preference(z1000013, m, 11, preferred, onlineOnly).
-preference(z1000013, m, 12, possible, onlineOnly).
-preference(z1000013, m, 13, possible, onlineOnly).
-preference(z1000013, m, 14, preferred, onlineOnly).
-preference(z1000013, m, 15, preferred, onlineOnly).
-preference(z1000013, m, 16, possible, onlineOnly).
-preference(z1000013, m, 17, possible, onlineOnly).
-preference(z1000013, m, 18, preferred, onlineOnly).
-preference(z1000013, m, 19, preferred, onlineOnly).
-preference(z1000013, m, 20, preferred, onlineOnly).
-preference(z1000013, t, 08, impossible, onlineOrPerson).
-preference(z1000013, t, 09, impossible, onlineOrPerson).
-preference(z1000013, t, 10, impossible, onlineOrPerson).
-preference(z1000013, t, 11, impossible, onlineOrPerson).
-preference(z1000013, t, 12, dislike, onlineOnly).
-preference(z1000013, t, 13, dislike, onlineOnly).
-preference(z1000013, t, 14, dislike, onlineOnly).
-preference(z1000013, t, 15, dislike, onlineOnly).
-preference(z1000013, t, 16, dislike, onlineOnly).
-preference(z1000013, t, 17, dislike, onlineOnly).
-preference(z1000013, t, 18, preferred, onlineOnly).
-preference(z1000013, t, 19, preferred, onlineOnly).
-preference(z1000013, t, 20, preferred, onlineOnly).
-preference(z1000013, w, 08, impossible, onlineOrPerson).
-preference(z1000013, w, 09, impossible, onlineOrPerson).
-preference(z1000013, w, 10, impossible, onlineOrPerson).
-preference(z1000013, w, 11, impossible, onlineOrPerson).
-preference(z1000013, w, 12, preferred, onlineOnly).
-preference(z1000013, w, 13, possible, onlineOnly).
-preference(z1000013, w, 14, possible, onlineOnly).
-preference(z1000013, w, 15, preferred, onlineOnly).
-preference(z1000013, w, 16, dislike, onlineOnly).
-preference(z1000013, w, 17, dislike, onlineOnly).
-preference(z1000013, w, 18, preferred, onlineOnly).
-preference(z1000013, w, 19, preferred, onlineOnly).
-preference(z1000013, w, 20, preferred, onlineOnly).
-preference(z1000013, h, 08, impossible, onlineOrPerson).
-preference(z1000013, h, 09, impossible, onlineOrPerson).
-preference(z1000013, h, 10, impossible, onlineOrPerson).
-preference(z1000013, h, 11, impossible, onlineOrPerson).
-preference(z1000013, h, 12, dislike, onlineOnly).
-preference(z1000013, h, 13, dislike, onlineOnly).
-preference(z1000013, h, 14, dislike, onlineOnly).
-preference(z1000013, h, 15, dislike, onlineOnly).
-preference(z1000013, h, 16, dislike, onlineOnly).
-preference(z1000013, h, 17, dislike, onlineOnly).
-preference(z1000013, h, 18, preferred, onlineOnly).
-preference(z1000013, h, 19, preferred, onlineOnly).
-preference(z1000013, h, 20, preferred, onlineOnly).
-preference(z1000013, f, 08, preferred, onlineOnly).
-preference(z1000013, f, 09, preferred, onlineOnly).
-preference(z1000013, f, 10, preferred, onlineOnly).
-preference(z1000013, f, 11, preferred, onlineOnly).
-preference(z1000013, f, 12, preferred, onlineOnly).
-preference(z1000013, f, 13, impossible, onlineOrPerson).
-preference(z1000013, f, 14, impossible, onlineOrPerson).
-preference(z1000013, f, 15, dislike, onlineOnly).
-preference(z1000013, f, 16, dislike, onlineOnly).
-preference(z1000013, f, 17, dislike, onlineOnly).
-preference(z1000013, f, 18, dislike, onlineOnly).
-preference(z1000013, f, 19, dislike, onlineOnly).
-preference(z1000013, f, 20, dislike, onlineOnly).
-capacityTute(z1000013, 1).
-capacityAsst(z1000013, 1).
-preferTutorial(z1000013, 1).
+experience(z1000013, tute).
+experience(z1000013, asst).
+available(z1000013, online, m, 8).
+desire(z1000013, preferred, m, 8).
+available(z1000013, online, m, 9).
+desire(z1000013, preferred, m, 9).
+available(z1000013, online, m, 10).
+desire(z1000013, preferred, m, 10).
+available(z1000013, online, m, 11).
+desire(z1000013, preferred, m, 11).
+available(z1000013, online, m, 12).
+desire(z1000013, possible, m, 12).
+available(z1000013, online, m, 13).
+desire(z1000013, possible, m, 13).
+available(z1000013, online, m, 14).
+desire(z1000013, preferred, m, 14).
+available(z1000013, online, m, 15).
+desire(z1000013, preferred, m, 15).
+available(z1000013, online, m, 16).
+desire(z1000013, possible, m, 16).
+available(z1000013, online, m, 17).
+desire(z1000013, possible, m, 17).
+available(z1000013, online, m, 18).
+desire(z1000013, preferred, m, 18).
+available(z1000013, online, m, 19).
+desire(z1000013, preferred, m, 19).
+available(z1000013, online, m, 20).
+desire(z1000013, preferred, m, 20).
+available(z1000013, online, t, 12).
+desire(z1000013, dislike, t, 12).
+available(z1000013, online, t, 13).
+desire(z1000013, dislike, t, 13).
+available(z1000013, online, t, 14).
+desire(z1000013, dislike, t, 14).
+available(z1000013, online, t, 15).
+desire(z1000013, dislike, t, 15).
+available(z1000013, online, t, 16).
+desire(z1000013, dislike, t, 16).
+available(z1000013, online, t, 17).
+desire(z1000013, dislike, t, 17).
+available(z1000013, online, t, 18).
+desire(z1000013, preferred, t, 18).
+available(z1000013, online, t, 19).
+desire(z1000013, preferred, t, 19).
+available(z1000013, online, t, 20).
+desire(z1000013, preferred, t, 20).
+available(z1000013, online, w, 12).
+desire(z1000013, preferred, w, 12).
+available(z1000013, online, w, 13).
+desire(z1000013, possible, w, 13).
+available(z1000013, online, w, 14).
+desire(z1000013, possible, w, 14).
+available(z1000013, online, w, 15).
+desire(z1000013, preferred, w, 15).
+available(z1000013, online, w, 16).
+desire(z1000013, dislike, w, 16).
+available(z1000013, online, w, 17).
+desire(z1000013, dislike, w, 17).
+available(z1000013, online, w, 18).
+desire(z1000013, preferred, w, 18).
+available(z1000013, online, w, 19).
+desire(z1000013, preferred, w, 19).
+available(z1000013, online, w, 20).
+desire(z1000013, preferred, w, 20).
+available(z1000013, online, h, 12).
+desire(z1000013, dislike, h, 12).
+available(z1000013, online, h, 13).
+desire(z1000013, dislike, h, 13).
+available(z1000013, online, h, 14).
+desire(z1000013, dislike, h, 14).
+available(z1000013, online, h, 15).
+desire(z1000013, dislike, h, 15).
+available(z1000013, online, h, 16).
+desire(z1000013, dislike, h, 16).
+available(z1000013, online, h, 17).
+desire(z1000013, dislike, h, 17).
+available(z1000013, online, h, 18).
+desire(z1000013, preferred, h, 18).
+available(z1000013, online, h, 19).
+desire(z1000013, preferred, h, 19).
+available(z1000013, online, h, 20).
+desire(z1000013, preferred, h, 20).
+available(z1000013, online, f, 8).
+desire(z1000013, preferred, f, 8).
+available(z1000013, online, f, 9).
+desire(z1000013, preferred, f, 9).
+available(z1000013, online, f, 10).
+desire(z1000013, preferred, f, 10).
+available(z1000013, online, f, 11).
+desire(z1000013, preferred, f, 11).
+available(z1000013, online, f, 12).
+desire(z1000013, preferred, f, 12).
+available(z1000013, online, f, 15).
+desire(z1000013, dislike, f, 15).
+available(z1000013, online, f, 16).
+desire(z1000013, dislike, f, 16).
+available(z1000013, online, f, 17).
+desire(z1000013, dislike, f, 17).
+available(z1000013, online, f, 18).
+desire(z1000013, dislike, f, 18).
+available(z1000013, online, f, 19).
+desire(z1000013, dislike, f, 19).
+available(z1000013, online, f, 20).
+desire(z1000013, dislike, f, 20).
+capacity(z1000013, tute, 1).
+capacity(z1000013, asst, 1).
+prefer(z1000013, tute).
 teacher(z1000014).
-previousTuteExperience(z1000014, true).
-preference(z1000014, m, 08, impossible, onlineOrPerson).
-preference(z1000014, m, 09, impossible, onlineOrPerson).
-preference(z1000014, m, 10, impossible, onlineOrPerson).
-preference(z1000014, m, 11, dislike, onlineOnly).
-preference(z1000014, m, 12, dislike, onlineOnly).
-preference(z1000014, m, 13, dislike, onlineOnly).
-preference(z1000014, m, 14, impossible, onlineOrPerson).
-preference(z1000014, m, 15, impossible, onlineOrPerson).
-preference(z1000014, m, 16, impossible, onlineOrPerson).
-preference(z1000014, m, 17, impossible, onlineOrPerson).
-preference(z1000014, m, 18, possible, onlineOnly).
-preference(z1000014, m, 19, possible, onlineOnly).
-preference(z1000014, m, 20, possible, onlineOnly).
-preference(z1000014, t, 08, possible, onlineOnly).
-preference(z1000014, t, 09, preferred, onlineOnly).
-preference(z1000014, t, 10, preferred, onlineOnly).
-preference(z1000014, t, 11, preferred, onlineOnly).
-preference(z1000014, t, 12, impossible, onlineOrPerson).
-preference(z1000014, t, 13, impossible, onlineOrPerson).
-preference(z1000014, t, 14, impossible, onlineOrPerson).
-preference(z1000014, t, 15, impossible, onlineOrPerson).
-preference(z1000014, t, 16, possible, onlineOnly).
-preference(z1000014, t, 17, possible, onlineOnly).
-preference(z1000014, t, 18, possible, onlineOnly).
-preference(z1000014, t, 19, possible, onlineOnly).
-preference(z1000014, t, 20, possible, onlineOnly).
-preference(z1000014, w, 08, impossible, onlineOrPerson).
-preference(z1000014, w, 09, impossible, onlineOrPerson).
-preference(z1000014, w, 10, impossible, onlineOrPerson).
-preference(z1000014, w, 11, impossible, onlineOrPerson).
-preference(z1000014, w, 12, impossible, onlineOrPerson).
-preference(z1000014, w, 13, impossible, onlineOrPerson).
-preference(z1000014, w, 14, impossible, onlineOrPerson).
-preference(z1000014, w, 15, impossible, onlineOrPerson).
-preference(z1000014, w, 16, impossible, onlineOrPerson).
-preference(z1000014, w, 17, impossible, onlineOrPerson).
-preference(z1000014, w, 18, impossible, onlineOrPerson).
-preference(z1000014, w, 19, impossible, onlineOrPerson).
-preference(z1000014, w, 20, impossible, onlineOrPerson).
-preference(z1000014, h, 08, impossible, onlineOrPerson).
-preference(z1000014, h, 09, impossible, onlineOrPerson).
-preference(z1000014, h, 10, impossible, onlineOrPerson).
-preference(z1000014, h, 11, possible, onlineOnly).
-preference(z1000014, h, 12, preferred, onlineOnly).
-preference(z1000014, h, 13, preferred, onlineOnly).
-preference(z1000014, h, 14, preferred, onlineOnly).
-preference(z1000014, h, 15, preferred, onlineOnly).
-preference(z1000014, h, 16, preferred, onlineOnly).
-preference(z1000014, h, 17, preferred, onlineOnly).
-preference(z1000014, h, 18, possible, onlineOnly).
-preference(z1000014, h, 19, possible, onlineOnly).
-preference(z1000014, h, 20, possible, onlineOnly).
-preference(z1000014, f, 08, possible, onlineOnly).
-preference(z1000014, f, 09, preferred, onlineOnly).
-preference(z1000014, f, 10, preferred, onlineOnly).
-preference(z1000014, f, 11, preferred, onlineOnly).
-preference(z1000014, f, 12, dislike, onlineOnly).
-preference(z1000014, f, 13, impossible, onlineOrPerson).
-preference(z1000014, f, 14, impossible, onlineOrPerson).
-preference(z1000014, f, 15, impossible, onlineOrPerson).
-preference(z1000014, f, 16, impossible, onlineOrPerson).
-preference(z1000014, f, 17, impossible, onlineOrPerson).
-preference(z1000014, f, 18, impossible, onlineOrPerson).
-preference(z1000014, f, 19, impossible, onlineOrPerson).
-preference(z1000014, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000014, 1).
-capacityAsst(z1000014, 1).
-preferTutorial(z1000014, 1).
+experience(z1000014, tute).
+experience(z1000014, asst).
+available(z1000014, online, m, 11).
+desire(z1000014, dislike, m, 11).
+available(z1000014, online, m, 12).
+desire(z1000014, dislike, m, 12).
+available(z1000014, online, m, 13).
+desire(z1000014, dislike, m, 13).
+available(z1000014, online, m, 18).
+desire(z1000014, possible, m, 18).
+available(z1000014, online, m, 19).
+desire(z1000014, possible, m, 19).
+available(z1000014, online, m, 20).
+desire(z1000014, possible, m, 20).
+available(z1000014, online, t, 8).
+desire(z1000014, possible, t, 8).
+available(z1000014, online, t, 9).
+desire(z1000014, preferred, t, 9).
+available(z1000014, online, t, 10).
+desire(z1000014, preferred, t, 10).
+available(z1000014, online, t, 11).
+desire(z1000014, preferred, t, 11).
+available(z1000014, online, t, 16).
+desire(z1000014, possible, t, 16).
+available(z1000014, online, t, 17).
+desire(z1000014, possible, t, 17).
+available(z1000014, online, t, 18).
+desire(z1000014, possible, t, 18).
+available(z1000014, online, t, 19).
+desire(z1000014, possible, t, 19).
+available(z1000014, online, t, 20).
+desire(z1000014, possible, t, 20).
+available(z1000014, online, h, 11).
+desire(z1000014, possible, h, 11).
+available(z1000014, online, h, 12).
+desire(z1000014, preferred, h, 12).
+available(z1000014, online, h, 13).
+desire(z1000014, preferred, h, 13).
+available(z1000014, online, h, 14).
+desire(z1000014, preferred, h, 14).
+available(z1000014, online, h, 15).
+desire(z1000014, preferred, h, 15).
+available(z1000014, online, h, 16).
+desire(z1000014, preferred, h, 16).
+available(z1000014, online, h, 17).
+desire(z1000014, preferred, h, 17).
+available(z1000014, online, h, 18).
+desire(z1000014, possible, h, 18).
+available(z1000014, online, h, 19).
+desire(z1000014, possible, h, 19).
+available(z1000014, online, h, 20).
+desire(z1000014, possible, h, 20).
+available(z1000014, online, f, 8).
+desire(z1000014, possible, f, 8).
+available(z1000014, online, f, 9).
+desire(z1000014, preferred, f, 9).
+available(z1000014, online, f, 10).
+desire(z1000014, preferred, f, 10).
+available(z1000014, online, f, 11).
+desire(z1000014, preferred, f, 11).
+available(z1000014, online, f, 12).
+desire(z1000014, dislike, f, 12).
+capacity(z1000014, tute, 1).
+capacity(z1000014, asst, 1).
+prefer(z1000014, tute).
 teacher(z1000015).
-previousTuteExperience(z1000015, true).
-preference(z1000015, m, 08, impossible, onlineOrPerson).
-preference(z1000015, m, 09, impossible, onlineOrPerson).
-preference(z1000015, m, 10, impossible, onlineOrPerson).
-preference(z1000015, m, 11, impossible, onlineOrPerson).
-preference(z1000015, m, 12, impossible, onlineOrPerson).
-preference(z1000015, m, 13, impossible, onlineOrPerson).
-preference(z1000015, m, 14, impossible, onlineOrPerson).
-preference(z1000015, m, 15, impossible, onlineOrPerson).
-preference(z1000015, m, 16, impossible, onlineOrPerson).
-preference(z1000015, m, 17, impossible, onlineOrPerson).
-preference(z1000015, m, 18, preferred, onlineOnly).
-preference(z1000015, m, 19, preferred, onlineOnly).
-preference(z1000015, m, 20, impossible, onlineOrPerson).
-preference(z1000015, t, 08, impossible, onlineOrPerson).
-preference(z1000015, t, 09, impossible, onlineOrPerson).
-preference(z1000015, t, 10, impossible, onlineOrPerson).
-preference(z1000015, t, 11, impossible, onlineOrPerson).
-preference(z1000015, t, 12, impossible, onlineOrPerson).
-preference(z1000015, t, 13, impossible, onlineOrPerson).
-preference(z1000015, t, 14, impossible, onlineOrPerson).
-preference(z1000015, t, 15, impossible, onlineOrPerson).
-preference(z1000015, t, 16, impossible, onlineOrPerson).
-preference(z1000015, t, 17, impossible, onlineOrPerson).
-preference(z1000015, t, 18, preferred, onlineOnly).
-preference(z1000015, t, 19, preferred, onlineOnly).
-preference(z1000015, t, 20, impossible, onlineOrPerson).
-preference(z1000015, w, 08, impossible, onlineOrPerson).
-preference(z1000015, w, 09, possible, onlineOnly).
-preference(z1000015, w, 10, possible, onlineOnly).
-preference(z1000015, w, 11, possible, onlineOnly).
-preference(z1000015, w, 12, preferred, onlineOnly).
-preference(z1000015, w, 13, preferred, onlineOnly).
-preference(z1000015, w, 14, preferred, onlineOnly).
-preference(z1000015, w, 15, preferred, onlineOnly).
-preference(z1000015, w, 16, impossible, onlineOrPerson).
-preference(z1000015, w, 17, impossible, onlineOrPerson).
-preference(z1000015, w, 18, preferred, onlineOnly).
-preference(z1000015, w, 19, preferred, onlineOnly).
-preference(z1000015, w, 20, impossible, onlineOrPerson).
-preference(z1000015, h, 08, impossible, onlineOrPerson).
-preference(z1000015, h, 09, impossible, onlineOrPerson).
-preference(z1000015, h, 10, impossible, onlineOrPerson).
-preference(z1000015, h, 11, impossible, onlineOrPerson).
-preference(z1000015, h, 12, impossible, onlineOrPerson).
-preference(z1000015, h, 13, impossible, onlineOrPerson).
-preference(z1000015, h, 14, impossible, onlineOrPerson).
-preference(z1000015, h, 15, impossible, onlineOrPerson).
-preference(z1000015, h, 16, impossible, onlineOrPerson).
-preference(z1000015, h, 17, impossible, onlineOrPerson).
-preference(z1000015, h, 18, dislike, onlineOnly).
-preference(z1000015, h, 19, dislike, onlineOnly).
-preference(z1000015, h, 20, impossible, onlineOrPerson).
-preference(z1000015, f, 08, impossible, onlineOrPerson).
-preference(z1000015, f, 09, impossible, onlineOrPerson).
-preference(z1000015, f, 10, impossible, onlineOrPerson).
-preference(z1000015, f, 11, impossible, onlineOrPerson).
-preference(z1000015, f, 12, impossible, onlineOrPerson).
-preference(z1000015, f, 13, impossible, onlineOrPerson).
-preference(z1000015, f, 14, impossible, onlineOrPerson).
-preference(z1000015, f, 15, impossible, onlineOrPerson).
-preference(z1000015, f, 16, impossible, onlineOrPerson).
-preference(z1000015, f, 17, impossible, onlineOrPerson).
-preference(z1000015, f, 18, preferred, onlineOnly).
-preference(z1000015, f, 19, preferred, onlineOnly).
-preference(z1000015, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000015, 1).
-capacityAsst(z1000015, 1).
-preferTutorial(z1000015, 1).
+experience(z1000015, tute).
+experience(z1000015, asst).
+available(z1000015, online, m, 18).
+desire(z1000015, preferred, m, 18).
+available(z1000015, online, m, 19).
+desire(z1000015, preferred, m, 19).
+available(z1000015, online, t, 18).
+desire(z1000015, preferred, t, 18).
+available(z1000015, online, t, 19).
+desire(z1000015, preferred, t, 19).
+available(z1000015, online, w, 9).
+desire(z1000015, possible, w, 9).
+available(z1000015, online, w, 10).
+desire(z1000015, possible, w, 10).
+available(z1000015, online, w, 11).
+desire(z1000015, possible, w, 11).
+available(z1000015, online, w, 12).
+desire(z1000015, preferred, w, 12).
+available(z1000015, online, w, 13).
+desire(z1000015, preferred, w, 13).
+available(z1000015, online, w, 14).
+desire(z1000015, preferred, w, 14).
+available(z1000015, online, w, 15).
+desire(z1000015, preferred, w, 15).
+available(z1000015, online, w, 18).
+desire(z1000015, preferred, w, 18).
+available(z1000015, online, w, 19).
+desire(z1000015, preferred, w, 19).
+available(z1000015, online, h, 18).
+desire(z1000015, dislike, h, 18).
+available(z1000015, online, h, 19).
+desire(z1000015, dislike, h, 19).
+available(z1000015, online, f, 18).
+desire(z1000015, preferred, f, 18).
+available(z1000015, online, f, 19).
+desire(z1000015, preferred, f, 19).
+capacity(z1000015, tute, 1).
+capacity(z1000015, asst, 1).
+prefer(z1000015, tute).
 teacher(z1000016).
-previousTuteExperience(z1000016, true).
-preference(z1000016, m, 08, preferred, onlineOnly).
-preference(z1000016, m, 09, preferred, onlineOnly).
-preference(z1000016, m, 10, preferred, onlineOnly).
-preference(z1000016, m, 11, impossible, onlineOrPerson).
-preference(z1000016, m, 12, impossible, onlineOrPerson).
-preference(z1000016, m, 13, preferred, onlineOnly).
-preference(z1000016, m, 14, preferred, onlineOnly).
-preference(z1000016, m, 15, preferred, onlineOnly).
-preference(z1000016, m, 16, preferred, onlineOnly).
-preference(z1000016, m, 17, preferred, onlineOnly).
-preference(z1000016, m, 18, preferred, onlineOnly).
-preference(z1000016, m, 19, preferred, onlineOnly).
-preference(z1000016, m, 20, preferred, onlineOnly).
-preference(z1000016, t, 08, preferred, onlineOnly).
-preference(z1000016, t, 09, impossible, onlineOrPerson).
-preference(z1000016, t, 10, impossible, onlineOrPerson).
-preference(z1000016, t, 11, preferred, onlineOnly).
-preference(z1000016, t, 12, preferred, onlineOnly).
-preference(z1000016, t, 13, preferred, onlineOnly).
-preference(z1000016, t, 14, preferred, onlineOnly).
-preference(z1000016, t, 15, preferred, onlineOnly).
-preference(z1000016, t, 16, preferred, onlineOnly).
-preference(z1000016, t, 17, preferred, onlineOnly).
-preference(z1000016, t, 18, preferred, onlineOnly).
-preference(z1000016, t, 19, preferred, onlineOnly).
-preference(z1000016, t, 20, preferred, onlineOnly).
-preference(z1000016, w, 08, preferred, onlineOnly).
-preference(z1000016, w, 09, preferred, onlineOrPerson).
-preference(z1000016, w, 10, preferred, onlineOrPerson).
-preference(z1000016, w, 11, preferred, onlineOrPerson).
-preference(z1000016, w, 12, impossible, onlineOrPerson).
-preference(z1000016, w, 13, impossible, onlineOrPerson).
-preference(z1000016, w, 14, impossible, onlineOrPerson).
-preference(z1000016, w, 15, preferred, onlineOnly).
-preference(z1000016, w, 16, preferred, onlineOnly).
-preference(z1000016, w, 17, preferred, onlineOnly).
-preference(z1000016, w, 18, preferred, onlineOnly).
-preference(z1000016, w, 19, preferred, onlineOnly).
-preference(z1000016, w, 20, preferred, onlineOnly).
-preference(z1000016, h, 08, preferred, onlineOnly).
-preference(z1000016, h, 09, impossible, onlineOrPerson).
-preference(z1000016, h, 10, impossible, onlineOrPerson).
-preference(z1000016, h, 11, preferred, onlineOnly).
-preference(z1000016, h, 12, impossible, onlineOrPerson).
-preference(z1000016, h, 13, preferred, onlineOnly).
-preference(z1000016, h, 14, impossible, onlineOrPerson).
-preference(z1000016, h, 15, preferred, onlineOnly).
-preference(z1000016, h, 16, preferred, onlineOnly).
-preference(z1000016, h, 17, preferred, onlineOnly).
-preference(z1000016, h, 18, preferred, onlineOnly).
-preference(z1000016, h, 19, preferred, onlineOnly).
-preference(z1000016, h, 20, preferred, onlineOnly).
-preference(z1000016, f, 08, preferred, onlineOnly).
-preference(z1000016, f, 09, preferred, onlineOrPerson).
-preference(z1000016, f, 10, preferred, onlineOrPerson).
-preference(z1000016, f, 11, preferred, onlineOrPerson).
-preference(z1000016, f, 12, impossible, onlineOrPerson).
-preference(z1000016, f, 13, impossible, onlineOrPerson).
-preference(z1000016, f, 14, preferred, onlineOnly).
-preference(z1000016, f, 15, preferred, onlineOnly).
-preference(z1000016, f, 16, preferred, onlineOnly).
-preference(z1000016, f, 17, preferred, onlineOnly).
-preference(z1000016, f, 18, preferred, onlineOnly).
-preference(z1000016, f, 19, preferred, onlineOnly).
-preference(z1000016, f, 20, preferred, onlineOnly).
-capacityTute(z1000016, 1).
-capacityAsst(z1000016, 1).
-preferTutorial(z1000016, 1).
+experience(z1000016, tute).
+experience(z1000016, asst).
+available(z1000016, online, m, 8).
+desire(z1000016, preferred, m, 8).
+available(z1000016, online, m, 9).
+desire(z1000016, preferred, m, 9).
+available(z1000016, online, m, 10).
+desire(z1000016, preferred, m, 10).
+available(z1000016, online, m, 13).
+desire(z1000016, preferred, m, 13).
+available(z1000016, online, m, 14).
+desire(z1000016, preferred, m, 14).
+available(z1000016, online, m, 15).
+desire(z1000016, preferred, m, 15).
+available(z1000016, online, m, 16).
+desire(z1000016, preferred, m, 16).
+available(z1000016, online, m, 17).
+desire(z1000016, preferred, m, 17).
+available(z1000016, online, m, 18).
+desire(z1000016, preferred, m, 18).
+available(z1000016, online, m, 19).
+desire(z1000016, preferred, m, 19).
+available(z1000016, online, m, 20).
+desire(z1000016, preferred, m, 20).
+available(z1000016, online, t, 8).
+desire(z1000016, preferred, t, 8).
+available(z1000016, online, t, 11).
+desire(z1000016, preferred, t, 11).
+available(z1000016, online, t, 12).
+desire(z1000016, preferred, t, 12).
+available(z1000016, online, t, 13).
+desire(z1000016, preferred, t, 13).
+available(z1000016, online, t, 14).
+desire(z1000016, preferred, t, 14).
+available(z1000016, online, t, 15).
+desire(z1000016, preferred, t, 15).
+available(z1000016, online, t, 16).
+desire(z1000016, preferred, t, 16).
+available(z1000016, online, t, 17).
+desire(z1000016, preferred, t, 17).
+available(z1000016, online, t, 18).
+desire(z1000016, preferred, t, 18).
+available(z1000016, online, t, 19).
+desire(z1000016, preferred, t, 19).
+available(z1000016, online, t, 20).
+desire(z1000016, preferred, t, 20).
+available(z1000016, online, w, 8).
+desire(z1000016, preferred, w, 8).
+available(z1000016, online, w, 9).
+available(z1000016, inPerson, w, 9).
+desire(z1000016, preferred, w, 9).
+available(z1000016, online, w, 10).
+available(z1000016, inPerson, w, 10).
+desire(z1000016, preferred, w, 10).
+available(z1000016, online, w, 11).
+available(z1000016, inPerson, w, 11).
+desire(z1000016, preferred, w, 11).
+available(z1000016, online, w, 15).
+desire(z1000016, preferred, w, 15).
+available(z1000016, online, w, 16).
+desire(z1000016, preferred, w, 16).
+available(z1000016, online, w, 17).
+desire(z1000016, preferred, w, 17).
+available(z1000016, online, w, 18).
+desire(z1000016, preferred, w, 18).
+available(z1000016, online, w, 19).
+desire(z1000016, preferred, w, 19).
+available(z1000016, online, w, 20).
+desire(z1000016, preferred, w, 20).
+available(z1000016, online, h, 8).
+desire(z1000016, preferred, h, 8).
+available(z1000016, online, h, 11).
+desire(z1000016, preferred, h, 11).
+available(z1000016, online, h, 13).
+desire(z1000016, preferred, h, 13).
+available(z1000016, online, h, 15).
+desire(z1000016, preferred, h, 15).
+available(z1000016, online, h, 16).
+desire(z1000016, preferred, h, 16).
+available(z1000016, online, h, 17).
+desire(z1000016, preferred, h, 17).
+available(z1000016, online, h, 18).
+desire(z1000016, preferred, h, 18).
+available(z1000016, online, h, 19).
+desire(z1000016, preferred, h, 19).
+available(z1000016, online, h, 20).
+desire(z1000016, preferred, h, 20).
+available(z1000016, online, f, 8).
+desire(z1000016, preferred, f, 8).
+available(z1000016, online, f, 9).
+available(z1000016, inPerson, f, 9).
+desire(z1000016, preferred, f, 9).
+available(z1000016, online, f, 10).
+available(z1000016, inPerson, f, 10).
+desire(z1000016, preferred, f, 10).
+available(z1000016, online, f, 11).
+available(z1000016, inPerson, f, 11).
+desire(z1000016, preferred, f, 11).
+available(z1000016, online, f, 14).
+desire(z1000016, preferred, f, 14).
+available(z1000016, online, f, 15).
+desire(z1000016, preferred, f, 15).
+available(z1000016, online, f, 16).
+desire(z1000016, preferred, f, 16).
+available(z1000016, online, f, 17).
+desire(z1000016, preferred, f, 17).
+available(z1000016, online, f, 18).
+desire(z1000016, preferred, f, 18).
+available(z1000016, online, f, 19).
+desire(z1000016, preferred, f, 19).
+available(z1000016, online, f, 20).
+desire(z1000016, preferred, f, 20).
+capacity(z1000016, tute, 1).
+capacity(z1000016, asst, 1).
+prefer(z1000016, tute).
 teacher(z1000017).
-previousTuteExperience(z1000017, true).
-preference(z1000017, m, 08, impossible, onlineOrPerson).
-preference(z1000017, m, 09, impossible, onlineOrPerson).
-preference(z1000017, m, 10, impossible, onlineOrPerson).
-preference(z1000017, m, 11, impossible, onlineOrPerson).
-preference(z1000017, m, 12, impossible, onlineOrPerson).
-preference(z1000017, m, 13, impossible, onlineOrPerson).
-preference(z1000017, m, 14, impossible, onlineOrPerson).
-preference(z1000017, m, 15, impossible, onlineOrPerson).
-preference(z1000017, m, 16, impossible, onlineOrPerson).
-preference(z1000017, m, 17, impossible, onlineOrPerson).
-preference(z1000017, m, 18, dislike, onlineOrPerson).
-preference(z1000017, m, 19, dislike, onlineOrPerson).
-preference(z1000017, m, 20, dislike, onlineOrPerson).
-preference(z1000017, t, 08, impossible, onlineOrPerson).
-preference(z1000017, t, 09, impossible, onlineOrPerson).
-preference(z1000017, t, 10, impossible, onlineOrPerson).
-preference(z1000017, t, 11, impossible, onlineOrPerson).
-preference(z1000017, t, 12, impossible, onlineOrPerson).
-preference(z1000017, t, 13, impossible, onlineOrPerson).
-preference(z1000017, t, 14, impossible, onlineOrPerson).
-preference(z1000017, t, 15, impossible, onlineOrPerson).
-preference(z1000017, t, 16, impossible, onlineOrPerson).
-preference(z1000017, t, 17, impossible, onlineOrPerson).
-preference(z1000017, t, 18, dislike, onlineOrPerson).
-preference(z1000017, t, 19, dislike, onlineOrPerson).
-preference(z1000017, t, 20, dislike, onlineOrPerson).
-preference(z1000017, w, 08, impossible, onlineOrPerson).
-preference(z1000017, w, 09, impossible, onlineOrPerson).
-preference(z1000017, w, 10, impossible, onlineOrPerson).
-preference(z1000017, w, 11, impossible, onlineOrPerson).
-preference(z1000017, w, 12, impossible, onlineOrPerson).
-preference(z1000017, w, 13, impossible, onlineOrPerson).
-preference(z1000017, w, 14, impossible, onlineOrPerson).
-preference(z1000017, w, 15, impossible, onlineOrPerson).
-preference(z1000017, w, 16, impossible, onlineOrPerson).
-preference(z1000017, w, 17, impossible, onlineOrPerson).
-preference(z1000017, w, 18, dislike, onlineOrPerson).
-preference(z1000017, w, 19, dislike, onlineOrPerson).
-preference(z1000017, w, 20, dislike, onlineOrPerson).
-preference(z1000017, h, 08, impossible, onlineOrPerson).
-preference(z1000017, h, 09, impossible, onlineOrPerson).
-preference(z1000017, h, 10, impossible, onlineOrPerson).
-preference(z1000017, h, 11, impossible, onlineOrPerson).
-preference(z1000017, h, 12, possible, onlineOrPerson).
-preference(z1000017, h, 13, possible, onlineOrPerson).
-preference(z1000017, h, 14, possible, onlineOrPerson).
-preference(z1000017, h, 15, possible, onlineOrPerson).
-preference(z1000017, h, 16, possible, onlineOrPerson).
-preference(z1000017, h, 17, possible, onlineOrPerson).
-preference(z1000017, h, 18, dislike, onlineOrPerson).
-preference(z1000017, h, 19, dislike, onlineOrPerson).
-preference(z1000017, h, 20, dislike, onlineOrPerson).
-preference(z1000017, f, 08, impossible, onlineOrPerson).
-preference(z1000017, f, 09, preferred, onlineOrPerson).
-preference(z1000017, f, 10, preferred, onlineOrPerson).
-preference(z1000017, f, 11, preferred, onlineOrPerson).
-preference(z1000017, f, 12, preferred, onlineOrPerson).
-preference(z1000017, f, 13, preferred, onlineOrPerson).
-preference(z1000017, f, 14, preferred, onlineOrPerson).
-preference(z1000017, f, 15, preferred, onlineOrPerson).
-preference(z1000017, f, 16, preferred, onlineOrPerson).
-preference(z1000017, f, 17, preferred, onlineOrPerson).
-preference(z1000017, f, 18, impossible, onlineOrPerson).
-preference(z1000017, f, 19, impossible, onlineOrPerson).
-preference(z1000017, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000017, 1).
-capacityAsst(z1000017, 1).
-preferTutorial(z1000017, 1).
+experience(z1000017, tute).
+experience(z1000017, asst).
+available(z1000017, online, m, 18).
+available(z1000017, inPerson, m, 18).
+desire(z1000017, dislike, m, 18).
+available(z1000017, online, m, 19).
+available(z1000017, inPerson, m, 19).
+desire(z1000017, dislike, m, 19).
+available(z1000017, online, m, 20).
+available(z1000017, inPerson, m, 20).
+desire(z1000017, dislike, m, 20).
+available(z1000017, online, t, 18).
+available(z1000017, inPerson, t, 18).
+desire(z1000017, dislike, t, 18).
+available(z1000017, online, t, 19).
+available(z1000017, inPerson, t, 19).
+desire(z1000017, dislike, t, 19).
+available(z1000017, online, t, 20).
+available(z1000017, inPerson, t, 20).
+desire(z1000017, dislike, t, 20).
+available(z1000017, online, w, 18).
+available(z1000017, inPerson, w, 18).
+desire(z1000017, dislike, w, 18).
+available(z1000017, online, w, 19).
+available(z1000017, inPerson, w, 19).
+desire(z1000017, dislike, w, 19).
+available(z1000017, online, w, 20).
+available(z1000017, inPerson, w, 20).
+desire(z1000017, dislike, w, 20).
+available(z1000017, online, h, 12).
+available(z1000017, inPerson, h, 12).
+desire(z1000017, possible, h, 12).
+available(z1000017, online, h, 13).
+available(z1000017, inPerson, h, 13).
+desire(z1000017, possible, h, 13).
+available(z1000017, online, h, 14).
+available(z1000017, inPerson, h, 14).
+desire(z1000017, possible, h, 14).
+available(z1000017, online, h, 15).
+available(z1000017, inPerson, h, 15).
+desire(z1000017, possible, h, 15).
+available(z1000017, online, h, 16).
+available(z1000017, inPerson, h, 16).
+desire(z1000017, possible, h, 16).
+available(z1000017, online, h, 17).
+available(z1000017, inPerson, h, 17).
+desire(z1000017, possible, h, 17).
+available(z1000017, online, h, 18).
+available(z1000017, inPerson, h, 18).
+desire(z1000017, dislike, h, 18).
+available(z1000017, online, h, 19).
+available(z1000017, inPerson, h, 19).
+desire(z1000017, dislike, h, 19).
+available(z1000017, online, h, 20).
+available(z1000017, inPerson, h, 20).
+desire(z1000017, dislike, h, 20).
+available(z1000017, online, f, 9).
+available(z1000017, inPerson, f, 9).
+desire(z1000017, preferred, f, 9).
+available(z1000017, online, f, 10).
+available(z1000017, inPerson, f, 10).
+desire(z1000017, preferred, f, 10).
+available(z1000017, online, f, 11).
+available(z1000017, inPerson, f, 11).
+desire(z1000017, preferred, f, 11).
+available(z1000017, online, f, 12).
+available(z1000017, inPerson, f, 12).
+desire(z1000017, preferred, f, 12).
+available(z1000017, online, f, 13).
+available(z1000017, inPerson, f, 13).
+desire(z1000017, preferred, f, 13).
+available(z1000017, online, f, 14).
+available(z1000017, inPerson, f, 14).
+desire(z1000017, preferred, f, 14).
+available(z1000017, online, f, 15).
+available(z1000017, inPerson, f, 15).
+desire(z1000017, preferred, f, 15).
+available(z1000017, online, f, 16).
+available(z1000017, inPerson, f, 16).
+desire(z1000017, preferred, f, 16).
+available(z1000017, online, f, 17).
+available(z1000017, inPerson, f, 17).
+desire(z1000017, preferred, f, 17).
+capacity(z1000017, tute, 1).
+capacity(z1000017, asst, 1).
+prefer(z1000017, tute).
 teacher(z1000018).
-previousTuteExperience(z1000018, true).
-preference(z1000018, m, 08, impossible, onlineOrPerson).
-preference(z1000018, m, 09, impossible, onlineOrPerson).
-preference(z1000018, m, 10, dislike, onlineOnly).
-preference(z1000018, m, 11, dislike, onlineOnly).
-preference(z1000018, m, 12, dislike, onlineOnly).
-preference(z1000018, m, 13, dislike, onlineOnly).
-preference(z1000018, m, 14, dislike, onlineOnly).
-preference(z1000018, m, 15, dislike, onlineOnly).
-preference(z1000018, m, 16, dislike, onlineOnly).
-preference(z1000018, m, 17, dislike, onlineOnly).
-preference(z1000018, m, 18, impossible, onlineOrPerson).
-preference(z1000018, m, 19, impossible, onlineOrPerson).
-preference(z1000018, m, 20, impossible, onlineOrPerson).
-preference(z1000018, t, 08, impossible, onlineOrPerson).
-preference(z1000018, t, 09, impossible, onlineOrPerson).
-preference(z1000018, t, 10, impossible, onlineOrPerson).
-preference(z1000018, t, 11, impossible, onlineOrPerson).
-preference(z1000018, t, 12, impossible, onlineOrPerson).
-preference(z1000018, t, 13, preferred, onlineOnly).
-preference(z1000018, t, 14, preferred, onlineOnly).
-preference(z1000018, t, 15, preferred, onlineOnly).
-preference(z1000018, t, 16, preferred, onlineOnly).
-preference(z1000018, t, 17, possible, onlineOnly).
-preference(z1000018, t, 18, impossible, onlineOrPerson).
-preference(z1000018, t, 19, impossible, onlineOrPerson).
-preference(z1000018, t, 20, impossible, onlineOrPerson).
-preference(z1000018, w, 08, impossible, onlineOrPerson).
-preference(z1000018, w, 09, impossible, onlineOrPerson).
-preference(z1000018, w, 10, dislike, onlineOnly).
-preference(z1000018, w, 11, dislike, onlineOnly).
-preference(z1000018, w, 12, dislike, onlineOnly).
-preference(z1000018, w, 13, dislike, onlineOnly).
-preference(z1000018, w, 14, dislike, onlineOnly).
-preference(z1000018, w, 15, dislike, onlineOnly).
-preference(z1000018, w, 16, dislike, onlineOnly).
-preference(z1000018, w, 17, dislike, onlineOnly).
-preference(z1000018, w, 18, impossible, onlineOrPerson).
-preference(z1000018, w, 19, impossible, onlineOrPerson).
-preference(z1000018, w, 20, impossible, onlineOrPerson).
-preference(z1000018, h, 08, impossible, onlineOrPerson).
-preference(z1000018, h, 09, impossible, onlineOrPerson).
-preference(z1000018, h, 10, impossible, onlineOrPerson).
-preference(z1000018, h, 11, possible, onlineOnly).
-preference(z1000018, h, 12, possible, onlineOnly).
-preference(z1000018, h, 13, possible, onlineOnly).
-preference(z1000018, h, 14, impossible, onlineOrPerson).
-preference(z1000018, h, 15, impossible, onlineOrPerson).
-preference(z1000018, h, 16, impossible, onlineOrPerson).
-preference(z1000018, h, 17, impossible, onlineOrPerson).
-preference(z1000018, h, 18, impossible, onlineOrPerson).
-preference(z1000018, h, 19, impossible, onlineOrPerson).
-preference(z1000018, h, 20, impossible, onlineOrPerson).
-preference(z1000018, f, 08, impossible, onlineOrPerson).
-preference(z1000018, f, 09, dislike, onlineOnly).
-preference(z1000018, f, 10, possible, onlineOnly).
-preference(z1000018, f, 11, possible, onlineOnly).
-preference(z1000018, f, 12, impossible, onlineOrPerson).
-preference(z1000018, f, 13, impossible, onlineOrPerson).
-preference(z1000018, f, 14, impossible, onlineOrPerson).
-preference(z1000018, f, 15, possible, onlineOnly).
-preference(z1000018, f, 16, possible, onlineOnly).
-preference(z1000018, f, 17, possible, onlineOnly).
-preference(z1000018, f, 18, impossible, onlineOrPerson).
-preference(z1000018, f, 19, impossible, onlineOrPerson).
-preference(z1000018, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000018, 1).
-capacityAsst(z1000018, 1).
-preferTutorial(z1000018, 1).
+experience(z1000018, tute).
+experience(z1000018, asst).
+available(z1000018, online, m, 10).
+desire(z1000018, dislike, m, 10).
+available(z1000018, online, m, 11).
+desire(z1000018, dislike, m, 11).
+available(z1000018, online, m, 12).
+desire(z1000018, dislike, m, 12).
+available(z1000018, online, m, 13).
+desire(z1000018, dislike, m, 13).
+available(z1000018, online, m, 14).
+desire(z1000018, dislike, m, 14).
+available(z1000018, online, m, 15).
+desire(z1000018, dislike, m, 15).
+available(z1000018, online, m, 16).
+desire(z1000018, dislike, m, 16).
+available(z1000018, online, m, 17).
+desire(z1000018, dislike, m, 17).
+available(z1000018, online, t, 13).
+desire(z1000018, preferred, t, 13).
+available(z1000018, online, t, 14).
+desire(z1000018, preferred, t, 14).
+available(z1000018, online, t, 15).
+desire(z1000018, preferred, t, 15).
+available(z1000018, online, t, 16).
+desire(z1000018, preferred, t, 16).
+available(z1000018, online, t, 17).
+desire(z1000018, possible, t, 17).
+available(z1000018, online, w, 10).
+desire(z1000018, dislike, w, 10).
+available(z1000018, online, w, 11).
+desire(z1000018, dislike, w, 11).
+available(z1000018, online, w, 12).
+desire(z1000018, dislike, w, 12).
+available(z1000018, online, w, 13).
+desire(z1000018, dislike, w, 13).
+available(z1000018, online, w, 14).
+desire(z1000018, dislike, w, 14).
+available(z1000018, online, w, 15).
+desire(z1000018, dislike, w, 15).
+available(z1000018, online, w, 16).
+desire(z1000018, dislike, w, 16).
+available(z1000018, online, w, 17).
+desire(z1000018, dislike, w, 17).
+available(z1000018, online, h, 11).
+desire(z1000018, possible, h, 11).
+available(z1000018, online, h, 12).
+desire(z1000018, possible, h, 12).
+available(z1000018, online, h, 13).
+desire(z1000018, possible, h, 13).
+available(z1000018, online, f, 9).
+desire(z1000018, dislike, f, 9).
+available(z1000018, online, f, 10).
+desire(z1000018, possible, f, 10).
+available(z1000018, online, f, 11).
+desire(z1000018, possible, f, 11).
+available(z1000018, online, f, 15).
+desire(z1000018, possible, f, 15).
+available(z1000018, online, f, 16).
+desire(z1000018, possible, f, 16).
+available(z1000018, online, f, 17).
+desire(z1000018, possible, f, 17).
+capacity(z1000018, tute, 1).
+capacity(z1000018, asst, 1).
+prefer(z1000018, tute).
 teacher(z1000019).
-previousTuteExperience(z1000019, true).
-preference(z1000019, m, 08, dislike, onlineOnly).
-preference(z1000019, m, 09, dislike, onlineOnly).
-preference(z1000019, m, 10, dislike, onlineOnly).
-preference(z1000019, m, 11, preferred, onlineOnly).
-preference(z1000019, m, 12, preferred, onlineOnly).
-preference(z1000019, m, 13, preferred, onlineOnly).
-preference(z1000019, m, 14, preferred, onlineOnly).
-preference(z1000019, m, 15, preferred, onlineOnly).
-preference(z1000019, m, 16, preferred, onlineOnly).
-preference(z1000019, m, 17, preferred, onlineOnly).
-preference(z1000019, m, 18, preferred, onlineOnly).
-preference(z1000019, m, 19, preferred, onlineOnly).
-preference(z1000019, m, 20, preferred, onlineOnly).
-preference(z1000019, t, 08, dislike, onlineOnly).
-preference(z1000019, t, 09, dislike, onlineOnly).
-preference(z1000019, t, 10, dislike, onlineOnly).
-preference(z1000019, t, 11, preferred, onlineOnly).
-preference(z1000019, t, 12, preferred, onlineOnly).
-preference(z1000019, t, 13, preferred, onlineOnly).
-preference(z1000019, t, 14, preferred, onlineOnly).
-preference(z1000019, t, 15, preferred, onlineOnly).
-preference(z1000019, t, 16, preferred, onlineOnly).
-preference(z1000019, t, 17, preferred, onlineOnly).
-preference(z1000019, t, 18, preferred, onlineOnly).
-preference(z1000019, t, 19, preferred, onlineOnly).
-preference(z1000019, t, 20, preferred, onlineOnly).
-preference(z1000019, w, 08, dislike, onlineOnly).
-preference(z1000019, w, 09, dislike, onlineOnly).
-preference(z1000019, w, 10, dislike, onlineOnly).
-preference(z1000019, w, 11, preferred, onlineOnly).
-preference(z1000019, w, 12, preferred, onlineOnly).
-preference(z1000019, w, 13, preferred, onlineOnly).
-preference(z1000019, w, 14, preferred, onlineOnly).
-preference(z1000019, w, 15, preferred, onlineOnly).
-preference(z1000019, w, 16, preferred, onlineOnly).
-preference(z1000019, w, 17, preferred, onlineOnly).
-preference(z1000019, w, 18, preferred, onlineOnly).
-preference(z1000019, w, 19, preferred, onlineOnly).
-preference(z1000019, w, 20, preferred, onlineOnly).
-preference(z1000019, h, 08, dislike, onlineOnly).
-preference(z1000019, h, 09, dislike, onlineOnly).
-preference(z1000019, h, 10, dislike, onlineOnly).
-preference(z1000019, h, 11, preferred, onlineOnly).
-preference(z1000019, h, 12, preferred, onlineOnly).
-preference(z1000019, h, 13, preferred, onlineOnly).
-preference(z1000019, h, 14, dislike, onlineOnly).
-preference(z1000019, h, 15, preferred, onlineOnly).
-preference(z1000019, h, 16, preferred, onlineOnly).
-preference(z1000019, h, 17, preferred, onlineOnly).
-preference(z1000019, h, 18, preferred, onlineOnly).
-preference(z1000019, h, 19, preferred, onlineOnly).
-preference(z1000019, h, 20, preferred, onlineOnly).
-preference(z1000019, f, 08, dislike, onlineOnly).
-preference(z1000019, f, 09, dislike, onlineOnly).
-preference(z1000019, f, 10, dislike, onlineOnly).
-preference(z1000019, f, 11, preferred, onlineOnly).
-preference(z1000019, f, 12, preferred, onlineOnly).
-preference(z1000019, f, 13, preferred, onlineOnly).
-preference(z1000019, f, 14, preferred, onlineOnly).
-preference(z1000019, f, 15, preferred, onlineOnly).
-preference(z1000019, f, 16, preferred, onlineOnly).
-preference(z1000019, f, 17, preferred, onlineOnly).
-preference(z1000019, f, 18, preferred, onlineOnly).
-preference(z1000019, f, 19, preferred, onlineOnly).
-preference(z1000019, f, 20, preferred, onlineOnly).
-capacityTute(z1000019, 1).
-capacityAsst(z1000019, 1).
-preferTutorial(z1000019, 1).
+experience(z1000019, tute).
+experience(z1000019, asst).
+available(z1000019, online, m, 8).
+desire(z1000019, dislike, m, 8).
+available(z1000019, online, m, 9).
+desire(z1000019, dislike, m, 9).
+available(z1000019, online, m, 10).
+desire(z1000019, dislike, m, 10).
+available(z1000019, online, m, 11).
+desire(z1000019, preferred, m, 11).
+available(z1000019, online, m, 12).
+desire(z1000019, preferred, m, 12).
+available(z1000019, online, m, 13).
+desire(z1000019, preferred, m, 13).
+available(z1000019, online, m, 14).
+desire(z1000019, preferred, m, 14).
+available(z1000019, online, m, 15).
+desire(z1000019, preferred, m, 15).
+available(z1000019, online, m, 16).
+desire(z1000019, preferred, m, 16).
+available(z1000019, online, m, 17).
+desire(z1000019, preferred, m, 17).
+available(z1000019, online, m, 18).
+desire(z1000019, preferred, m, 18).
+available(z1000019, online, m, 19).
+desire(z1000019, preferred, m, 19).
+available(z1000019, online, m, 20).
+desire(z1000019, preferred, m, 20).
+available(z1000019, online, t, 8).
+desire(z1000019, dislike, t, 8).
+available(z1000019, online, t, 9).
+desire(z1000019, dislike, t, 9).
+available(z1000019, online, t, 10).
+desire(z1000019, dislike, t, 10).
+available(z1000019, online, t, 11).
+desire(z1000019, preferred, t, 11).
+available(z1000019, online, t, 12).
+desire(z1000019, preferred, t, 12).
+available(z1000019, online, t, 13).
+desire(z1000019, preferred, t, 13).
+available(z1000019, online, t, 14).
+desire(z1000019, preferred, t, 14).
+available(z1000019, online, t, 15).
+desire(z1000019, preferred, t, 15).
+available(z1000019, online, t, 16).
+desire(z1000019, preferred, t, 16).
+available(z1000019, online, t, 17).
+desire(z1000019, preferred, t, 17).
+available(z1000019, online, t, 18).
+desire(z1000019, preferred, t, 18).
+available(z1000019, online, t, 19).
+desire(z1000019, preferred, t, 19).
+available(z1000019, online, t, 20).
+desire(z1000019, preferred, t, 20).
+available(z1000019, online, w, 8).
+desire(z1000019, dislike, w, 8).
+available(z1000019, online, w, 9).
+desire(z1000019, dislike, w, 9).
+available(z1000019, online, w, 10).
+desire(z1000019, dislike, w, 10).
+available(z1000019, online, w, 11).
+desire(z1000019, preferred, w, 11).
+available(z1000019, online, w, 12).
+desire(z1000019, preferred, w, 12).
+available(z1000019, online, w, 13).
+desire(z1000019, preferred, w, 13).
+available(z1000019, online, w, 14).
+desire(z1000019, preferred, w, 14).
+available(z1000019, online, w, 15).
+desire(z1000019, preferred, w, 15).
+available(z1000019, online, w, 16).
+desire(z1000019, preferred, w, 16).
+available(z1000019, online, w, 17).
+desire(z1000019, preferred, w, 17).
+available(z1000019, online, w, 18).
+desire(z1000019, preferred, w, 18).
+available(z1000019, online, w, 19).
+desire(z1000019, preferred, w, 19).
+available(z1000019, online, w, 20).
+desire(z1000019, preferred, w, 20).
+available(z1000019, online, h, 8).
+desire(z1000019, dislike, h, 8).
+available(z1000019, online, h, 9).
+desire(z1000019, dislike, h, 9).
+available(z1000019, online, h, 10).
+desire(z1000019, dislike, h, 10).
+available(z1000019, online, h, 11).
+desire(z1000019, preferred, h, 11).
+available(z1000019, online, h, 12).
+desire(z1000019, preferred, h, 12).
+available(z1000019, online, h, 13).
+desire(z1000019, preferred, h, 13).
+available(z1000019, online, h, 14).
+desire(z1000019, dislike, h, 14).
+available(z1000019, online, h, 15).
+desire(z1000019, preferred, h, 15).
+available(z1000019, online, h, 16).
+desire(z1000019, preferred, h, 16).
+available(z1000019, online, h, 17).
+desire(z1000019, preferred, h, 17).
+available(z1000019, online, h, 18).
+desire(z1000019, preferred, h, 18).
+available(z1000019, online, h, 19).
+desire(z1000019, preferred, h, 19).
+available(z1000019, online, h, 20).
+desire(z1000019, preferred, h, 20).
+available(z1000019, online, f, 8).
+desire(z1000019, dislike, f, 8).
+available(z1000019, online, f, 9).
+desire(z1000019, dislike, f, 9).
+available(z1000019, online, f, 10).
+desire(z1000019, dislike, f, 10).
+available(z1000019, online, f, 11).
+desire(z1000019, preferred, f, 11).
+available(z1000019, online, f, 12).
+desire(z1000019, preferred, f, 12).
+available(z1000019, online, f, 13).
+desire(z1000019, preferred, f, 13).
+available(z1000019, online, f, 14).
+desire(z1000019, preferred, f, 14).
+available(z1000019, online, f, 15).
+desire(z1000019, preferred, f, 15).
+available(z1000019, online, f, 16).
+desire(z1000019, preferred, f, 16).
+available(z1000019, online, f, 17).
+desire(z1000019, preferred, f, 17).
+available(z1000019, online, f, 18).
+desire(z1000019, preferred, f, 18).
+available(z1000019, online, f, 19).
+desire(z1000019, preferred, f, 19).
+available(z1000019, online, f, 20).
+desire(z1000019, preferred, f, 20).
+capacity(z1000019, tute, 1).
+capacity(z1000019, asst, 1).
+prefer(z1000019, tute).
 teacher(z1000020).
-previousTuteExperience(z1000020, true).
-preference(z1000020, m, 08, impossible, onlineOrPerson).
-preference(z1000020, m, 09, impossible, onlineOrPerson).
-preference(z1000020, m, 10, impossible, onlineOrPerson).
-preference(z1000020, m, 11, impossible, onlineOrPerson).
-preference(z1000020, m, 12, impossible, onlineOrPerson).
-preference(z1000020, m, 13, impossible, onlineOrPerson).
-preference(z1000020, m, 14, impossible, onlineOrPerson).
-preference(z1000020, m, 15, impossible, onlineOrPerson).
-preference(z1000020, m, 16, impossible, onlineOrPerson).
-preference(z1000020, m, 17, impossible, onlineOrPerson).
-preference(z1000020, m, 18, impossible, onlineOrPerson).
-preference(z1000020, m, 19, impossible, onlineOrPerson).
-preference(z1000020, m, 20, impossible, false).
-preference(z1000020, t, 08, impossible, onlineOrPerson).
-preference(z1000020, t, 09, impossible, onlineOrPerson).
-preference(z1000020, t, 10, impossible, onlineOrPerson).
-preference(z1000020, t, 11, impossible, onlineOrPerson).
-preference(z1000020, t, 12, impossible, onlineOrPerson).
-preference(z1000020, t, 13, impossible, onlineOrPerson).
-preference(z1000020, t, 14, impossible, onlineOrPerson).
-preference(z1000020, t, 15, impossible, onlineOrPerson).
-preference(z1000020, t, 16, impossible, onlineOrPerson).
-preference(z1000020, t, 17, impossible, onlineOrPerson).
-preference(z1000020, t, 18, impossible, onlineOrPerson).
-preference(z1000020, t, 19, impossible, onlineOrPerson).
-preference(z1000020, t, 20, impossible, false).
-preference(z1000020, w, 08, impossible, onlineOrPerson).
-preference(z1000020, w, 09, impossible, onlineOrPerson).
-preference(z1000020, w, 10, impossible, onlineOrPerson).
-preference(z1000020, w, 11, impossible, onlineOrPerson).
-preference(z1000020, w, 12, impossible, onlineOrPerson).
-preference(z1000020, w, 13, impossible, onlineOrPerson).
-preference(z1000020, w, 14, impossible, onlineOrPerson).
-preference(z1000020, w, 15, impossible, onlineOrPerson).
-preference(z1000020, w, 16, impossible, onlineOrPerson).
-preference(z1000020, w, 17, impossible, onlineOrPerson).
-preference(z1000020, w, 18, impossible, onlineOrPerson).
-preference(z1000020, w, 19, impossible, onlineOrPerson).
-preference(z1000020, w, 20, impossible, false).
-preference(z1000020, h, 08, impossible, onlineOrPerson).
-preference(z1000020, h, 09, preferred, onlineOnly).
-preference(z1000020, h, 10, preferred, onlineOnly).
-preference(z1000020, h, 11, preferred, onlineOnly).
-preference(z1000020, h, 12, preferred, onlineOnly).
-preference(z1000020, h, 13, preferred, onlineOnly).
-preference(z1000020, h, 14, preferred, onlineOnly).
-preference(z1000020, h, 15, preferred, onlineOnly).
-preference(z1000020, h, 16, impossible, onlineOrPerson).
-preference(z1000020, h, 17, impossible, onlineOrPerson).
-preference(z1000020, h, 18, impossible, onlineOrPerson).
-preference(z1000020, h, 19, impossible, onlineOrPerson).
-preference(z1000020, h, 20, impossible, false).
-preference(z1000020, f, 08, impossible, onlineOrPerson).
-preference(z1000020, f, 09, impossible, onlineOrPerson).
-preference(z1000020, f, 10, preferred, onlineOnly).
-preference(z1000020, f, 11, preferred, onlineOnly).
-preference(z1000020, f, 12, preferred, onlineOnly).
-preference(z1000020, f, 13, preferred, onlineOnly).
-preference(z1000020, f, 14, preferred, onlineOnly).
-preference(z1000020, f, 15, preferred, onlineOnly).
-preference(z1000020, f, 16, preferred, onlineOnly).
-preference(z1000020, f, 17, preferred, onlineOnly).
-preference(z1000020, f, 18, impossible, onlineOrPerson).
-preference(z1000020, f, 19, impossible, onlineOrPerson).
-preference(z1000020, f, 20, impossible, false).
-capacityTute(z1000020, 1).
-capacityAsst(z1000020, 1).
-preferTutorial(z1000020, 1).
+experience(z1000020, tute).
+experience(z1000020, asst).
+available(z1000020, online, h, 9).
+desire(z1000020, preferred, h, 9).
+available(z1000020, online, h, 10).
+desire(z1000020, preferred, h, 10).
+available(z1000020, online, h, 11).
+desire(z1000020, preferred, h, 11).
+available(z1000020, online, h, 12).
+desire(z1000020, preferred, h, 12).
+available(z1000020, online, h, 13).
+desire(z1000020, preferred, h, 13).
+available(z1000020, online, h, 14).
+desire(z1000020, preferred, h, 14).
+available(z1000020, online, h, 15).
+desire(z1000020, preferred, h, 15).
+available(z1000020, online, f, 10).
+desire(z1000020, preferred, f, 10).
+available(z1000020, online, f, 11).
+desire(z1000020, preferred, f, 11).
+available(z1000020, online, f, 12).
+desire(z1000020, preferred, f, 12).
+available(z1000020, online, f, 13).
+desire(z1000020, preferred, f, 13).
+available(z1000020, online, f, 14).
+desire(z1000020, preferred, f, 14).
+available(z1000020, online, f, 15).
+desire(z1000020, preferred, f, 15).
+available(z1000020, online, f, 16).
+desire(z1000020, preferred, f, 16).
+available(z1000020, online, f, 17).
+desire(z1000020, preferred, f, 17).
+capacity(z1000020, tute, 1).
+capacity(z1000020, asst, 1).
+prefer(z1000020, tute).
 teacher(z1000021).
-previousTuteExperience(z1000021, true).
-preference(z1000021, m, 08, impossible, onlineOrPerson).
-preference(z1000021, m, 09, possible, onlineOrPerson).
-preference(z1000021, m, 10, possible, onlineOrPerson).
-preference(z1000021, m, 11, possible, onlineOrPerson).
-preference(z1000021, m, 12, preferred, onlineOnly).
-preference(z1000021, m, 13, preferred, onlineOnly).
-preference(z1000021, m, 14, preferred, onlineOnly).
-preference(z1000021, m, 15, preferred, onlineOnly).
-preference(z1000021, m, 16, preferred, onlineOnly).
-preference(z1000021, m, 17, preferred, onlineOnly).
-preference(z1000021, m, 18, impossible, onlineOrPerson).
-preference(z1000021, m, 19, impossible, onlineOrPerson).
-preference(z1000021, m, 20, impossible, onlineOrPerson).
-preference(z1000021, t, 08, impossible, onlineOrPerson).
-preference(z1000021, t, 09, preferred, onlineOrPerson).
-preference(z1000021, t, 10, preferred, onlineOrPerson).
-preference(z1000021, t, 11, preferred, onlineOrPerson).
-preference(z1000021, t, 12, preferred, onlineOnly).
-preference(z1000021, t, 13, preferred, onlineOnly).
-preference(z1000021, t, 14, preferred, onlineOnly).
-preference(z1000021, t, 15, preferred, onlineOnly).
-preference(z1000021, t, 16, dislike, onlineOnly).
-preference(z1000021, t, 17, dislike, onlineOnly).
-preference(z1000021, t, 18, dislike, onlineOnly).
-preference(z1000021, t, 19, impossible, onlineOrPerson).
-preference(z1000021, t, 20, impossible, onlineOrPerson).
-preference(z1000021, w, 08, impossible, onlineOrPerson).
-preference(z1000021, w, 09, preferred, onlineOrPerson).
-preference(z1000021, w, 10, preferred, onlineOrPerson).
-preference(z1000021, w, 11, preferred, onlineOrPerson).
-preference(z1000021, w, 12, preferred, onlineOnly).
-preference(z1000021, w, 13, preferred, onlineOnly).
-preference(z1000021, w, 14, preferred, onlineOnly).
-preference(z1000021, w, 15, preferred, onlineOnly).
-preference(z1000021, w, 16, dislike, onlineOnly).
-preference(z1000021, w, 17, dislike, onlineOnly).
-preference(z1000021, w, 18, dislike, onlineOnly).
-preference(z1000021, w, 19, impossible, onlineOrPerson).
-preference(z1000021, w, 20, impossible, onlineOrPerson).
-preference(z1000021, h, 08, impossible, onlineOrPerson).
-preference(z1000021, h, 09, preferred, onlineOnly).
-preference(z1000021, h, 10, preferred, onlineOnly).
-preference(z1000021, h, 11, preferred, onlineOnly).
-preference(z1000021, h, 12, impossible, onlineOrPerson).
-preference(z1000021, h, 13, impossible, onlineOrPerson).
-preference(z1000021, h, 14, impossible, onlineOrPerson).
-preference(z1000021, h, 15, impossible, onlineOrPerson).
-preference(z1000021, h, 16, impossible, onlineOrPerson).
-preference(z1000021, h, 17, impossible, onlineOrPerson).
-preference(z1000021, h, 18, impossible, onlineOrPerson).
-preference(z1000021, h, 19, impossible, onlineOrPerson).
-preference(z1000021, h, 20, impossible, onlineOrPerson).
-preference(z1000021, f, 08, impossible, onlineOrPerson).
-preference(z1000021, f, 09, preferred, onlineOrPerson).
-preference(z1000021, f, 10, preferred, onlineOrPerson).
-preference(z1000021, f, 11, preferred, onlineOrPerson).
-preference(z1000021, f, 12, preferred, onlineOrPerson).
-preference(z1000021, f, 13, preferred, onlineOrPerson).
-preference(z1000021, f, 14, preferred, onlineOrPerson).
-preference(z1000021, f, 15, preferred, onlineOrPerson).
-preference(z1000021, f, 16, impossible, onlineOrPerson).
-preference(z1000021, f, 17, impossible, onlineOrPerson).
-preference(z1000021, f, 18, impossible, onlineOrPerson).
-preference(z1000021, f, 19, impossible, onlineOrPerson).
-preference(z1000021, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000021, 1).
-capacityAsst(z1000021, 1).
-preferTutorial(z1000021, 1).
+experience(z1000021, tute).
+experience(z1000021, asst).
+available(z1000021, online, m, 9).
+available(z1000021, inPerson, m, 9).
+desire(z1000021, possible, m, 9).
+available(z1000021, online, m, 10).
+available(z1000021, inPerson, m, 10).
+desire(z1000021, possible, m, 10).
+available(z1000021, online, m, 11).
+available(z1000021, inPerson, m, 11).
+desire(z1000021, possible, m, 11).
+available(z1000021, online, m, 12).
+desire(z1000021, preferred, m, 12).
+available(z1000021, online, m, 13).
+desire(z1000021, preferred, m, 13).
+available(z1000021, online, m, 14).
+desire(z1000021, preferred, m, 14).
+available(z1000021, online, m, 15).
+desire(z1000021, preferred, m, 15).
+available(z1000021, online, m, 16).
+desire(z1000021, preferred, m, 16).
+available(z1000021, online, m, 17).
+desire(z1000021, preferred, m, 17).
+available(z1000021, online, t, 9).
+available(z1000021, inPerson, t, 9).
+desire(z1000021, preferred, t, 9).
+available(z1000021, online, t, 10).
+available(z1000021, inPerson, t, 10).
+desire(z1000021, preferred, t, 10).
+available(z1000021, online, t, 11).
+available(z1000021, inPerson, t, 11).
+desire(z1000021, preferred, t, 11).
+available(z1000021, online, t, 12).
+desire(z1000021, preferred, t, 12).
+available(z1000021, online, t, 13).
+desire(z1000021, preferred, t, 13).
+available(z1000021, online, t, 14).
+desire(z1000021, preferred, t, 14).
+available(z1000021, online, t, 15).
+desire(z1000021, preferred, t, 15).
+available(z1000021, online, t, 16).
+desire(z1000021, dislike, t, 16).
+available(z1000021, online, t, 17).
+desire(z1000021, dislike, t, 17).
+available(z1000021, online, t, 18).
+desire(z1000021, dislike, t, 18).
+available(z1000021, online, w, 9).
+available(z1000021, inPerson, w, 9).
+desire(z1000021, preferred, w, 9).
+available(z1000021, online, w, 10).
+available(z1000021, inPerson, w, 10).
+desire(z1000021, preferred, w, 10).
+available(z1000021, online, w, 11).
+available(z1000021, inPerson, w, 11).
+desire(z1000021, preferred, w, 11).
+available(z1000021, online, w, 12).
+desire(z1000021, preferred, w, 12).
+available(z1000021, online, w, 13).
+desire(z1000021, preferred, w, 13).
+available(z1000021, online, w, 14).
+desire(z1000021, preferred, w, 14).
+available(z1000021, online, w, 15).
+desire(z1000021, preferred, w, 15).
+available(z1000021, online, w, 16).
+desire(z1000021, dislike, w, 16).
+available(z1000021, online, w, 17).
+desire(z1000021, dislike, w, 17).
+available(z1000021, online, w, 18).
+desire(z1000021, dislike, w, 18).
+available(z1000021, online, h, 9).
+desire(z1000021, preferred, h, 9).
+available(z1000021, online, h, 10).
+desire(z1000021, preferred, h, 10).
+available(z1000021, online, h, 11).
+desire(z1000021, preferred, h, 11).
+available(z1000021, online, f, 9).
+available(z1000021, inPerson, f, 9).
+desire(z1000021, preferred, f, 9).
+available(z1000021, online, f, 10).
+available(z1000021, inPerson, f, 10).
+desire(z1000021, preferred, f, 10).
+available(z1000021, online, f, 11).
+available(z1000021, inPerson, f, 11).
+desire(z1000021, preferred, f, 11).
+available(z1000021, online, f, 12).
+available(z1000021, inPerson, f, 12).
+desire(z1000021, preferred, f, 12).
+available(z1000021, online, f, 13).
+available(z1000021, inPerson, f, 13).
+desire(z1000021, preferred, f, 13).
+available(z1000021, online, f, 14).
+available(z1000021, inPerson, f, 14).
+desire(z1000021, preferred, f, 14).
+available(z1000021, online, f, 15).
+available(z1000021, inPerson, f, 15).
+desire(z1000021, preferred, f, 15).
+capacity(z1000021, tute, 1).
+capacity(z1000021, asst, 1).
+prefer(z1000021, tute).
 teacher(z1000022).
-previousTuteExperience(z1000022, true).
-preference(z1000022, m, 08, preferred, onlineOnly).
-preference(z1000022, m, 09, preferred, onlineOnly).
-preference(z1000022, m, 10, preferred, onlineOnly).
-preference(z1000022, m, 11, preferred, onlineOnly).
-preference(z1000022, m, 12, preferred, onlineOnly).
-preference(z1000022, m, 13, preferred, onlineOnly).
-preference(z1000022, m, 14, preferred, onlineOnly).
-preference(z1000022, m, 15, preferred, onlineOnly).
-preference(z1000022, m, 16, preferred, onlineOnly).
-preference(z1000022, m, 17, possible, onlineOnly).
-preference(z1000022, m, 18, possible, onlineOnly).
-preference(z1000022, m, 19, possible, onlineOnly).
-preference(z1000022, m, 20, possible, onlineOnly).
-preference(z1000022, t, 08, preferred, onlineOnly).
-preference(z1000022, t, 09, preferred, onlineOnly).
-preference(z1000022, t, 10, preferred, onlineOnly).
-preference(z1000022, t, 11, preferred, onlineOnly).
-preference(z1000022, t, 12, preferred, onlineOnly).
-preference(z1000022, t, 13, preferred, onlineOnly).
-preference(z1000022, t, 14, preferred, onlineOnly).
-preference(z1000022, t, 15, preferred, onlineOnly).
-preference(z1000022, t, 16, preferred, onlineOnly).
-preference(z1000022, t, 17, possible, onlineOnly).
-preference(z1000022, t, 18, possible, onlineOnly).
-preference(z1000022, t, 19, possible, onlineOnly).
-preference(z1000022, t, 20, possible, onlineOnly).
-preference(z1000022, w, 08, preferred, onlineOnly).
-preference(z1000022, w, 09, preferred, onlineOnly).
-preference(z1000022, w, 10, preferred, onlineOnly).
-preference(z1000022, w, 11, preferred, onlineOnly).
-preference(z1000022, w, 12, preferred, onlineOnly).
-preference(z1000022, w, 13, preferred, onlineOnly).
-preference(z1000022, w, 14, preferred, onlineOnly).
-preference(z1000022, w, 15, preferred, onlineOnly).
-preference(z1000022, w, 16, preferred, onlineOnly).
-preference(z1000022, w, 17, possible, onlineOnly).
-preference(z1000022, w, 18, possible, onlineOnly).
-preference(z1000022, w, 19, possible, onlineOnly).
-preference(z1000022, w, 20, possible, onlineOnly).
-preference(z1000022, h, 08, possible, onlineOnly).
-preference(z1000022, h, 09, possible, onlineOnly).
-preference(z1000022, h, 10, possible, onlineOnly).
-preference(z1000022, h, 11, possible, onlineOnly).
-preference(z1000022, h, 12, possible, onlineOnly).
-preference(z1000022, h, 13, impossible, onlineOrPerson).
-preference(z1000022, h, 14, impossible, onlineOrPerson).
-preference(z1000022, h, 15, impossible, onlineOrPerson).
-preference(z1000022, h, 16, impossible, onlineOrPerson).
-preference(z1000022, h, 17, impossible, onlineOrPerson).
-preference(z1000022, h, 18, impossible, onlineOrPerson).
-preference(z1000022, h, 19, impossible, onlineOrPerson).
-preference(z1000022, h, 20, impossible, onlineOrPerson).
-preference(z1000022, f, 08, impossible, onlineOrPerson).
-preference(z1000022, f, 09, impossible, onlineOrPerson).
-preference(z1000022, f, 10, impossible, onlineOrPerson).
-preference(z1000022, f, 11, impossible, onlineOrPerson).
-preference(z1000022, f, 12, impossible, onlineOrPerson).
-preference(z1000022, f, 13, impossible, onlineOrPerson).
-preference(z1000022, f, 14, impossible, onlineOrPerson).
-preference(z1000022, f, 15, impossible, onlineOrPerson).
-preference(z1000022, f, 16, impossible, onlineOrPerson).
-preference(z1000022, f, 17, impossible, onlineOrPerson).
-preference(z1000022, f, 18, impossible, onlineOrPerson).
-preference(z1000022, f, 19, impossible, onlineOrPerson).
-preference(z1000022, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000022, 1).
-capacityAsst(z1000022, 1).
-preferTutorial(z1000022, 1).
+experience(z1000022, tute).
+experience(z1000022, asst).
+available(z1000022, online, m, 8).
+desire(z1000022, preferred, m, 8).
+available(z1000022, online, m, 9).
+desire(z1000022, preferred, m, 9).
+available(z1000022, online, m, 10).
+desire(z1000022, preferred, m, 10).
+available(z1000022, online, m, 11).
+desire(z1000022, preferred, m, 11).
+available(z1000022, online, m, 12).
+desire(z1000022, preferred, m, 12).
+available(z1000022, online, m, 13).
+desire(z1000022, preferred, m, 13).
+available(z1000022, online, m, 14).
+desire(z1000022, preferred, m, 14).
+available(z1000022, online, m, 15).
+desire(z1000022, preferred, m, 15).
+available(z1000022, online, m, 16).
+desire(z1000022, preferred, m, 16).
+available(z1000022, online, m, 17).
+desire(z1000022, possible, m, 17).
+available(z1000022, online, m, 18).
+desire(z1000022, possible, m, 18).
+available(z1000022, online, m, 19).
+desire(z1000022, possible, m, 19).
+available(z1000022, online, m, 20).
+desire(z1000022, possible, m, 20).
+available(z1000022, online, t, 8).
+desire(z1000022, preferred, t, 8).
+available(z1000022, online, t, 9).
+desire(z1000022, preferred, t, 9).
+available(z1000022, online, t, 10).
+desire(z1000022, preferred, t, 10).
+available(z1000022, online, t, 11).
+desire(z1000022, preferred, t, 11).
+available(z1000022, online, t, 12).
+desire(z1000022, preferred, t, 12).
+available(z1000022, online, t, 13).
+desire(z1000022, preferred, t, 13).
+available(z1000022, online, t, 14).
+desire(z1000022, preferred, t, 14).
+available(z1000022, online, t, 15).
+desire(z1000022, preferred, t, 15).
+available(z1000022, online, t, 16).
+desire(z1000022, preferred, t, 16).
+available(z1000022, online, t, 17).
+desire(z1000022, possible, t, 17).
+available(z1000022, online, t, 18).
+desire(z1000022, possible, t, 18).
+available(z1000022, online, t, 19).
+desire(z1000022, possible, t, 19).
+available(z1000022, online, t, 20).
+desire(z1000022, possible, t, 20).
+available(z1000022, online, w, 8).
+desire(z1000022, preferred, w, 8).
+available(z1000022, online, w, 9).
+desire(z1000022, preferred, w, 9).
+available(z1000022, online, w, 10).
+desire(z1000022, preferred, w, 10).
+available(z1000022, online, w, 11).
+desire(z1000022, preferred, w, 11).
+available(z1000022, online, w, 12).
+desire(z1000022, preferred, w, 12).
+available(z1000022, online, w, 13).
+desire(z1000022, preferred, w, 13).
+available(z1000022, online, w, 14).
+desire(z1000022, preferred, w, 14).
+available(z1000022, online, w, 15).
+desire(z1000022, preferred, w, 15).
+available(z1000022, online, w, 16).
+desire(z1000022, preferred, w, 16).
+available(z1000022, online, w, 17).
+desire(z1000022, possible, w, 17).
+available(z1000022, online, w, 18).
+desire(z1000022, possible, w, 18).
+available(z1000022, online, w, 19).
+desire(z1000022, possible, w, 19).
+available(z1000022, online, w, 20).
+desire(z1000022, possible, w, 20).
+available(z1000022, online, h, 8).
+desire(z1000022, possible, h, 8).
+available(z1000022, online, h, 9).
+desire(z1000022, possible, h, 9).
+available(z1000022, online, h, 10).
+desire(z1000022, possible, h, 10).
+available(z1000022, online, h, 11).
+desire(z1000022, possible, h, 11).
+available(z1000022, online, h, 12).
+desire(z1000022, possible, h, 12).
+capacity(z1000022, tute, 1).
+capacity(z1000022, asst, 1).
+prefer(z1000022, tute).
 teacher(z1000023).
-previousTuteExperience(z1000023, true).
-preference(z1000023, m, 08, impossible, onlineOrPerson).
-preference(z1000023, m, 09, preferred, onlineOnly).
-preference(z1000023, m, 10, preferred, onlineOnly).
-preference(z1000023, m, 11, preferred, onlineOnly).
-preference(z1000023, m, 12, preferred, onlineOnly).
-preference(z1000023, m, 13, preferred, onlineOnly).
-preference(z1000023, m, 14, preferred, onlineOnly).
-preference(z1000023, m, 15, preferred, onlineOnly).
-preference(z1000023, m, 16, preferred, onlineOnly).
-preference(z1000023, m, 17, preferred, onlineOnly).
-preference(z1000023, m, 18, preferred, onlineOnly).
-preference(z1000023, m, 19, preferred, onlineOnly).
-preference(z1000023, m, 20, impossible, false).
-preference(z1000023, t, 08, impossible, onlineOrPerson).
-preference(z1000023, t, 09, preferred, onlineOnly).
-preference(z1000023, t, 10, preferred, onlineOnly).
-preference(z1000023, t, 11, preferred, onlineOnly).
-preference(z1000023, t, 12, preferred, onlineOnly).
-preference(z1000023, t, 13, preferred, onlineOnly).
-preference(z1000023, t, 14, preferred, onlineOnly).
-preference(z1000023, t, 15, preferred, onlineOnly).
-preference(z1000023, t, 16, preferred, onlineOnly).
-preference(z1000023, t, 17, preferred, onlineOnly).
-preference(z1000023, t, 18, preferred, onlineOnly).
-preference(z1000023, t, 19, preferred, onlineOnly).
-preference(z1000023, t, 20, impossible, false).
-preference(z1000023, w, 08, impossible, onlineOrPerson).
-preference(z1000023, w, 09, possible, onlineOnly).
-preference(z1000023, w, 10, possible, onlineOnly).
-preference(z1000023, w, 11, possible, onlineOnly).
-preference(z1000023, w, 12, possible, onlineOnly).
-preference(z1000023, w, 13, possible, onlineOnly).
-preference(z1000023, w, 14, possible, onlineOnly).
-preference(z1000023, w, 15, possible, onlineOnly).
-preference(z1000023, w, 16, possible, onlineOnly).
-preference(z1000023, w, 17, possible, onlineOnly).
-preference(z1000023, w, 18, possible, onlineOnly).
-preference(z1000023, w, 19, possible, onlineOnly).
-preference(z1000023, w, 20, impossible, false).
-preference(z1000023, h, 08, impossible, onlineOrPerson).
-preference(z1000023, h, 09, possible, onlineOnly).
-preference(z1000023, h, 10, possible, onlineOnly).
-preference(z1000023, h, 11, possible, onlineOnly).
-preference(z1000023, h, 12, possible, onlineOnly).
-preference(z1000023, h, 13, possible, onlineOnly).
-preference(z1000023, h, 14, possible, onlineOnly).
-preference(z1000023, h, 15, possible, onlineOnly).
-preference(z1000023, h, 16, possible, onlineOnly).
-preference(z1000023, h, 17, possible, onlineOnly).
-preference(z1000023, h, 18, possible, onlineOnly).
-preference(z1000023, h, 19, possible, onlineOnly).
-preference(z1000023, h, 20, impossible, false).
-preference(z1000023, f, 08, impossible, onlineOrPerson).
-preference(z1000023, f, 09, possible, onlineOnly).
-preference(z1000023, f, 10, possible, onlineOnly).
-preference(z1000023, f, 11, possible, onlineOnly).
-preference(z1000023, f, 12, possible, onlineOnly).
-preference(z1000023, f, 13, possible, onlineOnly).
-preference(z1000023, f, 14, possible, onlineOnly).
-preference(z1000023, f, 15, possible, onlineOnly).
-preference(z1000023, f, 16, possible, onlineOnly).
-preference(z1000023, f, 17, possible, onlineOnly).
-preference(z1000023, f, 18, possible, onlineOnly).
-preference(z1000023, f, 19, possible, onlineOnly).
-preference(z1000023, f, 20, impossible, false).
-capacityTute(z1000023, 1).
-capacityAsst(z1000023, 1).
-preferTutorial(z1000023, 1).
+experience(z1000023, tute).
+experience(z1000023, asst).
+available(z1000023, online, m, 9).
+desire(z1000023, preferred, m, 9).
+available(z1000023, online, m, 10).
+desire(z1000023, preferred, m, 10).
+available(z1000023, online, m, 11).
+desire(z1000023, preferred, m, 11).
+available(z1000023, online, m, 12).
+desire(z1000023, preferred, m, 12).
+available(z1000023, online, m, 13).
+desire(z1000023, preferred, m, 13).
+available(z1000023, online, m, 14).
+desire(z1000023, preferred, m, 14).
+available(z1000023, online, m, 15).
+desire(z1000023, preferred, m, 15).
+available(z1000023, online, m, 16).
+desire(z1000023, preferred, m, 16).
+available(z1000023, online, m, 17).
+desire(z1000023, preferred, m, 17).
+available(z1000023, online, m, 18).
+desire(z1000023, preferred, m, 18).
+available(z1000023, online, m, 19).
+desire(z1000023, preferred, m, 19).
+available(z1000023, online, t, 9).
+desire(z1000023, preferred, t, 9).
+available(z1000023, online, t, 10).
+desire(z1000023, preferred, t, 10).
+available(z1000023, online, t, 11).
+desire(z1000023, preferred, t, 11).
+available(z1000023, online, t, 12).
+desire(z1000023, preferred, t, 12).
+available(z1000023, online, t, 13).
+desire(z1000023, preferred, t, 13).
+available(z1000023, online, t, 14).
+desire(z1000023, preferred, t, 14).
+available(z1000023, online, t, 15).
+desire(z1000023, preferred, t, 15).
+available(z1000023, online, t, 16).
+desire(z1000023, preferred, t, 16).
+available(z1000023, online, t, 17).
+desire(z1000023, preferred, t, 17).
+available(z1000023, online, t, 18).
+desire(z1000023, preferred, t, 18).
+available(z1000023, online, t, 19).
+desire(z1000023, preferred, t, 19).
+available(z1000023, online, w, 9).
+desire(z1000023, possible, w, 9).
+available(z1000023, online, w, 10).
+desire(z1000023, possible, w, 10).
+available(z1000023, online, w, 11).
+desire(z1000023, possible, w, 11).
+available(z1000023, online, w, 12).
+desire(z1000023, possible, w, 12).
+available(z1000023, online, w, 13).
+desire(z1000023, possible, w, 13).
+available(z1000023, online, w, 14).
+desire(z1000023, possible, w, 14).
+available(z1000023, online, w, 15).
+desire(z1000023, possible, w, 15).
+available(z1000023, online, w, 16).
+desire(z1000023, possible, w, 16).
+available(z1000023, online, w, 17).
+desire(z1000023, possible, w, 17).
+available(z1000023, online, w, 18).
+desire(z1000023, possible, w, 18).
+available(z1000023, online, w, 19).
+desire(z1000023, possible, w, 19).
+available(z1000023, online, h, 9).
+desire(z1000023, possible, h, 9).
+available(z1000023, online, h, 10).
+desire(z1000023, possible, h, 10).
+available(z1000023, online, h, 11).
+desire(z1000023, possible, h, 11).
+available(z1000023, online, h, 12).
+desire(z1000023, possible, h, 12).
+available(z1000023, online, h, 13).
+desire(z1000023, possible, h, 13).
+available(z1000023, online, h, 14).
+desire(z1000023, possible, h, 14).
+available(z1000023, online, h, 15).
+desire(z1000023, possible, h, 15).
+available(z1000023, online, h, 16).
+desire(z1000023, possible, h, 16).
+available(z1000023, online, h, 17).
+desire(z1000023, possible, h, 17).
+available(z1000023, online, h, 18).
+desire(z1000023, possible, h, 18).
+available(z1000023, online, h, 19).
+desire(z1000023, possible, h, 19).
+available(z1000023, online, f, 9).
+desire(z1000023, possible, f, 9).
+available(z1000023, online, f, 10).
+desire(z1000023, possible, f, 10).
+available(z1000023, online, f, 11).
+desire(z1000023, possible, f, 11).
+available(z1000023, online, f, 12).
+desire(z1000023, possible, f, 12).
+available(z1000023, online, f, 13).
+desire(z1000023, possible, f, 13).
+available(z1000023, online, f, 14).
+desire(z1000023, possible, f, 14).
+available(z1000023, online, f, 15).
+desire(z1000023, possible, f, 15).
+available(z1000023, online, f, 16).
+desire(z1000023, possible, f, 16).
+available(z1000023, online, f, 17).
+desire(z1000023, possible, f, 17).
+available(z1000023, online, f, 18).
+desire(z1000023, possible, f, 18).
+available(z1000023, online, f, 19).
+desire(z1000023, possible, f, 19).
+capacity(z1000023, tute, 1).
+capacity(z1000023, asst, 1).
+prefer(z1000023, tute).
 teacher(z1000024).
-previousTuteExperience(z1000024, true).
-preference(z1000024, m, 08, impossible, onlineOrPerson).
-preference(z1000024, m, 09, impossible, onlineOrPerson).
-preference(z1000024, m, 10, impossible, onlineOrPerson).
-preference(z1000024, m, 11, impossible, onlineOrPerson).
-preference(z1000024, m, 12, impossible, onlineOrPerson).
-preference(z1000024, m, 13, impossible, onlineOrPerson).
-preference(z1000024, m, 14, impossible, onlineOrPerson).
-preference(z1000024, m, 15, impossible, onlineOrPerson).
-preference(z1000024, m, 16, preferred, onlineOnly).
-preference(z1000024, m, 17, preferred, onlineOnly).
-preference(z1000024, m, 18, preferred, onlineOnly).
-preference(z1000024, m, 19, preferred, onlineOnly).
-preference(z1000024, m, 20, dislike, onlineOnly).
-preference(z1000024, t, 08, impossible, onlineOrPerson).
-preference(z1000024, t, 09, impossible, onlineOrPerson).
-preference(z1000024, t, 10, impossible, onlineOrPerson).
-preference(z1000024, t, 11, impossible, onlineOrPerson).
-preference(z1000024, t, 12, impossible, onlineOrPerson).
-preference(z1000024, t, 13, impossible, onlineOrPerson).
-preference(z1000024, t, 14, impossible, onlineOrPerson).
-preference(z1000024, t, 15, impossible, onlineOrPerson).
-preference(z1000024, t, 16, preferred, onlineOnly).
-preference(z1000024, t, 17, preferred, onlineOnly).
-preference(z1000024, t, 18, preferred, onlineOnly).
-preference(z1000024, t, 19, preferred, onlineOnly).
-preference(z1000024, t, 20, dislike, onlineOnly).
-preference(z1000024, w, 08, impossible, onlineOrPerson).
-preference(z1000024, w, 09, impossible, onlineOrPerson).
-preference(z1000024, w, 10, impossible, onlineOrPerson).
-preference(z1000024, w, 11, impossible, onlineOrPerson).
-preference(z1000024, w, 12, impossible, onlineOrPerson).
-preference(z1000024, w, 13, impossible, onlineOrPerson).
-preference(z1000024, w, 14, impossible, onlineOrPerson).
-preference(z1000024, w, 15, impossible, onlineOrPerson).
-preference(z1000024, w, 16, preferred, onlineOnly).
-preference(z1000024, w, 17, preferred, onlineOnly).
-preference(z1000024, w, 18, preferred, onlineOnly).
-preference(z1000024, w, 19, preferred, onlineOnly).
-preference(z1000024, w, 20, dislike, onlineOnly).
-preference(z1000024, h, 08, impossible, onlineOrPerson).
-preference(z1000024, h, 09, impossible, onlineOrPerson).
-preference(z1000024, h, 10, impossible, onlineOrPerson).
-preference(z1000024, h, 11, impossible, onlineOrPerson).
-preference(z1000024, h, 12, impossible, onlineOrPerson).
-preference(z1000024, h, 13, impossible, onlineOrPerson).
-preference(z1000024, h, 14, impossible, onlineOrPerson).
-preference(z1000024, h, 15, impossible, onlineOrPerson).
-preference(z1000024, h, 16, preferred, onlineOnly).
-preference(z1000024, h, 17, preferred, onlineOnly).
-preference(z1000024, h, 18, preferred, onlineOnly).
-preference(z1000024, h, 19, preferred, onlineOnly).
-preference(z1000024, h, 20, dislike, onlineOnly).
-preference(z1000024, f, 08, impossible, onlineOrPerson).
-preference(z1000024, f, 09, impossible, onlineOrPerson).
-preference(z1000024, f, 10, impossible, onlineOrPerson).
-preference(z1000024, f, 11, impossible, onlineOrPerson).
-preference(z1000024, f, 12, impossible, onlineOrPerson).
-preference(z1000024, f, 13, impossible, onlineOrPerson).
-preference(z1000024, f, 14, impossible, onlineOrPerson).
-preference(z1000024, f, 15, impossible, onlineOrPerson).
-preference(z1000024, f, 16, preferred, onlineOnly).
-preference(z1000024, f, 17, preferred, onlineOnly).
-preference(z1000024, f, 18, preferred, onlineOnly).
-preference(z1000024, f, 19, preferred, onlineOnly).
-preference(z1000024, f, 20, dislike, onlineOnly).
-capacityTute(z1000024, 1).
-capacityAsst(z1000024, 1).
-preferTutorial(z1000024, 1).
+experience(z1000024, tute).
+experience(z1000024, asst).
+available(z1000024, online, m, 16).
+desire(z1000024, preferred, m, 16).
+available(z1000024, online, m, 17).
+desire(z1000024, preferred, m, 17).
+available(z1000024, online, m, 18).
+desire(z1000024, preferred, m, 18).
+available(z1000024, online, m, 19).
+desire(z1000024, preferred, m, 19).
+available(z1000024, online, m, 20).
+desire(z1000024, dislike, m, 20).
+available(z1000024, online, t, 16).
+desire(z1000024, preferred, t, 16).
+available(z1000024, online, t, 17).
+desire(z1000024, preferred, t, 17).
+available(z1000024, online, t, 18).
+desire(z1000024, preferred, t, 18).
+available(z1000024, online, t, 19).
+desire(z1000024, preferred, t, 19).
+available(z1000024, online, t, 20).
+desire(z1000024, dislike, t, 20).
+available(z1000024, online, w, 16).
+desire(z1000024, preferred, w, 16).
+available(z1000024, online, w, 17).
+desire(z1000024, preferred, w, 17).
+available(z1000024, online, w, 18).
+desire(z1000024, preferred, w, 18).
+available(z1000024, online, w, 19).
+desire(z1000024, preferred, w, 19).
+available(z1000024, online, w, 20).
+desire(z1000024, dislike, w, 20).
+available(z1000024, online, h, 16).
+desire(z1000024, preferred, h, 16).
+available(z1000024, online, h, 17).
+desire(z1000024, preferred, h, 17).
+available(z1000024, online, h, 18).
+desire(z1000024, preferred, h, 18).
+available(z1000024, online, h, 19).
+desire(z1000024, preferred, h, 19).
+available(z1000024, online, h, 20).
+desire(z1000024, dislike, h, 20).
+available(z1000024, online, f, 16).
+desire(z1000024, preferred, f, 16).
+available(z1000024, online, f, 17).
+desire(z1000024, preferred, f, 17).
+available(z1000024, online, f, 18).
+desire(z1000024, preferred, f, 18).
+available(z1000024, online, f, 19).
+desire(z1000024, preferred, f, 19).
+available(z1000024, online, f, 20).
+desire(z1000024, dislike, f, 20).
+capacity(z1000024, tute, 1).
+capacity(z1000024, asst, 1).
+prefer(z1000024, tute).
 teacher(z1000025).
-previousTuteExperience(z1000025, true).
-preference(z1000025, m, 08, impossible, onlineOrPerson).
-preference(z1000025, m, 09, impossible, onlineOrPerson).
-preference(z1000025, m, 10, impossible, onlineOrPerson).
-preference(z1000025, m, 11, impossible, onlineOrPerson).
-preference(z1000025, m, 12, impossible, onlineOrPerson).
-preference(z1000025, m, 13, impossible, onlineOrPerson).
-preference(z1000025, m, 14, impossible, onlineOrPerson).
-preference(z1000025, m, 15, impossible, onlineOrPerson).
-preference(z1000025, m, 16, impossible, onlineOrPerson).
-preference(z1000025, m, 17, preferred, onlineOrPerson).
-preference(z1000025, m, 18, preferred, onlineOrPerson).
-preference(z1000025, m, 19, preferred, onlineOrPerson).
-preference(z1000025, m, 20, impossible, onlineOrPerson).
-preference(z1000025, t, 08, impossible, onlineOrPerson).
-preference(z1000025, t, 09, impossible, onlineOrPerson).
-preference(z1000025, t, 10, impossible, onlineOrPerson).
-preference(z1000025, t, 11, impossible, onlineOrPerson).
-preference(z1000025, t, 12, impossible, onlineOrPerson).
-preference(z1000025, t, 13, impossible, onlineOrPerson).
-preference(z1000025, t, 14, impossible, onlineOrPerson).
-preference(z1000025, t, 15, impossible, onlineOrPerson).
-preference(z1000025, t, 16, impossible, onlineOrPerson).
-preference(z1000025, t, 17, impossible, onlineOrPerson).
-preference(z1000025, t, 18, impossible, onlineOrPerson).
-preference(z1000025, t, 19, impossible, onlineOrPerson).
-preference(z1000025, t, 20, impossible, onlineOrPerson).
-preference(z1000025, w, 08, impossible, onlineOrPerson).
-preference(z1000025, w, 09, impossible, onlineOrPerson).
-preference(z1000025, w, 10, impossible, onlineOrPerson).
-preference(z1000025, w, 11, impossible, onlineOrPerson).
-preference(z1000025, w, 12, impossible, onlineOrPerson).
-preference(z1000025, w, 13, impossible, onlineOrPerson).
-preference(z1000025, w, 14, impossible, onlineOrPerson).
-preference(z1000025, w, 15, impossible, onlineOrPerson).
-preference(z1000025, w, 16, impossible, onlineOrPerson).
-preference(z1000025, w, 17, preferred, onlineOrPerson).
-preference(z1000025, w, 18, preferred, onlineOrPerson).
-preference(z1000025, w, 19, preferred, onlineOrPerson).
-preference(z1000025, w, 20, impossible, onlineOrPerson).
-preference(z1000025, h, 08, impossible, onlineOrPerson).
-preference(z1000025, h, 09, impossible, onlineOrPerson).
-preference(z1000025, h, 10, impossible, onlineOrPerson).
-preference(z1000025, h, 11, impossible, onlineOrPerson).
-preference(z1000025, h, 12, impossible, onlineOrPerson).
-preference(z1000025, h, 13, preferred, onlineOrPerson).
-preference(z1000025, h, 14, preferred, onlineOrPerson).
-preference(z1000025, h, 15, preferred, onlineOrPerson).
-preference(z1000025, h, 16, preferred, onlineOrPerson).
-preference(z1000025, h, 17, impossible, onlineOrPerson).
-preference(z1000025, h, 18, preferred, onlineOrPerson).
-preference(z1000025, h, 19, preferred, onlineOrPerson).
-preference(z1000025, h, 20, impossible, onlineOrPerson).
-preference(z1000025, f, 08, impossible, onlineOrPerson).
-preference(z1000025, f, 09, impossible, onlineOrPerson).
-preference(z1000025, f, 10, impossible, onlineOrPerson).
-preference(z1000025, f, 11, impossible, onlineOrPerson).
-preference(z1000025, f, 12, impossible, onlineOrPerson).
-preference(z1000025, f, 13, impossible, onlineOrPerson).
-preference(z1000025, f, 14, impossible, onlineOrPerson).
-preference(z1000025, f, 15, preferred, onlineOrPerson).
-preference(z1000025, f, 16, preferred, onlineOrPerson).
-preference(z1000025, f, 17, preferred, onlineOrPerson).
-preference(z1000025, f, 18, impossible, onlineOrPerson).
-preference(z1000025, f, 19, impossible, onlineOrPerson).
-preference(z1000025, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000025, 1).
-capacityAsst(z1000025, 1).
-preferTutorial(z1000025, 1).
+experience(z1000025, tute).
+experience(z1000025, asst).
+available(z1000025, online, m, 17).
+available(z1000025, inPerson, m, 17).
+desire(z1000025, preferred, m, 17).
+available(z1000025, online, m, 18).
+available(z1000025, inPerson, m, 18).
+desire(z1000025, preferred, m, 18).
+available(z1000025, online, m, 19).
+available(z1000025, inPerson, m, 19).
+desire(z1000025, preferred, m, 19).
+available(z1000025, online, w, 17).
+available(z1000025, inPerson, w, 17).
+desire(z1000025, preferred, w, 17).
+available(z1000025, online, w, 18).
+available(z1000025, inPerson, w, 18).
+desire(z1000025, preferred, w, 18).
+available(z1000025, online, w, 19).
+available(z1000025, inPerson, w, 19).
+desire(z1000025, preferred, w, 19).
+available(z1000025, online, h, 13).
+available(z1000025, inPerson, h, 13).
+desire(z1000025, preferred, h, 13).
+available(z1000025, online, h, 14).
+available(z1000025, inPerson, h, 14).
+desire(z1000025, preferred, h, 14).
+available(z1000025, online, h, 15).
+available(z1000025, inPerson, h, 15).
+desire(z1000025, preferred, h, 15).
+available(z1000025, online, h, 16).
+available(z1000025, inPerson, h, 16).
+desire(z1000025, preferred, h, 16).
+available(z1000025, online, h, 18).
+available(z1000025, inPerson, h, 18).
+desire(z1000025, preferred, h, 18).
+available(z1000025, online, h, 19).
+available(z1000025, inPerson, h, 19).
+desire(z1000025, preferred, h, 19).
+available(z1000025, online, f, 15).
+available(z1000025, inPerson, f, 15).
+desire(z1000025, preferred, f, 15).
+available(z1000025, online, f, 16).
+available(z1000025, inPerson, f, 16).
+desire(z1000025, preferred, f, 16).
+available(z1000025, online, f, 17).
+available(z1000025, inPerson, f, 17).
+desire(z1000025, preferred, f, 17).
+capacity(z1000025, tute, 1).
+capacity(z1000025, asst, 1).
+prefer(z1000025, tute).
 teacher(z1000026).
-previousTuteExperience(z1000026, false).
-preference(z1000026, m, 08, impossible, onlineOrPerson).
-preference(z1000026, m, 09, impossible, onlineOrPerson).
-preference(z1000026, m, 10, preferred, onlineOnly).
-preference(z1000026, m, 11, preferred, onlineOnly).
-preference(z1000026, m, 12, preferred, onlineOnly).
-preference(z1000026, m, 13, preferred, onlineOnly).
-preference(z1000026, m, 14, preferred, onlineOnly).
-preference(z1000026, m, 15, preferred, onlineOnly).
-preference(z1000026, m, 16, preferred, onlineOnly).
-preference(z1000026, m, 17, preferred, onlineOnly).
-preference(z1000026, m, 18, preferred, onlineOnly).
-preference(z1000026, m, 19, preferred, onlineOnly).
-preference(z1000026, m, 20, preferred, onlineOnly).
-preference(z1000026, t, 08, impossible, onlineOrPerson).
-preference(z1000026, t, 09, impossible, onlineOrPerson).
-preference(z1000026, t, 10, preferred, onlineOnly).
-preference(z1000026, t, 11, preferred, onlineOnly).
-preference(z1000026, t, 12, possible, onlineOnly).
-preference(z1000026, t, 13, possible, onlineOnly).
-preference(z1000026, t, 14, possible, onlineOnly).
-preference(z1000026, t, 15, preferred, onlineOnly).
-preference(z1000026, t, 16, preferred, onlineOnly).
-preference(z1000026, t, 17, possible, onlineOnly).
-preference(z1000026, t, 18, possible, onlineOnly).
-preference(z1000026, t, 19, possible, onlineOnly).
-preference(z1000026, t, 20, impossible, onlineOrPerson).
-preference(z1000026, w, 08, impossible, onlineOrPerson).
-preference(z1000026, w, 09, impossible, onlineOrPerson).
-preference(z1000026, w, 10, preferred, onlineOnly).
-preference(z1000026, w, 11, preferred, onlineOnly).
-preference(z1000026, w, 12, preferred, onlineOnly).
-preference(z1000026, w, 13, preferred, onlineOnly).
-preference(z1000026, w, 14, preferred, onlineOnly).
-preference(z1000026, w, 15, preferred, onlineOnly).
-preference(z1000026, w, 16, preferred, onlineOnly).
-preference(z1000026, w, 17, dislike, onlineOnly).
-preference(z1000026, w, 18, dislike, onlineOnly).
-preference(z1000026, w, 19, dislike, onlineOnly).
-preference(z1000026, w, 20, impossible, onlineOrPerson).
-preference(z1000026, h, 08, impossible, onlineOrPerson).
-preference(z1000026, h, 09, impossible, onlineOrPerson).
-preference(z1000026, h, 10, preferred, onlineOnly).
-preference(z1000026, h, 11, preferred, onlineOnly).
-preference(z1000026, h, 12, preferred, onlineOnly).
-preference(z1000026, h, 13, preferred, onlineOnly).
-preference(z1000026, h, 14, preferred, onlineOnly).
-preference(z1000026, h, 15, preferred, onlineOnly).
-preference(z1000026, h, 16, preferred, onlineOnly).
-preference(z1000026, h, 17, possible, onlineOnly).
-preference(z1000026, h, 18, possible, onlineOnly).
-preference(z1000026, h, 19, possible, onlineOnly).
-preference(z1000026, h, 20, impossible, onlineOrPerson).
-preference(z1000026, f, 08, impossible, onlineOrPerson).
-preference(z1000026, f, 09, impossible, onlineOrPerson).
-preference(z1000026, f, 10, preferred, onlineOnly).
-preference(z1000026, f, 11, preferred, onlineOnly).
-preference(z1000026, f, 12, preferred, onlineOnly).
-preference(z1000026, f, 13, preferred, onlineOnly).
-preference(z1000026, f, 14, preferred, onlineOnly).
-preference(z1000026, f, 15, preferred, onlineOnly).
-preference(z1000026, f, 16, preferred, onlineOnly).
-preference(z1000026, f, 17, preferred, onlineOnly).
-preference(z1000026, f, 18, preferred, onlineOnly).
-preference(z1000026, f, 19, preferred, onlineOnly).
-preference(z1000026, f, 20, preferred, onlineOnly).
-capacityTute(z1000026, 1).
-capacityAsst(z1000026, 1).
-preferTutorial(z1000026, 1).
+available(z1000026, online, m, 10).
+desire(z1000026, preferred, m, 10).
+available(z1000026, online, m, 11).
+desire(z1000026, preferred, m, 11).
+available(z1000026, online, m, 12).
+desire(z1000026, preferred, m, 12).
+available(z1000026, online, m, 13).
+desire(z1000026, preferred, m, 13).
+available(z1000026, online, m, 14).
+desire(z1000026, preferred, m, 14).
+available(z1000026, online, m, 15).
+desire(z1000026, preferred, m, 15).
+available(z1000026, online, m, 16).
+desire(z1000026, preferred, m, 16).
+available(z1000026, online, m, 17).
+desire(z1000026, preferred, m, 17).
+available(z1000026, online, m, 18).
+desire(z1000026, preferred, m, 18).
+available(z1000026, online, m, 19).
+desire(z1000026, preferred, m, 19).
+available(z1000026, online, m, 20).
+desire(z1000026, preferred, m, 20).
+available(z1000026, online, t, 10).
+desire(z1000026, preferred, t, 10).
+available(z1000026, online, t, 11).
+desire(z1000026, preferred, t, 11).
+available(z1000026, online, t, 12).
+desire(z1000026, possible, t, 12).
+available(z1000026, online, t, 13).
+desire(z1000026, possible, t, 13).
+available(z1000026, online, t, 14).
+desire(z1000026, possible, t, 14).
+available(z1000026, online, t, 15).
+desire(z1000026, preferred, t, 15).
+available(z1000026, online, t, 16).
+desire(z1000026, preferred, t, 16).
+available(z1000026, online, t, 17).
+desire(z1000026, possible, t, 17).
+available(z1000026, online, t, 18).
+desire(z1000026, possible, t, 18).
+available(z1000026, online, t, 19).
+desire(z1000026, possible, t, 19).
+available(z1000026, online, w, 10).
+desire(z1000026, preferred, w, 10).
+available(z1000026, online, w, 11).
+desire(z1000026, preferred, w, 11).
+available(z1000026, online, w, 12).
+desire(z1000026, preferred, w, 12).
+available(z1000026, online, w, 13).
+desire(z1000026, preferred, w, 13).
+available(z1000026, online, w, 14).
+desire(z1000026, preferred, w, 14).
+available(z1000026, online, w, 15).
+desire(z1000026, preferred, w, 15).
+available(z1000026, online, w, 16).
+desire(z1000026, preferred, w, 16).
+available(z1000026, online, w, 17).
+desire(z1000026, dislike, w, 17).
+available(z1000026, online, w, 18).
+desire(z1000026, dislike, w, 18).
+available(z1000026, online, w, 19).
+desire(z1000026, dislike, w, 19).
+available(z1000026, online, h, 10).
+desire(z1000026, preferred, h, 10).
+available(z1000026, online, h, 11).
+desire(z1000026, preferred, h, 11).
+available(z1000026, online, h, 12).
+desire(z1000026, preferred, h, 12).
+available(z1000026, online, h, 13).
+desire(z1000026, preferred, h, 13).
+available(z1000026, online, h, 14).
+desire(z1000026, preferred, h, 14).
+available(z1000026, online, h, 15).
+desire(z1000026, preferred, h, 15).
+available(z1000026, online, h, 16).
+desire(z1000026, preferred, h, 16).
+available(z1000026, online, h, 17).
+desire(z1000026, possible, h, 17).
+available(z1000026, online, h, 18).
+desire(z1000026, possible, h, 18).
+available(z1000026, online, h, 19).
+desire(z1000026, possible, h, 19).
+available(z1000026, online, f, 10).
+desire(z1000026, preferred, f, 10).
+available(z1000026, online, f, 11).
+desire(z1000026, preferred, f, 11).
+available(z1000026, online, f, 12).
+desire(z1000026, preferred, f, 12).
+available(z1000026, online, f, 13).
+desire(z1000026, preferred, f, 13).
+available(z1000026, online, f, 14).
+desire(z1000026, preferred, f, 14).
+available(z1000026, online, f, 15).
+desire(z1000026, preferred, f, 15).
+available(z1000026, online, f, 16).
+desire(z1000026, preferred, f, 16).
+available(z1000026, online, f, 17).
+desire(z1000026, preferred, f, 17).
+available(z1000026, online, f, 18).
+desire(z1000026, preferred, f, 18).
+available(z1000026, online, f, 19).
+desire(z1000026, preferred, f, 19).
+available(z1000026, online, f, 20).
+desire(z1000026, preferred, f, 20).
+capacity(z1000026, tute, 1).
+capacity(z1000026, asst, 1).
+prefer(z1000026, tute).
 teacher(z1000027).
-previousTuteExperience(z1000027, false).
-preference(z1000027, m, 08, preferred, onlineOnly).
-preference(z1000027, m, 09, preferred, onlineOnly).
-preference(z1000027, m, 10, preferred, onlineOnly).
-preference(z1000027, m, 11, preferred, onlineOnly).
-preference(z1000027, m, 12, preferred, onlineOnly).
-preference(z1000027, m, 13, preferred, onlineOnly).
-preference(z1000027, m, 14, preferred, onlineOnly).
-preference(z1000027, m, 15, preferred, onlineOnly).
-preference(z1000027, m, 16, preferred, onlineOnly).
-preference(z1000027, m, 17, preferred, onlineOnly).
-preference(z1000027, m, 18, preferred, onlineOnly).
-preference(z1000027, m, 19, preferred, onlineOnly).
-preference(z1000027, m, 20, preferred, onlineOnly).
-preference(z1000027, t, 08, preferred, onlineOnly).
-preference(z1000027, t, 09, preferred, onlineOnly).
-preference(z1000027, t, 10, preferred, onlineOnly).
-preference(z1000027, t, 11, preferred, onlineOnly).
-preference(z1000027, t, 12, preferred, onlineOnly).
-preference(z1000027, t, 13, preferred, onlineOnly).
-preference(z1000027, t, 14, preferred, onlineOnly).
-preference(z1000027, t, 15, preferred, onlineOnly).
-preference(z1000027, t, 16, preferred, onlineOnly).
-preference(z1000027, t, 17, preferred, onlineOnly).
-preference(z1000027, t, 18, preferred, onlineOnly).
-preference(z1000027, t, 19, preferred, onlineOnly).
-preference(z1000027, t, 20, preferred, onlineOnly).
-preference(z1000027, w, 08, possible, onlineOrPerson).
-preference(z1000027, w, 09, possible, onlineOrPerson).
-preference(z1000027, w, 10, possible, onlineOrPerson).
-preference(z1000027, w, 11, possible, onlineOrPerson).
-preference(z1000027, w, 12, possible, onlineOrPerson).
-preference(z1000027, w, 13, impossible, onlineOrPerson).
-preference(z1000027, w, 14, impossible, onlineOrPerson).
-preference(z1000027, w, 15, impossible, onlineOrPerson).
-preference(z1000027, w, 16, impossible, onlineOrPerson).
-preference(z1000027, w, 17, impossible, onlineOrPerson).
-preference(z1000027, w, 18, impossible, onlineOrPerson).
-preference(z1000027, w, 19, impossible, onlineOrPerson).
-preference(z1000027, w, 20, impossible, onlineOrPerson).
-preference(z1000027, h, 08, impossible, onlineOrPerson).
-preference(z1000027, h, 09, impossible, onlineOrPerson).
-preference(z1000027, h, 10, impossible, onlineOrPerson).
-preference(z1000027, h, 11, impossible, onlineOrPerson).
-preference(z1000027, h, 12, impossible, onlineOrPerson).
-preference(z1000027, h, 13, impossible, onlineOrPerson).
-preference(z1000027, h, 14, impossible, onlineOrPerson).
-preference(z1000027, h, 15, impossible, onlineOrPerson).
-preference(z1000027, h, 16, impossible, onlineOrPerson).
-preference(z1000027, h, 17, impossible, onlineOrPerson).
-preference(z1000027, h, 18, impossible, onlineOrPerson).
-preference(z1000027, h, 19, impossible, onlineOrPerson).
-preference(z1000027, h, 20, impossible, onlineOrPerson).
-preference(z1000027, f, 08, impossible, onlineOrPerson).
-preference(z1000027, f, 09, impossible, onlineOrPerson).
-preference(z1000027, f, 10, impossible, onlineOrPerson).
-preference(z1000027, f, 11, impossible, onlineOrPerson).
-preference(z1000027, f, 12, impossible, onlineOrPerson).
-preference(z1000027, f, 13, impossible, onlineOrPerson).
-preference(z1000027, f, 14, impossible, onlineOrPerson).
-preference(z1000027, f, 15, impossible, onlineOrPerson).
-preference(z1000027, f, 16, impossible, onlineOrPerson).
-preference(z1000027, f, 17, impossible, onlineOrPerson).
-preference(z1000027, f, 18, impossible, onlineOrPerson).
-preference(z1000027, f, 19, impossible, onlineOrPerson).
-preference(z1000027, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000027, 1).
-capacityAsst(z1000027, 1).
-preferTutorial(z1000027, 1).
+available(z1000027, online, m, 8).
+desire(z1000027, preferred, m, 8).
+available(z1000027, online, m, 9).
+desire(z1000027, preferred, m, 9).
+available(z1000027, online, m, 10).
+desire(z1000027, preferred, m, 10).
+available(z1000027, online, m, 11).
+desire(z1000027, preferred, m, 11).
+available(z1000027, online, m, 12).
+desire(z1000027, preferred, m, 12).
+available(z1000027, online, m, 13).
+desire(z1000027, preferred, m, 13).
+available(z1000027, online, m, 14).
+desire(z1000027, preferred, m, 14).
+available(z1000027, online, m, 15).
+desire(z1000027, preferred, m, 15).
+available(z1000027, online, m, 16).
+desire(z1000027, preferred, m, 16).
+available(z1000027, online, m, 17).
+desire(z1000027, preferred, m, 17).
+available(z1000027, online, m, 18).
+desire(z1000027, preferred, m, 18).
+available(z1000027, online, m, 19).
+desire(z1000027, preferred, m, 19).
+available(z1000027, online, m, 20).
+desire(z1000027, preferred, m, 20).
+available(z1000027, online, t, 8).
+desire(z1000027, preferred, t, 8).
+available(z1000027, online, t, 9).
+desire(z1000027, preferred, t, 9).
+available(z1000027, online, t, 10).
+desire(z1000027, preferred, t, 10).
+available(z1000027, online, t, 11).
+desire(z1000027, preferred, t, 11).
+available(z1000027, online, t, 12).
+desire(z1000027, preferred, t, 12).
+available(z1000027, online, t, 13).
+desire(z1000027, preferred, t, 13).
+available(z1000027, online, t, 14).
+desire(z1000027, preferred, t, 14).
+available(z1000027, online, t, 15).
+desire(z1000027, preferred, t, 15).
+available(z1000027, online, t, 16).
+desire(z1000027, preferred, t, 16).
+available(z1000027, online, t, 17).
+desire(z1000027, preferred, t, 17).
+available(z1000027, online, t, 18).
+desire(z1000027, preferred, t, 18).
+available(z1000027, online, t, 19).
+desire(z1000027, preferred, t, 19).
+available(z1000027, online, t, 20).
+desire(z1000027, preferred, t, 20).
+available(z1000027, online, w, 8).
+available(z1000027, inPerson, w, 8).
+desire(z1000027, possible, w, 8).
+available(z1000027, online, w, 9).
+available(z1000027, inPerson, w, 9).
+desire(z1000027, possible, w, 9).
+available(z1000027, online, w, 10).
+available(z1000027, inPerson, w, 10).
+desire(z1000027, possible, w, 10).
+available(z1000027, online, w, 11).
+available(z1000027, inPerson, w, 11).
+desire(z1000027, possible, w, 11).
+available(z1000027, online, w, 12).
+available(z1000027, inPerson, w, 12).
+desire(z1000027, possible, w, 12).
+capacity(z1000027, tute, 1).
+capacity(z1000027, asst, 1).
+prefer(z1000027, tute).
 teacher(z1000028).
-previousTuteExperience(z1000028, false).
-preference(z1000028, m, 08, possible, onlineOnly).
-preference(z1000028, m, 09, possible, onlineOnly).
-preference(z1000028, m, 10, possible, onlineOnly).
-preference(z1000028, m, 11, possible, onlineOnly).
-preference(z1000028, m, 12, possible, onlineOnly).
-preference(z1000028, m, 13, possible, onlineOnly).
-preference(z1000028, m, 14, possible, onlineOnly).
-preference(z1000028, m, 15, possible, onlineOnly).
-preference(z1000028, m, 16, possible, onlineOnly).
-preference(z1000028, m, 17, possible, onlineOnly).
-preference(z1000028, m, 18, possible, onlineOnly).
-preference(z1000028, m, 19, possible, onlineOnly).
-preference(z1000028, m, 20, possible, onlineOnly).
-preference(z1000028, t, 08, possible, onlineOnly).
-preference(z1000028, t, 09, impossible, onlineOrPerson).
-preference(z1000028, t, 10, impossible, onlineOrPerson).
-preference(z1000028, t, 11, preferred, onlineOnly).
-preference(z1000028, t, 12, preferred, onlineOnly).
-preference(z1000028, t, 13, impossible, onlineOrPerson).
-preference(z1000028, t, 14, preferred, onlineOnly).
-preference(z1000028, t, 15, preferred, onlineOnly).
-preference(z1000028, t, 16, impossible, onlineOrPerson).
-preference(z1000028, t, 17, impossible, onlineOrPerson).
-preference(z1000028, t, 18, preferred, onlineOnly).
-preference(z1000028, t, 19, preferred, onlineOnly).
-preference(z1000028, t, 20, preferred, onlineOnly).
-preference(z1000028, w, 08, preferred, onlineOnly).
-preference(z1000028, w, 09, preferred, onlineOnly).
-preference(z1000028, w, 10, preferred, onlineOnly).
-preference(z1000028, w, 11, preferred, onlineOnly).
-preference(z1000028, w, 12, preferred, onlineOnly).
-preference(z1000028, w, 13, impossible, onlineOrPerson).
-preference(z1000028, w, 14, impossible, onlineOrPerson).
-preference(z1000028, w, 15, impossible, onlineOrPerson).
-preference(z1000028, w, 16, impossible, onlineOrPerson).
-preference(z1000028, w, 17, impossible, onlineOrPerson).
-preference(z1000028, w, 18, impossible, onlineOrPerson).
-preference(z1000028, w, 19, impossible, onlineOrPerson).
-preference(z1000028, w, 20, possible, onlineOnly).
-preference(z1000028, h, 08, possible, onlineOnly).
-preference(z1000028, h, 09, possible, onlineOnly).
-preference(z1000028, h, 10, possible, onlineOnly).
-preference(z1000028, h, 11, possible, onlineOnly).
-preference(z1000028, h, 12, possible, onlineOnly).
-preference(z1000028, h, 13, possible, onlineOnly).
-preference(z1000028, h, 14, possible, onlineOnly).
-preference(z1000028, h, 15, possible, onlineOnly).
-preference(z1000028, h, 16, possible, onlineOnly).
-preference(z1000028, h, 17, possible, onlineOnly).
-preference(z1000028, h, 18, possible, onlineOnly).
-preference(z1000028, h, 19, possible, onlineOnly).
-preference(z1000028, h, 20, possible, onlineOnly).
-preference(z1000028, f, 08, possible, onlineOnly).
-preference(z1000028, f, 09, possible, onlineOnly).
-preference(z1000028, f, 10, possible, onlineOnly).
-preference(z1000028, f, 11, possible, onlineOnly).
-preference(z1000028, f, 12, possible, onlineOnly).
-preference(z1000028, f, 13, possible, onlineOnly).
-preference(z1000028, f, 14, possible, onlineOnly).
-preference(z1000028, f, 15, possible, onlineOnly).
-preference(z1000028, f, 16, possible, onlineOnly).
-preference(z1000028, f, 17, possible, onlineOnly).
-preference(z1000028, f, 18, possible, onlineOnly).
-preference(z1000028, f, 19, possible, onlineOnly).
-preference(z1000028, f, 20, possible, onlineOnly).
-capacityTute(z1000028, 1).
-capacityAsst(z1000028, 1).
-preferTutorial(z1000028, 1).
+available(z1000028, online, m, 8).
+desire(z1000028, possible, m, 8).
+available(z1000028, online, m, 9).
+desire(z1000028, possible, m, 9).
+available(z1000028, online, m, 10).
+desire(z1000028, possible, m, 10).
+available(z1000028, online, m, 11).
+desire(z1000028, possible, m, 11).
+available(z1000028, online, m, 12).
+desire(z1000028, possible, m, 12).
+available(z1000028, online, m, 13).
+desire(z1000028, possible, m, 13).
+available(z1000028, online, m, 14).
+desire(z1000028, possible, m, 14).
+available(z1000028, online, m, 15).
+desire(z1000028, possible, m, 15).
+available(z1000028, online, m, 16).
+desire(z1000028, possible, m, 16).
+available(z1000028, online, m, 17).
+desire(z1000028, possible, m, 17).
+available(z1000028, online, m, 18).
+desire(z1000028, possible, m, 18).
+available(z1000028, online, m, 19).
+desire(z1000028, possible, m, 19).
+available(z1000028, online, m, 20).
+desire(z1000028, possible, m, 20).
+available(z1000028, online, t, 8).
+desire(z1000028, possible, t, 8).
+available(z1000028, online, t, 11).
+desire(z1000028, preferred, t, 11).
+available(z1000028, online, t, 12).
+desire(z1000028, preferred, t, 12).
+available(z1000028, online, t, 14).
+desire(z1000028, preferred, t, 14).
+available(z1000028, online, t, 15).
+desire(z1000028, preferred, t, 15).
+available(z1000028, online, t, 18).
+desire(z1000028, preferred, t, 18).
+available(z1000028, online, t, 19).
+desire(z1000028, preferred, t, 19).
+available(z1000028, online, t, 20).
+desire(z1000028, preferred, t, 20).
+available(z1000028, online, w, 8).
+desire(z1000028, preferred, w, 8).
+available(z1000028, online, w, 9).
+desire(z1000028, preferred, w, 9).
+available(z1000028, online, w, 10).
+desire(z1000028, preferred, w, 10).
+available(z1000028, online, w, 11).
+desire(z1000028, preferred, w, 11).
+available(z1000028, online, w, 12).
+desire(z1000028, preferred, w, 12).
+available(z1000028, online, w, 20).
+desire(z1000028, possible, w, 20).
+available(z1000028, online, h, 8).
+desire(z1000028, possible, h, 8).
+available(z1000028, online, h, 9).
+desire(z1000028, possible, h, 9).
+available(z1000028, online, h, 10).
+desire(z1000028, possible, h, 10).
+available(z1000028, online, h, 11).
+desire(z1000028, possible, h, 11).
+available(z1000028, online, h, 12).
+desire(z1000028, possible, h, 12).
+available(z1000028, online, h, 13).
+desire(z1000028, possible, h, 13).
+available(z1000028, online, h, 14).
+desire(z1000028, possible, h, 14).
+available(z1000028, online, h, 15).
+desire(z1000028, possible, h, 15).
+available(z1000028, online, h, 16).
+desire(z1000028, possible, h, 16).
+available(z1000028, online, h, 17).
+desire(z1000028, possible, h, 17).
+available(z1000028, online, h, 18).
+desire(z1000028, possible, h, 18).
+available(z1000028, online, h, 19).
+desire(z1000028, possible, h, 19).
+available(z1000028, online, h, 20).
+desire(z1000028, possible, h, 20).
+available(z1000028, online, f, 8).
+desire(z1000028, possible, f, 8).
+available(z1000028, online, f, 9).
+desire(z1000028, possible, f, 9).
+available(z1000028, online, f, 10).
+desire(z1000028, possible, f, 10).
+available(z1000028, online, f, 11).
+desire(z1000028, possible, f, 11).
+available(z1000028, online, f, 12).
+desire(z1000028, possible, f, 12).
+available(z1000028, online, f, 13).
+desire(z1000028, possible, f, 13).
+available(z1000028, online, f, 14).
+desire(z1000028, possible, f, 14).
+available(z1000028, online, f, 15).
+desire(z1000028, possible, f, 15).
+available(z1000028, online, f, 16).
+desire(z1000028, possible, f, 16).
+available(z1000028, online, f, 17).
+desire(z1000028, possible, f, 17).
+available(z1000028, online, f, 18).
+desire(z1000028, possible, f, 18).
+available(z1000028, online, f, 19).
+desire(z1000028, possible, f, 19).
+available(z1000028, online, f, 20).
+desire(z1000028, possible, f, 20).
+capacity(z1000028, tute, 1).
+capacity(z1000028, asst, 1).
+prefer(z1000028, tute).
 teacher(z1000029).
-previousTuteExperience(z1000029, false).
-preference(z1000029, m, 08, preferred, onlineOnly).
-preference(z1000029, m, 09, preferred, onlineOnly).
-preference(z1000029, m, 10, preferred, onlineOnly).
-preference(z1000029, m, 11, preferred, onlineOnly).
-preference(z1000029, m, 12, preferred, onlineOnly).
-preference(z1000029, m, 13, impossible, onlineOrPerson).
-preference(z1000029, m, 14, impossible, onlineOrPerson).
-preference(z1000029, m, 15, impossible, onlineOrPerson).
-preference(z1000029, m, 16, preferred, onlineOnly).
-preference(z1000029, m, 17, preferred, onlineOnly).
-preference(z1000029, m, 18, preferred, onlineOnly).
-preference(z1000029, m, 19, preferred, onlineOnly).
-preference(z1000029, m, 20, preferred, onlineOnly).
-preference(z1000029, t, 08, possible, onlineOnly).
-preference(z1000029, t, 09, possible, onlineOnly).
-preference(z1000029, t, 10, possible, onlineOnly).
-preference(z1000029, t, 11, impossible, onlineOrPerson).
-preference(z1000029, t, 12, impossible, onlineOrPerson).
-preference(z1000029, t, 13, impossible, onlineOrPerson).
-preference(z1000029, t, 14, possible, onlineOnly).
-preference(z1000029, t, 15, possible, onlineOnly).
-preference(z1000029, t, 16, impossible, onlineOrPerson).
-preference(z1000029, t, 17, impossible, onlineOrPerson).
-preference(z1000029, t, 18, impossible, onlineOrPerson).
-preference(z1000029, t, 19, possible, onlineOnly).
-preference(z1000029, t, 20, possible, onlineOnly).
-preference(z1000029, w, 08, preferred, onlineOnly).
-preference(z1000029, w, 09, preferred, onlineOnly).
-preference(z1000029, w, 10, preferred, onlineOnly).
-preference(z1000029, w, 11, preferred, onlineOnly).
-preference(z1000029, w, 12, preferred, onlineOnly).
-preference(z1000029, w, 13, preferred, onlineOnly).
-preference(z1000029, w, 14, preferred, onlineOnly).
-preference(z1000029, w, 15, preferred, onlineOnly).
-preference(z1000029, w, 16, preferred, onlineOnly).
-preference(z1000029, w, 17, preferred, onlineOnly).
-preference(z1000029, w, 18, preferred, onlineOnly).
-preference(z1000029, w, 19, preferred, onlineOnly).
-preference(z1000029, w, 20, preferred, onlineOnly).
-preference(z1000029, h, 08, preferred, onlineOnly).
-preference(z1000029, h, 09, preferred, onlineOnly).
-preference(z1000029, h, 10, preferred, onlineOnly).
-preference(z1000029, h, 11, preferred, onlineOnly).
-preference(z1000029, h, 12, preferred, onlineOnly).
-preference(z1000029, h, 13, preferred, onlineOnly).
-preference(z1000029, h, 14, preferred, onlineOnly).
-preference(z1000029, h, 15, preferred, onlineOnly).
-preference(z1000029, h, 16, preferred, onlineOnly).
-preference(z1000029, h, 17, preferred, onlineOnly).
-preference(z1000029, h, 18, preferred, onlineOnly).
-preference(z1000029, h, 19, preferred, onlineOnly).
-preference(z1000029, h, 20, preferred, onlineOnly).
-preference(z1000029, f, 08, preferred, onlineOnly).
-preference(z1000029, f, 09, preferred, onlineOnly).
-preference(z1000029, f, 10, preferred, onlineOnly).
-preference(z1000029, f, 11, preferred, onlineOnly).
-preference(z1000029, f, 12, preferred, onlineOnly).
-preference(z1000029, f, 13, preferred, onlineOnly).
-preference(z1000029, f, 14, preferred, onlineOnly).
-preference(z1000029, f, 15, preferred, onlineOnly).
-preference(z1000029, f, 16, preferred, onlineOnly).
-preference(z1000029, f, 17, preferred, onlineOnly).
-preference(z1000029, f, 18, preferred, onlineOnly).
-preference(z1000029, f, 19, preferred, onlineOnly).
-preference(z1000029, f, 20, preferred, onlineOnly).
-capacityTute(z1000029, 1).
-capacityAsst(z1000029, 1).
-preferTutorial(z1000029, 1).
+available(z1000029, online, m, 8).
+desire(z1000029, preferred, m, 8).
+available(z1000029, online, m, 9).
+desire(z1000029, preferred, m, 9).
+available(z1000029, online, m, 10).
+desire(z1000029, preferred, m, 10).
+available(z1000029, online, m, 11).
+desire(z1000029, preferred, m, 11).
+available(z1000029, online, m, 12).
+desire(z1000029, preferred, m, 12).
+available(z1000029, online, m, 16).
+desire(z1000029, preferred, m, 16).
+available(z1000029, online, m, 17).
+desire(z1000029, preferred, m, 17).
+available(z1000029, online, m, 18).
+desire(z1000029, preferred, m, 18).
+available(z1000029, online, m, 19).
+desire(z1000029, preferred, m, 19).
+available(z1000029, online, m, 20).
+desire(z1000029, preferred, m, 20).
+available(z1000029, online, t, 8).
+desire(z1000029, possible, t, 8).
+available(z1000029, online, t, 9).
+desire(z1000029, possible, t, 9).
+available(z1000029, online, t, 10).
+desire(z1000029, possible, t, 10).
+available(z1000029, online, t, 14).
+desire(z1000029, possible, t, 14).
+available(z1000029, online, t, 15).
+desire(z1000029, possible, t, 15).
+available(z1000029, online, t, 19).
+desire(z1000029, possible, t, 19).
+available(z1000029, online, t, 20).
+desire(z1000029, possible, t, 20).
+available(z1000029, online, w, 8).
+desire(z1000029, preferred, w, 8).
+available(z1000029, online, w, 9).
+desire(z1000029, preferred, w, 9).
+available(z1000029, online, w, 10).
+desire(z1000029, preferred, w, 10).
+available(z1000029, online, w, 11).
+desire(z1000029, preferred, w, 11).
+available(z1000029, online, w, 12).
+desire(z1000029, preferred, w, 12).
+available(z1000029, online, w, 13).
+desire(z1000029, preferred, w, 13).
+available(z1000029, online, w, 14).
+desire(z1000029, preferred, w, 14).
+available(z1000029, online, w, 15).
+desire(z1000029, preferred, w, 15).
+available(z1000029, online, w, 16).
+desire(z1000029, preferred, w, 16).
+available(z1000029, online, w, 17).
+desire(z1000029, preferred, w, 17).
+available(z1000029, online, w, 18).
+desire(z1000029, preferred, w, 18).
+available(z1000029, online, w, 19).
+desire(z1000029, preferred, w, 19).
+available(z1000029, online, w, 20).
+desire(z1000029, preferred, w, 20).
+available(z1000029, online, h, 8).
+desire(z1000029, preferred, h, 8).
+available(z1000029, online, h, 9).
+desire(z1000029, preferred, h, 9).
+available(z1000029, online, h, 10).
+desire(z1000029, preferred, h, 10).
+available(z1000029, online, h, 11).
+desire(z1000029, preferred, h, 11).
+available(z1000029, online, h, 12).
+desire(z1000029, preferred, h, 12).
+available(z1000029, online, h, 13).
+desire(z1000029, preferred, h, 13).
+available(z1000029, online, h, 14).
+desire(z1000029, preferred, h, 14).
+available(z1000029, online, h, 15).
+desire(z1000029, preferred, h, 15).
+available(z1000029, online, h, 16).
+desire(z1000029, preferred, h, 16).
+available(z1000029, online, h, 17).
+desire(z1000029, preferred, h, 17).
+available(z1000029, online, h, 18).
+desire(z1000029, preferred, h, 18).
+available(z1000029, online, h, 19).
+desire(z1000029, preferred, h, 19).
+available(z1000029, online, h, 20).
+desire(z1000029, preferred, h, 20).
+available(z1000029, online, f, 8).
+desire(z1000029, preferred, f, 8).
+available(z1000029, online, f, 9).
+desire(z1000029, preferred, f, 9).
+available(z1000029, online, f, 10).
+desire(z1000029, preferred, f, 10).
+available(z1000029, online, f, 11).
+desire(z1000029, preferred, f, 11).
+available(z1000029, online, f, 12).
+desire(z1000029, preferred, f, 12).
+available(z1000029, online, f, 13).
+desire(z1000029, preferred, f, 13).
+available(z1000029, online, f, 14).
+desire(z1000029, preferred, f, 14).
+available(z1000029, online, f, 15).
+desire(z1000029, preferred, f, 15).
+available(z1000029, online, f, 16).
+desire(z1000029, preferred, f, 16).
+available(z1000029, online, f, 17).
+desire(z1000029, preferred, f, 17).
+available(z1000029, online, f, 18).
+desire(z1000029, preferred, f, 18).
+available(z1000029, online, f, 19).
+desire(z1000029, preferred, f, 19).
+available(z1000029, online, f, 20).
+desire(z1000029, preferred, f, 20).
+capacity(z1000029, tute, 1).
+capacity(z1000029, asst, 1).
+prefer(z1000029, tute).
 teacher(z1000030).
-previousTuteExperience(z1000030, true).
-preference(z1000030, m, 08, impossible, onlineOrPerson).
-preference(z1000030, m, 09, impossible, onlineOrPerson).
-preference(z1000030, m, 10, impossible, onlineOrPerson).
-preference(z1000030, m, 11, impossible, onlineOrPerson).
-preference(z1000030, m, 12, impossible, onlineOrPerson).
-preference(z1000030, m, 13, impossible, onlineOrPerson).
-preference(z1000030, m, 14, impossible, onlineOrPerson).
-preference(z1000030, m, 15, impossible, onlineOrPerson).
-preference(z1000030, m, 16, impossible, onlineOrPerson).
-preference(z1000030, m, 17, impossible, onlineOrPerson).
-preference(z1000030, m, 18, possible, onlineOrPerson).
-preference(z1000030, m, 19, possible, onlineOrPerson).
-preference(z1000030, m, 20, possible, onlineOrPerson).
-preference(z1000030, t, 08, impossible, onlineOrPerson).
-preference(z1000030, t, 09, preferred, onlineOnly).
-preference(z1000030, t, 10, preferred, onlineOnly).
-preference(z1000030, t, 11, preferred, onlineOnly).
-preference(z1000030, t, 12, preferred, onlineOnly).
-preference(z1000030, t, 13, preferred, onlineOnly).
-preference(z1000030, t, 14, preferred, onlineOnly).
-preference(z1000030, t, 15, preferred, onlineOnly).
-preference(z1000030, t, 16, impossible, onlineOrPerson).
-preference(z1000030, t, 17, impossible, onlineOrPerson).
-preference(z1000030, t, 18, possible, onlineOrPerson).
-preference(z1000030, t, 19, possible, onlineOrPerson).
-preference(z1000030, t, 20, possible, onlineOrPerson).
-preference(z1000030, w, 08, impossible, onlineOrPerson).
-preference(z1000030, w, 09, preferred, onlineOnly).
-preference(z1000030, w, 10, preferred, onlineOnly).
-preference(z1000030, w, 11, preferred, onlineOnly).
-preference(z1000030, w, 12, preferred, onlineOnly).
-preference(z1000030, w, 13, possible, onlineOrPerson).
-preference(z1000030, w, 14, possible, onlineOrPerson).
-preference(z1000030, w, 15, impossible, onlineOrPerson).
-preference(z1000030, w, 16, impossible, onlineOrPerson).
-preference(z1000030, w, 17, impossible, onlineOrPerson).
-preference(z1000030, w, 18, impossible, onlineOrPerson).
-preference(z1000030, w, 19, impossible, onlineOrPerson).
-preference(z1000030, w, 20, impossible, onlineOrPerson).
-preference(z1000030, h, 08, impossible, onlineOrPerson).
-preference(z1000030, h, 09, impossible, onlineOrPerson).
-preference(z1000030, h, 10, impossible, onlineOrPerson).
-preference(z1000030, h, 11, impossible, onlineOrPerson).
-preference(z1000030, h, 12, impossible, onlineOrPerson).
-preference(z1000030, h, 13, impossible, onlineOrPerson).
-preference(z1000030, h, 14, impossible, onlineOrPerson).
-preference(z1000030, h, 15, impossible, onlineOrPerson).
-preference(z1000030, h, 16, impossible, onlineOrPerson).
-preference(z1000030, h, 17, impossible, onlineOrPerson).
-preference(z1000030, h, 18, impossible, onlineOrPerson).
-preference(z1000030, h, 19, impossible, onlineOrPerson).
-preference(z1000030, h, 20, impossible, onlineOrPerson).
-preference(z1000030, f, 08, impossible, onlineOrPerson).
-preference(z1000030, f, 09, impossible, onlineOrPerson).
-preference(z1000030, f, 10, impossible, onlineOrPerson).
-preference(z1000030, f, 11, impossible, onlineOrPerson).
-preference(z1000030, f, 12, impossible, onlineOrPerson).
-preference(z1000030, f, 13, impossible, onlineOrPerson).
-preference(z1000030, f, 14, impossible, onlineOrPerson).
-preference(z1000030, f, 15, impossible, onlineOrPerson).
-preference(z1000030, f, 16, impossible, onlineOrPerson).
-preference(z1000030, f, 17, impossible, onlineOrPerson).
-preference(z1000030, f, 18, impossible, onlineOrPerson).
-preference(z1000030, f, 19, impossible, onlineOrPerson).
-preference(z1000030, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000030, 1).
-capacityAsst(z1000030, 1).
-preferTutorial(z1000030, 1).
+experience(z1000030, tute).
+experience(z1000030, asst).
+available(z1000030, online, m, 18).
+available(z1000030, inPerson, m, 18).
+desire(z1000030, possible, m, 18).
+available(z1000030, online, m, 19).
+available(z1000030, inPerson, m, 19).
+desire(z1000030, possible, m, 19).
+available(z1000030, online, m, 20).
+available(z1000030, inPerson, m, 20).
+desire(z1000030, possible, m, 20).
+available(z1000030, online, t, 9).
+desire(z1000030, preferred, t, 9).
+available(z1000030, online, t, 10).
+desire(z1000030, preferred, t, 10).
+available(z1000030, online, t, 11).
+desire(z1000030, preferred, t, 11).
+available(z1000030, online, t, 12).
+desire(z1000030, preferred, t, 12).
+available(z1000030, online, t, 13).
+desire(z1000030, preferred, t, 13).
+available(z1000030, online, t, 14).
+desire(z1000030, preferred, t, 14).
+available(z1000030, online, t, 15).
+desire(z1000030, preferred, t, 15).
+available(z1000030, online, t, 18).
+available(z1000030, inPerson, t, 18).
+desire(z1000030, possible, t, 18).
+available(z1000030, online, t, 19).
+available(z1000030, inPerson, t, 19).
+desire(z1000030, possible, t, 19).
+available(z1000030, online, t, 20).
+available(z1000030, inPerson, t, 20).
+desire(z1000030, possible, t, 20).
+available(z1000030, online, w, 9).
+desire(z1000030, preferred, w, 9).
+available(z1000030, online, w, 10).
+desire(z1000030, preferred, w, 10).
+available(z1000030, online, w, 11).
+desire(z1000030, preferred, w, 11).
+available(z1000030, online, w, 12).
+desire(z1000030, preferred, w, 12).
+available(z1000030, online, w, 13).
+available(z1000030, inPerson, w, 13).
+desire(z1000030, possible, w, 13).
+available(z1000030, online, w, 14).
+available(z1000030, inPerson, w, 14).
+desire(z1000030, possible, w, 14).
+capacity(z1000030, tute, 1).
+capacity(z1000030, asst, 1).
+prefer(z1000030, tute).
 teacher(z1000031).
-previousTuteExperience(z1000031, false).
-preference(z1000031, m, 08, preferred, onlineOnly).
-preference(z1000031, m, 09, preferred, onlineOnly).
-preference(z1000031, m, 10, preferred, onlineOnly).
-preference(z1000031, m, 11, preferred, onlineOnly).
-preference(z1000031, m, 12, preferred, onlineOnly).
-preference(z1000031, m, 13, preferred, onlineOnly).
-preference(z1000031, m, 14, preferred, onlineOnly).
-preference(z1000031, m, 15, preferred, onlineOnly).
-preference(z1000031, m, 16, preferred, onlineOnly).
-preference(z1000031, m, 17, preferred, onlineOnly).
-preference(z1000031, m, 18, possible, onlineOrPerson).
-preference(z1000031, m, 19, possible, onlineOrPerson).
-preference(z1000031, m, 20, possible, onlineOrPerson).
-preference(z1000031, t, 08, possible, onlineOnly).
-preference(z1000031, t, 09, possible, onlineOnly).
-preference(z1000031, t, 10, possible, onlineOnly).
-preference(z1000031, t, 11, possible, onlineOnly).
-preference(z1000031, t, 12, possible, onlineOnly).
-preference(z1000031, t, 13, impossible, onlineOrPerson).
-preference(z1000031, t, 14, impossible, onlineOrPerson).
-preference(z1000031, t, 15, impossible, onlineOrPerson).
-preference(z1000031, t, 16, impossible, onlineOrPerson).
-preference(z1000031, t, 17, impossible, onlineOrPerson).
-preference(z1000031, t, 18, possible, onlineOrPerson).
-preference(z1000031, t, 19, possible, onlineOrPerson).
-preference(z1000031, t, 20, possible, onlineOrPerson).
-preference(z1000031, w, 08, impossible, onlineOrPerson).
-preference(z1000031, w, 09, impossible, onlineOrPerson).
-preference(z1000031, w, 10, impossible, onlineOrPerson).
-preference(z1000031, w, 11, impossible, onlineOrPerson).
-preference(z1000031, w, 12, possible, onlineOnly).
-preference(z1000031, w, 13, possible, onlineOnly).
-preference(z1000031, w, 14, possible, onlineOnly).
-preference(z1000031, w, 15, impossible, onlineOrPerson).
-preference(z1000031, w, 16, impossible, onlineOrPerson).
-preference(z1000031, w, 17, impossible, onlineOrPerson).
-preference(z1000031, w, 18, preferred, onlineOnly).
-preference(z1000031, w, 19, preferred, onlineOnly).
-preference(z1000031, w, 20, preferred, onlineOnly).
-preference(z1000031, h, 08, preferred, onlineOnly).
-preference(z1000031, h, 09, preferred, onlineOnly).
-preference(z1000031, h, 10, preferred, onlineOnly).
-preference(z1000031, h, 11, preferred, onlineOnly).
-preference(z1000031, h, 12, preferred, onlineOnly).
-preference(z1000031, h, 13, preferred, onlineOnly).
-preference(z1000031, h, 14, impossible, onlineOrPerson).
-preference(z1000031, h, 15, impossible, onlineOrPerson).
-preference(z1000031, h, 16, impossible, onlineOrPerson).
-preference(z1000031, h, 17, impossible, onlineOrPerson).
-preference(z1000031, h, 18, dislike, onlineOrPerson).
-preference(z1000031, h, 19, dislike, onlineOrPerson).
-preference(z1000031, h, 20, dislike, onlineOrPerson).
-preference(z1000031, f, 08, preferred, onlineOnly).
-preference(z1000031, f, 09, preferred, onlineOnly).
-preference(z1000031, f, 10, preferred, onlineOnly).
-preference(z1000031, f, 11, preferred, onlineOnly).
-preference(z1000031, f, 12, preferred, onlineOnly).
-preference(z1000031, f, 13, preferred, onlineOnly).
-preference(z1000031, f, 14, preferred, onlineOnly).
-preference(z1000031, f, 15, preferred, onlineOnly).
-preference(z1000031, f, 16, preferred, onlineOnly).
-preference(z1000031, f, 17, preferred, onlineOnly).
-preference(z1000031, f, 18, preferred, onlineOnly).
-preference(z1000031, f, 19, preferred, onlineOnly).
-preference(z1000031, f, 20, preferred, onlineOnly).
-capacityTute(z1000031, 1).
-capacityAsst(z1000031, 1).
-preferTutorial(z1000031, 1).
+available(z1000031, online, m, 8).
+desire(z1000031, preferred, m, 8).
+available(z1000031, online, m, 9).
+desire(z1000031, preferred, m, 9).
+available(z1000031, online, m, 10).
+desire(z1000031, preferred, m, 10).
+available(z1000031, online, m, 11).
+desire(z1000031, preferred, m, 11).
+available(z1000031, online, m, 12).
+desire(z1000031, preferred, m, 12).
+available(z1000031, online, m, 13).
+desire(z1000031, preferred, m, 13).
+available(z1000031, online, m, 14).
+desire(z1000031, preferred, m, 14).
+available(z1000031, online, m, 15).
+desire(z1000031, preferred, m, 15).
+available(z1000031, online, m, 16).
+desire(z1000031, preferred, m, 16).
+available(z1000031, online, m, 17).
+desire(z1000031, preferred, m, 17).
+available(z1000031, online, m, 18).
+available(z1000031, inPerson, m, 18).
+desire(z1000031, possible, m, 18).
+available(z1000031, online, m, 19).
+available(z1000031, inPerson, m, 19).
+desire(z1000031, possible, m, 19).
+available(z1000031, online, m, 20).
+available(z1000031, inPerson, m, 20).
+desire(z1000031, possible, m, 20).
+available(z1000031, online, t, 8).
+desire(z1000031, possible, t, 8).
+available(z1000031, online, t, 9).
+desire(z1000031, possible, t, 9).
+available(z1000031, online, t, 10).
+desire(z1000031, possible, t, 10).
+available(z1000031, online, t, 11).
+desire(z1000031, possible, t, 11).
+available(z1000031, online, t, 12).
+desire(z1000031, possible, t, 12).
+available(z1000031, online, t, 18).
+available(z1000031, inPerson, t, 18).
+desire(z1000031, possible, t, 18).
+available(z1000031, online, t, 19).
+available(z1000031, inPerson, t, 19).
+desire(z1000031, possible, t, 19).
+available(z1000031, online, t, 20).
+available(z1000031, inPerson, t, 20).
+desire(z1000031, possible, t, 20).
+available(z1000031, online, w, 12).
+desire(z1000031, possible, w, 12).
+available(z1000031, online, w, 13).
+desire(z1000031, possible, w, 13).
+available(z1000031, online, w, 14).
+desire(z1000031, possible, w, 14).
+available(z1000031, online, w, 18).
+desire(z1000031, preferred, w, 18).
+available(z1000031, online, w, 19).
+desire(z1000031, preferred, w, 19).
+available(z1000031, online, w, 20).
+desire(z1000031, preferred, w, 20).
+available(z1000031, online, h, 8).
+desire(z1000031, preferred, h, 8).
+available(z1000031, online, h, 9).
+desire(z1000031, preferred, h, 9).
+available(z1000031, online, h, 10).
+desire(z1000031, preferred, h, 10).
+available(z1000031, online, h, 11).
+desire(z1000031, preferred, h, 11).
+available(z1000031, online, h, 12).
+desire(z1000031, preferred, h, 12).
+available(z1000031, online, h, 13).
+desire(z1000031, preferred, h, 13).
+available(z1000031, online, h, 18).
+available(z1000031, inPerson, h, 18).
+desire(z1000031, dislike, h, 18).
+available(z1000031, online, h, 19).
+available(z1000031, inPerson, h, 19).
+desire(z1000031, dislike, h, 19).
+available(z1000031, online, h, 20).
+available(z1000031, inPerson, h, 20).
+desire(z1000031, dislike, h, 20).
+available(z1000031, online, f, 8).
+desire(z1000031, preferred, f, 8).
+available(z1000031, online, f, 9).
+desire(z1000031, preferred, f, 9).
+available(z1000031, online, f, 10).
+desire(z1000031, preferred, f, 10).
+available(z1000031, online, f, 11).
+desire(z1000031, preferred, f, 11).
+available(z1000031, online, f, 12).
+desire(z1000031, preferred, f, 12).
+available(z1000031, online, f, 13).
+desire(z1000031, preferred, f, 13).
+available(z1000031, online, f, 14).
+desire(z1000031, preferred, f, 14).
+available(z1000031, online, f, 15).
+desire(z1000031, preferred, f, 15).
+available(z1000031, online, f, 16).
+desire(z1000031, preferred, f, 16).
+available(z1000031, online, f, 17).
+desire(z1000031, preferred, f, 17).
+available(z1000031, online, f, 18).
+desire(z1000031, preferred, f, 18).
+available(z1000031, online, f, 19).
+desire(z1000031, preferred, f, 19).
+available(z1000031, online, f, 20).
+desire(z1000031, preferred, f, 20).
+capacity(z1000031, tute, 1).
+capacity(z1000031, asst, 1).
+prefer(z1000031, tute).
 teacher(z1000032).
-previousTuteExperience(z1000032, false).
-preference(z1000032, m, 08, possible, onlineOnly).
-preference(z1000032, m, 09, possible, onlineOnly).
-preference(z1000032, m, 10, preferred, onlineOnly).
-preference(z1000032, m, 11, preferred, onlineOnly).
-preference(z1000032, m, 12, preferred, onlineOnly).
-preference(z1000032, m, 13, preferred, onlineOnly).
-preference(z1000032, m, 14, preferred, onlineOnly).
-preference(z1000032, m, 15, preferred, onlineOnly).
-preference(z1000032, m, 16, preferred, onlineOnly).
-preference(z1000032, m, 17, preferred, onlineOnly).
-preference(z1000032, m, 18, preferred, onlineOnly).
-preference(z1000032, m, 19, preferred, onlineOnly).
-preference(z1000032, m, 20, preferred, onlineOnly).
-preference(z1000032, t, 08, possible, onlineOnly).
-preference(z1000032, t, 09, possible, onlineOnly).
-preference(z1000032, t, 10, preferred, onlineOnly).
-preference(z1000032, t, 11, preferred, onlineOnly).
-preference(z1000032, t, 12, preferred, onlineOnly).
-preference(z1000032, t, 13, impossible, onlineOrPerson).
-preference(z1000032, t, 14, impossible, onlineOrPerson).
-preference(z1000032, t, 15, impossible, onlineOrPerson).
-preference(z1000032, t, 16, preferred, onlineOnly).
-preference(z1000032, t, 17, preferred, onlineOnly).
-preference(z1000032, t, 18, preferred, onlineOnly).
-preference(z1000032, t, 19, preferred, onlineOnly).
-preference(z1000032, t, 20, preferred, onlineOnly).
-preference(z1000032, w, 08, possible, onlineOnly).
-preference(z1000032, w, 09, possible, onlineOnly).
-preference(z1000032, w, 10, preferred, onlineOnly).
-preference(z1000032, w, 11, preferred, onlineOnly).
-preference(z1000032, w, 12, preferred, onlineOnly).
-preference(z1000032, w, 13, preferred, onlineOnly).
-preference(z1000032, w, 14, preferred, onlineOnly).
-preference(z1000032, w, 15, preferred, onlineOnly).
-preference(z1000032, w, 16, preferred, onlineOnly).
-preference(z1000032, w, 17, preferred, onlineOnly).
-preference(z1000032, w, 18, preferred, onlineOnly).
-preference(z1000032, w, 19, preferred, onlineOnly).
-preference(z1000032, w, 20, preferred, onlineOnly).
-preference(z1000032, h, 08, possible, onlineOnly).
-preference(z1000032, h, 09, possible, onlineOnly).
-preference(z1000032, h, 10, preferred, onlineOnly).
-preference(z1000032, h, 11, impossible, onlineOrPerson).
-preference(z1000032, h, 12, impossible, onlineOrPerson).
-preference(z1000032, h, 13, impossible, onlineOrPerson).
-preference(z1000032, h, 14, preferred, onlineOnly).
-preference(z1000032, h, 15, preferred, onlineOnly).
-preference(z1000032, h, 16, preferred, onlineOnly).
-preference(z1000032, h, 17, preferred, onlineOnly).
-preference(z1000032, h, 18, preferred, onlineOnly).
-preference(z1000032, h, 19, preferred, onlineOnly).
-preference(z1000032, h, 20, preferred, onlineOnly).
-preference(z1000032, f, 08, possible, onlineOnly).
-preference(z1000032, f, 09, possible, onlineOnly).
-preference(z1000032, f, 10, preferred, onlineOnly).
-preference(z1000032, f, 11, preferred, onlineOnly).
-preference(z1000032, f, 12, preferred, onlineOnly).
-preference(z1000032, f, 13, preferred, onlineOnly).
-preference(z1000032, f, 14, preferred, onlineOnly).
-preference(z1000032, f, 15, preferred, onlineOnly).
-preference(z1000032, f, 16, preferred, onlineOnly).
-preference(z1000032, f, 17, preferred, onlineOnly).
-preference(z1000032, f, 18, preferred, onlineOnly).
-preference(z1000032, f, 19, preferred, onlineOnly).
-preference(z1000032, f, 20, preferred, onlineOnly).
-capacityTute(z1000032, 1).
-capacityAsst(z1000032, 1).
-preferTutorial(z1000032, 1).
+available(z1000032, online, m, 8).
+desire(z1000032, possible, m, 8).
+available(z1000032, online, m, 9).
+desire(z1000032, possible, m, 9).
+available(z1000032, online, m, 10).
+desire(z1000032, preferred, m, 10).
+available(z1000032, online, m, 11).
+desire(z1000032, preferred, m, 11).
+available(z1000032, online, m, 12).
+desire(z1000032, preferred, m, 12).
+available(z1000032, online, m, 13).
+desire(z1000032, preferred, m, 13).
+available(z1000032, online, m, 14).
+desire(z1000032, preferred, m, 14).
+available(z1000032, online, m, 15).
+desire(z1000032, preferred, m, 15).
+available(z1000032, online, m, 16).
+desire(z1000032, preferred, m, 16).
+available(z1000032, online, m, 17).
+desire(z1000032, preferred, m, 17).
+available(z1000032, online, m, 18).
+desire(z1000032, preferred, m, 18).
+available(z1000032, online, m, 19).
+desire(z1000032, preferred, m, 19).
+available(z1000032, online, m, 20).
+desire(z1000032, preferred, m, 20).
+available(z1000032, online, t, 8).
+desire(z1000032, possible, t, 8).
+available(z1000032, online, t, 9).
+desire(z1000032, possible, t, 9).
+available(z1000032, online, t, 10).
+desire(z1000032, preferred, t, 10).
+available(z1000032, online, t, 11).
+desire(z1000032, preferred, t, 11).
+available(z1000032, online, t, 12).
+desire(z1000032, preferred, t, 12).
+available(z1000032, online, t, 16).
+desire(z1000032, preferred, t, 16).
+available(z1000032, online, t, 17).
+desire(z1000032, preferred, t, 17).
+available(z1000032, online, t, 18).
+desire(z1000032, preferred, t, 18).
+available(z1000032, online, t, 19).
+desire(z1000032, preferred, t, 19).
+available(z1000032, online, t, 20).
+desire(z1000032, preferred, t, 20).
+available(z1000032, online, w, 8).
+desire(z1000032, possible, w, 8).
+available(z1000032, online, w, 9).
+desire(z1000032, possible, w, 9).
+available(z1000032, online, w, 10).
+desire(z1000032, preferred, w, 10).
+available(z1000032, online, w, 11).
+desire(z1000032, preferred, w, 11).
+available(z1000032, online, w, 12).
+desire(z1000032, preferred, w, 12).
+available(z1000032, online, w, 13).
+desire(z1000032, preferred, w, 13).
+available(z1000032, online, w, 14).
+desire(z1000032, preferred, w, 14).
+available(z1000032, online, w, 15).
+desire(z1000032, preferred, w, 15).
+available(z1000032, online, w, 16).
+desire(z1000032, preferred, w, 16).
+available(z1000032, online, w, 17).
+desire(z1000032, preferred, w, 17).
+available(z1000032, online, w, 18).
+desire(z1000032, preferred, w, 18).
+available(z1000032, online, w, 19).
+desire(z1000032, preferred, w, 19).
+available(z1000032, online, w, 20).
+desire(z1000032, preferred, w, 20).
+available(z1000032, online, h, 8).
+desire(z1000032, possible, h, 8).
+available(z1000032, online, h, 9).
+desire(z1000032, possible, h, 9).
+available(z1000032, online, h, 10).
+desire(z1000032, preferred, h, 10).
+available(z1000032, online, h, 14).
+desire(z1000032, preferred, h, 14).
+available(z1000032, online, h, 15).
+desire(z1000032, preferred, h, 15).
+available(z1000032, online, h, 16).
+desire(z1000032, preferred, h, 16).
+available(z1000032, online, h, 17).
+desire(z1000032, preferred, h, 17).
+available(z1000032, online, h, 18).
+desire(z1000032, preferred, h, 18).
+available(z1000032, online, h, 19).
+desire(z1000032, preferred, h, 19).
+available(z1000032, online, h, 20).
+desire(z1000032, preferred, h, 20).
+available(z1000032, online, f, 8).
+desire(z1000032, possible, f, 8).
+available(z1000032, online, f, 9).
+desire(z1000032, possible, f, 9).
+available(z1000032, online, f, 10).
+desire(z1000032, preferred, f, 10).
+available(z1000032, online, f, 11).
+desire(z1000032, preferred, f, 11).
+available(z1000032, online, f, 12).
+desire(z1000032, preferred, f, 12).
+available(z1000032, online, f, 13).
+desire(z1000032, preferred, f, 13).
+available(z1000032, online, f, 14).
+desire(z1000032, preferred, f, 14).
+available(z1000032, online, f, 15).
+desire(z1000032, preferred, f, 15).
+available(z1000032, online, f, 16).
+desire(z1000032, preferred, f, 16).
+available(z1000032, online, f, 17).
+desire(z1000032, preferred, f, 17).
+available(z1000032, online, f, 18).
+desire(z1000032, preferred, f, 18).
+available(z1000032, online, f, 19).
+desire(z1000032, preferred, f, 19).
+available(z1000032, online, f, 20).
+desire(z1000032, preferred, f, 20).
+capacity(z1000032, tute, 1).
+capacity(z1000032, asst, 1).
+prefer(z1000032, tute).
 teacher(z1000033).
-previousTuteExperience(z1000033, true).
-preference(z1000033, m, 08, impossible, onlineOrPerson).
-preference(z1000033, m, 09, impossible, onlineOrPerson).
-preference(z1000033, m, 10, impossible, onlineOrPerson).
-preference(z1000033, m, 11, impossible, onlineOrPerson).
-preference(z1000033, m, 12, impossible, onlineOrPerson).
-preference(z1000033, m, 13, impossible, onlineOrPerson).
-preference(z1000033, m, 14, impossible, onlineOrPerson).
-preference(z1000033, m, 15, impossible, onlineOrPerson).
-preference(z1000033, m, 16, impossible, onlineOrPerson).
-preference(z1000033, m, 17, impossible, onlineOrPerson).
-preference(z1000033, m, 18, dislike, onlineOrPerson).
-preference(z1000033, m, 19, dislike, onlineOrPerson).
-preference(z1000033, m, 20, dislike, onlineOrPerson).
-preference(z1000033, t, 08, impossible, onlineOrPerson).
-preference(z1000033, t, 09, impossible, onlineOrPerson).
-preference(z1000033, t, 10, impossible, onlineOrPerson).
-preference(z1000033, t, 11, impossible, onlineOrPerson).
-preference(z1000033, t, 12, impossible, onlineOrPerson).
-preference(z1000033, t, 13, impossible, onlineOrPerson).
-preference(z1000033, t, 14, impossible, onlineOrPerson).
-preference(z1000033, t, 15, impossible, onlineOrPerson).
-preference(z1000033, t, 16, impossible, onlineOrPerson).
-preference(z1000033, t, 17, impossible, onlineOrPerson).
-preference(z1000033, t, 18, dislike, onlineOrPerson).
-preference(z1000033, t, 19, dislike, onlineOrPerson).
-preference(z1000033, t, 20, dislike, onlineOrPerson).
-preference(z1000033, w, 08, impossible, onlineOrPerson).
-preference(z1000033, w, 09, impossible, onlineOrPerson).
-preference(z1000033, w, 10, impossible, onlineOrPerson).
-preference(z1000033, w, 11, impossible, onlineOrPerson).
-preference(z1000033, w, 12, impossible, onlineOrPerson).
-preference(z1000033, w, 13, impossible, onlineOrPerson).
-preference(z1000033, w, 14, impossible, onlineOrPerson).
-preference(z1000033, w, 15, impossible, onlineOrPerson).
-preference(z1000033, w, 16, impossible, onlineOrPerson).
-preference(z1000033, w, 17, impossible, onlineOrPerson).
-preference(z1000033, w, 18, dislike, onlineOrPerson).
-preference(z1000033, w, 19, dislike, onlineOrPerson).
-preference(z1000033, w, 20, dislike, onlineOrPerson).
-preference(z1000033, h, 08, impossible, onlineOrPerson).
-preference(z1000033, h, 09, impossible, onlineOrPerson).
-preference(z1000033, h, 10, impossible, onlineOrPerson).
-preference(z1000033, h, 11, impossible, onlineOrPerson).
-preference(z1000033, h, 12, possible, onlineOrPerson).
-preference(z1000033, h, 13, possible, onlineOrPerson).
-preference(z1000033, h, 14, possible, onlineOrPerson).
-preference(z1000033, h, 15, possible, onlineOrPerson).
-preference(z1000033, h, 16, possible, onlineOrPerson).
-preference(z1000033, h, 17, possible, onlineOrPerson).
-preference(z1000033, h, 18, dislike, onlineOrPerson).
-preference(z1000033, h, 19, dislike, onlineOrPerson).
-preference(z1000033, h, 20, dislike, onlineOrPerson).
-preference(z1000033, f, 08, impossible, onlineOrPerson).
-preference(z1000033, f, 09, preferred, onlineOrPerson).
-preference(z1000033, f, 10, preferred, onlineOrPerson).
-preference(z1000033, f, 11, preferred, onlineOrPerson).
-preference(z1000033, f, 12, preferred, onlineOrPerson).
-preference(z1000033, f, 13, preferred, onlineOrPerson).
-preference(z1000033, f, 14, preferred, onlineOrPerson).
-preference(z1000033, f, 15, preferred, onlineOrPerson).
-preference(z1000033, f, 16, preferred, onlineOrPerson).
-preference(z1000033, f, 17, preferred, onlineOrPerson).
-preference(z1000033, f, 18, impossible, onlineOrPerson).
-preference(z1000033, f, 19, impossible, onlineOrPerson).
-preference(z1000033, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000033, 1).
-capacityAsst(z1000033, 1).
-preferTutorial(z1000033, 1).
+experience(z1000033, tute).
+experience(z1000033, asst).
+available(z1000033, online, m, 18).
+available(z1000033, inPerson, m, 18).
+desire(z1000033, dislike, m, 18).
+available(z1000033, online, m, 19).
+available(z1000033, inPerson, m, 19).
+desire(z1000033, dislike, m, 19).
+available(z1000033, online, m, 20).
+available(z1000033, inPerson, m, 20).
+desire(z1000033, dislike, m, 20).
+available(z1000033, online, t, 18).
+available(z1000033, inPerson, t, 18).
+desire(z1000033, dislike, t, 18).
+available(z1000033, online, t, 19).
+available(z1000033, inPerson, t, 19).
+desire(z1000033, dislike, t, 19).
+available(z1000033, online, t, 20).
+available(z1000033, inPerson, t, 20).
+desire(z1000033, dislike, t, 20).
+available(z1000033, online, w, 18).
+available(z1000033, inPerson, w, 18).
+desire(z1000033, dislike, w, 18).
+available(z1000033, online, w, 19).
+available(z1000033, inPerson, w, 19).
+desire(z1000033, dislike, w, 19).
+available(z1000033, online, w, 20).
+available(z1000033, inPerson, w, 20).
+desire(z1000033, dislike, w, 20).
+available(z1000033, online, h, 12).
+available(z1000033, inPerson, h, 12).
+desire(z1000033, possible, h, 12).
+available(z1000033, online, h, 13).
+available(z1000033, inPerson, h, 13).
+desire(z1000033, possible, h, 13).
+available(z1000033, online, h, 14).
+available(z1000033, inPerson, h, 14).
+desire(z1000033, possible, h, 14).
+available(z1000033, online, h, 15).
+available(z1000033, inPerson, h, 15).
+desire(z1000033, possible, h, 15).
+available(z1000033, online, h, 16).
+available(z1000033, inPerson, h, 16).
+desire(z1000033, possible, h, 16).
+available(z1000033, online, h, 17).
+available(z1000033, inPerson, h, 17).
+desire(z1000033, possible, h, 17).
+available(z1000033, online, h, 18).
+available(z1000033, inPerson, h, 18).
+desire(z1000033, dislike, h, 18).
+available(z1000033, online, h, 19).
+available(z1000033, inPerson, h, 19).
+desire(z1000033, dislike, h, 19).
+available(z1000033, online, h, 20).
+available(z1000033, inPerson, h, 20).
+desire(z1000033, dislike, h, 20).
+available(z1000033, online, f, 9).
+available(z1000033, inPerson, f, 9).
+desire(z1000033, preferred, f, 9).
+available(z1000033, online, f, 10).
+available(z1000033, inPerson, f, 10).
+desire(z1000033, preferred, f, 10).
+available(z1000033, online, f, 11).
+available(z1000033, inPerson, f, 11).
+desire(z1000033, preferred, f, 11).
+available(z1000033, online, f, 12).
+available(z1000033, inPerson, f, 12).
+desire(z1000033, preferred, f, 12).
+available(z1000033, online, f, 13).
+available(z1000033, inPerson, f, 13).
+desire(z1000033, preferred, f, 13).
+available(z1000033, online, f, 14).
+available(z1000033, inPerson, f, 14).
+desire(z1000033, preferred, f, 14).
+available(z1000033, online, f, 15).
+available(z1000033, inPerson, f, 15).
+desire(z1000033, preferred, f, 15).
+available(z1000033, online, f, 16).
+available(z1000033, inPerson, f, 16).
+desire(z1000033, preferred, f, 16).
+available(z1000033, online, f, 17).
+available(z1000033, inPerson, f, 17).
+desire(z1000033, preferred, f, 17).
+capacity(z1000033, tute, 1).
+capacity(z1000033, asst, 1).
+prefer(z1000033, tute).
 teacher(z1000034).
-previousTuteExperience(z1000034, true).
-preference(z1000034, m, 08, preferred, onlineOrPerson).
-preference(z1000034, m, 09, preferred, onlineOrPerson).
-preference(z1000034, m, 10, preferred, onlineOrPerson).
-preference(z1000034, m, 11, preferred, onlineOrPerson).
-preference(z1000034, m, 12, preferred, onlineOrPerson).
-preference(z1000034, m, 13, preferred, onlineOrPerson).
-preference(z1000034, m, 14, preferred, onlineOrPerson).
-preference(z1000034, m, 15, impossible, onlineOrPerson).
-preference(z1000034, m, 16, impossible, onlineOrPerson).
-preference(z1000034, m, 17, impossible, onlineOrPerson).
-preference(z1000034, m, 18, preferred, onlineOrPerson).
-preference(z1000034, m, 19, preferred, onlineOrPerson).
-preference(z1000034, m, 20, preferred, onlineOrPerson).
-preference(z1000034, t, 08, preferred, onlineOnly).
-preference(z1000034, t, 09, preferred, onlineOnly).
-preference(z1000034, t, 10, preferred, onlineOnly).
-preference(z1000034, t, 11, preferred, onlineOnly).
-preference(z1000034, t, 12, preferred, onlineOnly).
-preference(z1000034, t, 13, preferred, onlineOnly).
-preference(z1000034, t, 14, preferred, onlineOnly).
-preference(z1000034, t, 15, preferred, onlineOnly).
-preference(z1000034, t, 16, preferred, onlineOnly).
-preference(z1000034, t, 17, impossible, onlineOrPerson).
-preference(z1000034, t, 18, impossible, onlineOrPerson).
-preference(z1000034, t, 19, impossible, onlineOrPerson).
-preference(z1000034, t, 20, impossible, onlineOrPerson).
-preference(z1000034, w, 08, preferred, onlineOnly).
-preference(z1000034, w, 09, preferred, onlineOnly).
-preference(z1000034, w, 10, impossible, onlineOrPerson).
-preference(z1000034, w, 11, impossible, onlineOrPerson).
-preference(z1000034, w, 12, possible, onlineOnly).
-preference(z1000034, w, 13, preferred, onlineOnly).
-preference(z1000034, w, 14, preferred, onlineOnly).
-preference(z1000034, w, 15, preferred, onlineOnly).
-preference(z1000034, w, 16, preferred, onlineOnly).
-preference(z1000034, w, 17, preferred, onlineOnly).
-preference(z1000034, w, 18, preferred, onlineOnly).
-preference(z1000034, w, 19, preferred, onlineOnly).
-preference(z1000034, w, 20, preferred, onlineOnly).
-preference(z1000034, h, 08, preferred, onlineOnly).
-preference(z1000034, h, 09, preferred, onlineOnly).
-preference(z1000034, h, 10, impossible, onlineOrPerson).
-preference(z1000034, h, 11, impossible, onlineOrPerson).
-preference(z1000034, h, 12, possible, onlineOnly).
-preference(z1000034, h, 13, preferred, onlineOnly).
-preference(z1000034, h, 14, preferred, onlineOnly).
-preference(z1000034, h, 15, preferred, onlineOnly).
-preference(z1000034, h, 16, preferred, onlineOnly).
-preference(z1000034, h, 17, impossible, onlineOrPerson).
-preference(z1000034, h, 18, impossible, onlineOrPerson).
-preference(z1000034, h, 19, impossible, onlineOrPerson).
-preference(z1000034, h, 20, impossible, onlineOrPerson).
-preference(z1000034, f, 08, preferred, onlineOrPerson).
-preference(z1000034, f, 09, preferred, onlineOrPerson).
-preference(z1000034, f, 10, preferred, onlineOrPerson).
-preference(z1000034, f, 11, preferred, onlineOrPerson).
-preference(z1000034, f, 12, preferred, onlineOrPerson).
-preference(z1000034, f, 13, preferred, onlineOrPerson).
-preference(z1000034, f, 14, preferred, onlineOrPerson).
-preference(z1000034, f, 15, impossible, onlineOrPerson).
-preference(z1000034, f, 16, impossible, onlineOrPerson).
-preference(z1000034, f, 17, preferred, onlineOrPerson).
-preference(z1000034, f, 18, preferred, onlineOrPerson).
-preference(z1000034, f, 19, preferred, onlineOrPerson).
-preference(z1000034, f, 20, preferred, onlineOrPerson).
-capacityTute(z1000034, 1).
-capacityAsst(z1000034, 1).
-preferTutorial(z1000034, 1).
+experience(z1000034, tute).
+experience(z1000034, asst).
+available(z1000034, online, m, 8).
+available(z1000034, inPerson, m, 8).
+desire(z1000034, preferred, m, 8).
+available(z1000034, online, m, 9).
+available(z1000034, inPerson, m, 9).
+desire(z1000034, preferred, m, 9).
+available(z1000034, online, m, 10).
+available(z1000034, inPerson, m, 10).
+desire(z1000034, preferred, m, 10).
+available(z1000034, online, m, 11).
+available(z1000034, inPerson, m, 11).
+desire(z1000034, preferred, m, 11).
+available(z1000034, online, m, 12).
+available(z1000034, inPerson, m, 12).
+desire(z1000034, preferred, m, 12).
+available(z1000034, online, m, 13).
+available(z1000034, inPerson, m, 13).
+desire(z1000034, preferred, m, 13).
+available(z1000034, online, m, 14).
+available(z1000034, inPerson, m, 14).
+desire(z1000034, preferred, m, 14).
+available(z1000034, online, m, 18).
+available(z1000034, inPerson, m, 18).
+desire(z1000034, preferred, m, 18).
+available(z1000034, online, m, 19).
+available(z1000034, inPerson, m, 19).
+desire(z1000034, preferred, m, 19).
+available(z1000034, online, m, 20).
+available(z1000034, inPerson, m, 20).
+desire(z1000034, preferred, m, 20).
+available(z1000034, online, t, 8).
+desire(z1000034, preferred, t, 8).
+available(z1000034, online, t, 9).
+desire(z1000034, preferred, t, 9).
+available(z1000034, online, t, 10).
+desire(z1000034, preferred, t, 10).
+available(z1000034, online, t, 11).
+desire(z1000034, preferred, t, 11).
+available(z1000034, online, t, 12).
+desire(z1000034, preferred, t, 12).
+available(z1000034, online, t, 13).
+desire(z1000034, preferred, t, 13).
+available(z1000034, online, t, 14).
+desire(z1000034, preferred, t, 14).
+available(z1000034, online, t, 15).
+desire(z1000034, preferred, t, 15).
+available(z1000034, online, t, 16).
+desire(z1000034, preferred, t, 16).
+available(z1000034, online, w, 8).
+desire(z1000034, preferred, w, 8).
+available(z1000034, online, w, 9).
+desire(z1000034, preferred, w, 9).
+available(z1000034, online, w, 12).
+desire(z1000034, possible, w, 12).
+available(z1000034, online, w, 13).
+desire(z1000034, preferred, w, 13).
+available(z1000034, online, w, 14).
+desire(z1000034, preferred, w, 14).
+available(z1000034, online, w, 15).
+desire(z1000034, preferred, w, 15).
+available(z1000034, online, w, 16).
+desire(z1000034, preferred, w, 16).
+available(z1000034, online, w, 17).
+desire(z1000034, preferred, w, 17).
+available(z1000034, online, w, 18).
+desire(z1000034, preferred, w, 18).
+available(z1000034, online, w, 19).
+desire(z1000034, preferred, w, 19).
+available(z1000034, online, w, 20).
+desire(z1000034, preferred, w, 20).
+available(z1000034, online, h, 8).
+desire(z1000034, preferred, h, 8).
+available(z1000034, online, h, 9).
+desire(z1000034, preferred, h, 9).
+available(z1000034, online, h, 12).
+desire(z1000034, possible, h, 12).
+available(z1000034, online, h, 13).
+desire(z1000034, preferred, h, 13).
+available(z1000034, online, h, 14).
+desire(z1000034, preferred, h, 14).
+available(z1000034, online, h, 15).
+desire(z1000034, preferred, h, 15).
+available(z1000034, online, h, 16).
+desire(z1000034, preferred, h, 16).
+available(z1000034, online, f, 8).
+available(z1000034, inPerson, f, 8).
+desire(z1000034, preferred, f, 8).
+available(z1000034, online, f, 9).
+available(z1000034, inPerson, f, 9).
+desire(z1000034, preferred, f, 9).
+available(z1000034, online, f, 10).
+available(z1000034, inPerson, f, 10).
+desire(z1000034, preferred, f, 10).
+available(z1000034, online, f, 11).
+available(z1000034, inPerson, f, 11).
+desire(z1000034, preferred, f, 11).
+available(z1000034, online, f, 12).
+available(z1000034, inPerson, f, 12).
+desire(z1000034, preferred, f, 12).
+available(z1000034, online, f, 13).
+available(z1000034, inPerson, f, 13).
+desire(z1000034, preferred, f, 13).
+available(z1000034, online, f, 14).
+available(z1000034, inPerson, f, 14).
+desire(z1000034, preferred, f, 14).
+available(z1000034, online, f, 17).
+available(z1000034, inPerson, f, 17).
+desire(z1000034, preferred, f, 17).
+available(z1000034, online, f, 18).
+available(z1000034, inPerson, f, 18).
+desire(z1000034, preferred, f, 18).
+available(z1000034, online, f, 19).
+available(z1000034, inPerson, f, 19).
+desire(z1000034, preferred, f, 19).
+available(z1000034, online, f, 20).
+available(z1000034, inPerson, f, 20).
+desire(z1000034, preferred, f, 20).
+capacity(z1000034, tute, 1).
+capacity(z1000034, asst, 1).
+prefer(z1000034, tute).
 teacher(z1000035).
-previousTuteExperience(z1000035, false).
-preference(z1000035, m, 08, impossible, onlineOrPerson).
-preference(z1000035, m, 09, possible, onlineOnly).
-preference(z1000035, m, 10, preferred, onlineOnly).
-preference(z1000035, m, 11, preferred, onlineOnly).
-preference(z1000035, m, 12, preferred, onlineOnly).
-preference(z1000035, m, 13, impossible, onlineOrPerson).
-preference(z1000035, m, 14, impossible, onlineOrPerson).
-preference(z1000035, m, 15, impossible, onlineOrPerson).
-preference(z1000035, m, 16, preferred, onlineOnly).
-preference(z1000035, m, 17, preferred, onlineOnly).
-preference(z1000035, m, 18, preferred, onlineOnly).
-preference(z1000035, m, 19, possible, onlineOnly).
-preference(z1000035, m, 20, impossible, onlineOrPerson).
-preference(z1000035, t, 08, impossible, onlineOrPerson).
-preference(z1000035, t, 09, dislike, onlineOnly).
-preference(z1000035, t, 10, preferred, onlineOnly).
-preference(z1000035, t, 11, dislike, onlineOnly).
-preference(z1000035, t, 12, dislike, onlineOnly).
-preference(z1000035, t, 13, preferred, onlineOnly).
-preference(z1000035, t, 14, preferred, onlineOnly).
-preference(z1000035, t, 15, preferred, onlineOnly).
-preference(z1000035, t, 16, dislike, onlineOnly).
-preference(z1000035, t, 17, dislike, onlineOnly).
-preference(z1000035, t, 18, dislike, onlineOnly).
-preference(z1000035, t, 19, dislike, onlineOnly).
-preference(z1000035, t, 20, impossible, onlineOrPerson).
-preference(z1000035, w, 08, impossible, onlineOrPerson).
-preference(z1000035, w, 09, possible, onlineOnly).
-preference(z1000035, w, 10, possible, onlineOnly).
-preference(z1000035, w, 11, possible, onlineOnly).
-preference(z1000035, w, 12, possible, onlineOnly).
-preference(z1000035, w, 13, possible, onlineOnly).
-preference(z1000035, w, 14, possible, onlineOnly).
-preference(z1000035, w, 15, possible, onlineOnly).
-preference(z1000035, w, 16, dislike, onlineOnly).
-preference(z1000035, w, 17, dislike, onlineOnly).
-preference(z1000035, w, 18, dislike, onlineOnly).
-preference(z1000035, w, 19, dislike, onlineOnly).
-preference(z1000035, w, 20, impossible, onlineOrPerson).
-preference(z1000035, h, 08, impossible, onlineOrPerson).
-preference(z1000035, h, 09, dislike, onlineOnly).
-preference(z1000035, h, 10, preferred, onlineOnly).
-preference(z1000035, h, 11, impossible, onlineOrPerson).
-preference(z1000035, h, 12, dislike, onlineOnly).
-preference(z1000035, h, 13, preferred, onlineOnly).
-preference(z1000035, h, 14, preferred, onlineOnly).
-preference(z1000035, h, 15, preferred, onlineOnly).
-preference(z1000035, h, 16, dislike, onlineOnly).
-preference(z1000035, h, 17, dislike, onlineOnly).
-preference(z1000035, h, 18, dislike, onlineOnly).
-preference(z1000035, h, 19, possible, onlineOnly).
-preference(z1000035, h, 20, impossible, onlineOrPerson).
-preference(z1000035, f, 08, impossible, onlineOrPerson).
-preference(z1000035, f, 09, dislike, onlineOnly).
-preference(z1000035, f, 10, preferred, onlineOnly).
-preference(z1000035, f, 11, dislike, onlineOnly).
-preference(z1000035, f, 12, dislike, onlineOnly).
-preference(z1000035, f, 13, preferred, onlineOnly).
-preference(z1000035, f, 14, preferred, onlineOnly).
-preference(z1000035, f, 15, preferred, onlineOnly).
-preference(z1000035, f, 16, possible, onlineOnly).
-preference(z1000035, f, 17, possible, onlineOnly).
-preference(z1000035, f, 18, possible, onlineOnly).
-preference(z1000035, f, 19, possible, onlineOnly).
-preference(z1000035, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000035, 1).
-capacityAsst(z1000035, 1).
-preferTutorial(z1000035, 1).
+available(z1000035, online, m, 9).
+desire(z1000035, possible, m, 9).
+available(z1000035, online, m, 10).
+desire(z1000035, preferred, m, 10).
+available(z1000035, online, m, 11).
+desire(z1000035, preferred, m, 11).
+available(z1000035, online, m, 12).
+desire(z1000035, preferred, m, 12).
+available(z1000035, online, m, 16).
+desire(z1000035, preferred, m, 16).
+available(z1000035, online, m, 17).
+desire(z1000035, preferred, m, 17).
+available(z1000035, online, m, 18).
+desire(z1000035, preferred, m, 18).
+available(z1000035, online, m, 19).
+desire(z1000035, possible, m, 19).
+available(z1000035, online, t, 9).
+desire(z1000035, dislike, t, 9).
+available(z1000035, online, t, 10).
+desire(z1000035, preferred, t, 10).
+available(z1000035, online, t, 11).
+desire(z1000035, dislike, t, 11).
+available(z1000035, online, t, 12).
+desire(z1000035, dislike, t, 12).
+available(z1000035, online, t, 13).
+desire(z1000035, preferred, t, 13).
+available(z1000035, online, t, 14).
+desire(z1000035, preferred, t, 14).
+available(z1000035, online, t, 15).
+desire(z1000035, preferred, t, 15).
+available(z1000035, online, t, 16).
+desire(z1000035, dislike, t, 16).
+available(z1000035, online, t, 17).
+desire(z1000035, dislike, t, 17).
+available(z1000035, online, t, 18).
+desire(z1000035, dislike, t, 18).
+available(z1000035, online, t, 19).
+desire(z1000035, dislike, t, 19).
+available(z1000035, online, w, 9).
+desire(z1000035, possible, w, 9).
+available(z1000035, online, w, 10).
+desire(z1000035, possible, w, 10).
+available(z1000035, online, w, 11).
+desire(z1000035, possible, w, 11).
+available(z1000035, online, w, 12).
+desire(z1000035, possible, w, 12).
+available(z1000035, online, w, 13).
+desire(z1000035, possible, w, 13).
+available(z1000035, online, w, 14).
+desire(z1000035, possible, w, 14).
+available(z1000035, online, w, 15).
+desire(z1000035, possible, w, 15).
+available(z1000035, online, w, 16).
+desire(z1000035, dislike, w, 16).
+available(z1000035, online, w, 17).
+desire(z1000035, dislike, w, 17).
+available(z1000035, online, w, 18).
+desire(z1000035, dislike, w, 18).
+available(z1000035, online, w, 19).
+desire(z1000035, dislike, w, 19).
+available(z1000035, online, h, 9).
+desire(z1000035, dislike, h, 9).
+available(z1000035, online, h, 10).
+desire(z1000035, preferred, h, 10).
+available(z1000035, online, h, 12).
+desire(z1000035, dislike, h, 12).
+available(z1000035, online, h, 13).
+desire(z1000035, preferred, h, 13).
+available(z1000035, online, h, 14).
+desire(z1000035, preferred, h, 14).
+available(z1000035, online, h, 15).
+desire(z1000035, preferred, h, 15).
+available(z1000035, online, h, 16).
+desire(z1000035, dislike, h, 16).
+available(z1000035, online, h, 17).
+desire(z1000035, dislike, h, 17).
+available(z1000035, online, h, 18).
+desire(z1000035, dislike, h, 18).
+available(z1000035, online, h, 19).
+desire(z1000035, possible, h, 19).
+available(z1000035, online, f, 9).
+desire(z1000035, dislike, f, 9).
+available(z1000035, online, f, 10).
+desire(z1000035, preferred, f, 10).
+available(z1000035, online, f, 11).
+desire(z1000035, dislike, f, 11).
+available(z1000035, online, f, 12).
+desire(z1000035, dislike, f, 12).
+available(z1000035, online, f, 13).
+desire(z1000035, preferred, f, 13).
+available(z1000035, online, f, 14).
+desire(z1000035, preferred, f, 14).
+available(z1000035, online, f, 15).
+desire(z1000035, preferred, f, 15).
+available(z1000035, online, f, 16).
+desire(z1000035, possible, f, 16).
+available(z1000035, online, f, 17).
+desire(z1000035, possible, f, 17).
+available(z1000035, online, f, 18).
+desire(z1000035, possible, f, 18).
+available(z1000035, online, f, 19).
+desire(z1000035, possible, f, 19).
+capacity(z1000035, tute, 1).
+capacity(z1000035, asst, 1).
+prefer(z1000035, tute).
 teacher(z1000036).
-previousTuteExperience(z1000036, true).
-preference(z1000036, m, 08, preferred, onlineOnly).
-preference(z1000036, m, 09, preferred, onlineOnly).
-preference(z1000036, m, 10, preferred, onlineOnly).
-preference(z1000036, m, 11, preferred, onlineOnly).
-preference(z1000036, m, 12, preferred, onlineOnly).
-preference(z1000036, m, 13, preferred, onlineOnly).
-preference(z1000036, m, 14, preferred, onlineOnly).
-preference(z1000036, m, 15, preferred, onlineOnly).
-preference(z1000036, m, 16, preferred, onlineOnly).
-preference(z1000036, m, 17, preferred, onlineOnly).
-preference(z1000036, m, 18, preferred, onlineOnly).
-preference(z1000036, m, 19, preferred, onlineOnly).
-preference(z1000036, m, 20, preferred, onlineOnly).
-preference(z1000036, t, 08, impossible, onlineOrPerson).
-preference(z1000036, t, 09, impossible, onlineOrPerson).
-preference(z1000036, t, 10, impossible, onlineOrPerson).
-preference(z1000036, t, 11, impossible, onlineOrPerson).
-preference(z1000036, t, 12, impossible, onlineOrPerson).
-preference(z1000036, t, 13, impossible, onlineOrPerson).
-preference(z1000036, t, 14, impossible, onlineOrPerson).
-preference(z1000036, t, 15, impossible, onlineOrPerson).
-preference(z1000036, t, 16, impossible, onlineOrPerson).
-preference(z1000036, t, 17, impossible, onlineOrPerson).
-preference(z1000036, t, 18, impossible, onlineOrPerson).
-preference(z1000036, t, 19, impossible, onlineOrPerson).
-preference(z1000036, t, 20, impossible, onlineOrPerson).
-preference(z1000036, w, 08, preferred, onlineOnly).
-preference(z1000036, w, 09, preferred, onlineOnly).
-preference(z1000036, w, 10, preferred, onlineOnly).
-preference(z1000036, w, 11, preferred, onlineOnly).
-preference(z1000036, w, 12, preferred, onlineOnly).
-preference(z1000036, w, 13, preferred, onlineOnly).
-preference(z1000036, w, 14, preferred, onlineOnly).
-preference(z1000036, w, 15, preferred, onlineOnly).
-preference(z1000036, w, 16, preferred, onlineOnly).
-preference(z1000036, w, 17, preferred, onlineOnly).
-preference(z1000036, w, 18, preferred, onlineOnly).
-preference(z1000036, w, 19, preferred, onlineOnly).
-preference(z1000036, w, 20, preferred, onlineOnly).
-preference(z1000036, h, 08, impossible, onlineOrPerson).
-preference(z1000036, h, 09, impossible, onlineOrPerson).
-preference(z1000036, h, 10, impossible, onlineOrPerson).
-preference(z1000036, h, 11, impossible, onlineOrPerson).
-preference(z1000036, h, 12, impossible, onlineOrPerson).
-preference(z1000036, h, 13, impossible, onlineOrPerson).
-preference(z1000036, h, 14, impossible, onlineOrPerson).
-preference(z1000036, h, 15, impossible, onlineOrPerson).
-preference(z1000036, h, 16, impossible, onlineOrPerson).
-preference(z1000036, h, 17, impossible, onlineOrPerson).
-preference(z1000036, h, 18, impossible, onlineOrPerson).
-preference(z1000036, h, 19, impossible, onlineOrPerson).
-preference(z1000036, h, 20, impossible, onlineOrPerson).
-preference(z1000036, f, 08, preferred, onlineOnly).
-preference(z1000036, f, 09, preferred, onlineOnly).
-preference(z1000036, f, 10, preferred, onlineOnly).
-preference(z1000036, f, 11, preferred, onlineOnly).
-preference(z1000036, f, 12, preferred, onlineOnly).
-preference(z1000036, f, 13, preferred, onlineOnly).
-preference(z1000036, f, 14, preferred, onlineOnly).
-preference(z1000036, f, 15, preferred, onlineOnly).
-preference(z1000036, f, 16, preferred, onlineOnly).
-preference(z1000036, f, 17, preferred, onlineOnly).
-preference(z1000036, f, 18, preferred, onlineOnly).
-preference(z1000036, f, 19, preferred, onlineOnly).
-preference(z1000036, f, 20, impossible, false).
-capacityTute(z1000036, 1).
-capacityAsst(z1000036, 1).
-preferTutorial(z1000036, 1).
+experience(z1000036, tute).
+experience(z1000036, asst).
+available(z1000036, online, m, 8).
+desire(z1000036, preferred, m, 8).
+available(z1000036, online, m, 9).
+desire(z1000036, preferred, m, 9).
+available(z1000036, online, m, 10).
+desire(z1000036, preferred, m, 10).
+available(z1000036, online, m, 11).
+desire(z1000036, preferred, m, 11).
+available(z1000036, online, m, 12).
+desire(z1000036, preferred, m, 12).
+available(z1000036, online, m, 13).
+desire(z1000036, preferred, m, 13).
+available(z1000036, online, m, 14).
+desire(z1000036, preferred, m, 14).
+available(z1000036, online, m, 15).
+desire(z1000036, preferred, m, 15).
+available(z1000036, online, m, 16).
+desire(z1000036, preferred, m, 16).
+available(z1000036, online, m, 17).
+desire(z1000036, preferred, m, 17).
+available(z1000036, online, m, 18).
+desire(z1000036, preferred, m, 18).
+available(z1000036, online, m, 19).
+desire(z1000036, preferred, m, 19).
+available(z1000036, online, m, 20).
+desire(z1000036, preferred, m, 20).
+available(z1000036, online, w, 8).
+desire(z1000036, preferred, w, 8).
+available(z1000036, online, w, 9).
+desire(z1000036, preferred, w, 9).
+available(z1000036, online, w, 10).
+desire(z1000036, preferred, w, 10).
+available(z1000036, online, w, 11).
+desire(z1000036, preferred, w, 11).
+available(z1000036, online, w, 12).
+desire(z1000036, preferred, w, 12).
+available(z1000036, online, w, 13).
+desire(z1000036, preferred, w, 13).
+available(z1000036, online, w, 14).
+desire(z1000036, preferred, w, 14).
+available(z1000036, online, w, 15).
+desire(z1000036, preferred, w, 15).
+available(z1000036, online, w, 16).
+desire(z1000036, preferred, w, 16).
+available(z1000036, online, w, 17).
+desire(z1000036, preferred, w, 17).
+available(z1000036, online, w, 18).
+desire(z1000036, preferred, w, 18).
+available(z1000036, online, w, 19).
+desire(z1000036, preferred, w, 19).
+available(z1000036, online, w, 20).
+desire(z1000036, preferred, w, 20).
+available(z1000036, online, f, 8).
+desire(z1000036, preferred, f, 8).
+available(z1000036, online, f, 9).
+desire(z1000036, preferred, f, 9).
+available(z1000036, online, f, 10).
+desire(z1000036, preferred, f, 10).
+available(z1000036, online, f, 11).
+desire(z1000036, preferred, f, 11).
+available(z1000036, online, f, 12).
+desire(z1000036, preferred, f, 12).
+available(z1000036, online, f, 13).
+desire(z1000036, preferred, f, 13).
+available(z1000036, online, f, 14).
+desire(z1000036, preferred, f, 14).
+available(z1000036, online, f, 15).
+desire(z1000036, preferred, f, 15).
+available(z1000036, online, f, 16).
+desire(z1000036, preferred, f, 16).
+available(z1000036, online, f, 17).
+desire(z1000036, preferred, f, 17).
+available(z1000036, online, f, 18).
+desire(z1000036, preferred, f, 18).
+available(z1000036, online, f, 19).
+desire(z1000036, preferred, f, 19).
+capacity(z1000036, tute, 1).
+capacity(z1000036, asst, 1).
+prefer(z1000036, tute).
 teacher(z1000037).
-previousTuteExperience(z1000037, true).
-preference(z1000037, m, 08, impossible, onlineOrPerson).
-preference(z1000037, m, 09, preferred, onlineOnly).
-preference(z1000037, m, 10, preferred, onlineOnly).
-preference(z1000037, m, 11, preferred, onlineOnly).
-preference(z1000037, m, 12, impossible, onlineOrPerson).
-preference(z1000037, m, 13, impossible, onlineOrPerson).
-preference(z1000037, m, 14, impossible, onlineOrPerson).
-preference(z1000037, m, 15, impossible, onlineOrPerson).
-preference(z1000037, m, 16, impossible, onlineOrPerson).
-preference(z1000037, m, 17, possible, onlineOnly).
-preference(z1000037, m, 18, possible, onlineOnly).
-preference(z1000037, m, 19, possible, onlineOnly).
-preference(z1000037, m, 20, impossible, onlineOrPerson).
-preference(z1000037, t, 08, impossible, onlineOrPerson).
-preference(z1000037, t, 09, impossible, onlineOrPerson).
-preference(z1000037, t, 10, impossible, onlineOrPerson).
-preference(z1000037, t, 11, impossible, onlineOrPerson).
-preference(z1000037, t, 12, impossible, onlineOrPerson).
-preference(z1000037, t, 13, impossible, onlineOrPerson).
-preference(z1000037, t, 14, impossible, onlineOrPerson).
-preference(z1000037, t, 15, impossible, onlineOrPerson).
-preference(z1000037, t, 16, impossible, onlineOrPerson).
-preference(z1000037, t, 17, impossible, onlineOrPerson).
-preference(z1000037, t, 18, impossible, onlineOrPerson).
-preference(z1000037, t, 19, impossible, onlineOrPerson).
-preference(z1000037, t, 20, impossible, onlineOrPerson).
-preference(z1000037, w, 08, impossible, onlineOrPerson).
-preference(z1000037, w, 09, impossible, onlineOrPerson).
-preference(z1000037, w, 10, impossible, onlineOrPerson).
-preference(z1000037, w, 11, impossible, onlineOrPerson).
-preference(z1000037, w, 12, impossible, onlineOrPerson).
-preference(z1000037, w, 13, impossible, onlineOrPerson).
-preference(z1000037, w, 14, impossible, onlineOrPerson).
-preference(z1000037, w, 15, dislike, onlineOnly).
-preference(z1000037, w, 16, dislike, onlineOnly).
-preference(z1000037, w, 17, dislike, onlineOnly).
-preference(z1000037, w, 18, impossible, onlineOrPerson).
-preference(z1000037, w, 19, impossible, onlineOrPerson).
-preference(z1000037, w, 20, impossible, onlineOrPerson).
-preference(z1000037, h, 08, impossible, onlineOrPerson).
-preference(z1000037, h, 09, preferred, onlineOnly).
-preference(z1000037, h, 10, preferred, onlineOnly).
-preference(z1000037, h, 11, preferred, onlineOnly).
-preference(z1000037, h, 12, preferred, onlineOnly).
-preference(z1000037, h, 13, preferred, onlineOnly).
-preference(z1000037, h, 14, preferred, onlineOnly).
-preference(z1000037, h, 15, preferred, onlineOnly).
-preference(z1000037, h, 16, preferred, onlineOnly).
-preference(z1000037, h, 17, preferred, onlineOnly).
-preference(z1000037, h, 18, impossible, onlineOrPerson).
-preference(z1000037, h, 19, impossible, onlineOrPerson).
-preference(z1000037, h, 20, impossible, onlineOrPerson).
-preference(z1000037, f, 08, impossible, onlineOrPerson).
-preference(z1000037, f, 09, preferred, onlineOnly).
-preference(z1000037, f, 10, preferred, onlineOnly).
-preference(z1000037, f, 11, impossible, onlineOrPerson).
-preference(z1000037, f, 12, impossible, onlineOrPerson).
-preference(z1000037, f, 13, impossible, onlineOrPerson).
-preference(z1000037, f, 14, impossible, onlineOrPerson).
-preference(z1000037, f, 15, impossible, onlineOrPerson).
-preference(z1000037, f, 16, preferred, onlineOnly).
-preference(z1000037, f, 17, preferred, onlineOnly).
-preference(z1000037, f, 18, preferred, onlineOnly).
-preference(z1000037, f, 19, impossible, onlineOrPerson).
-preference(z1000037, f, 20, impossible, onlineOrPerson).
-capacityTute(z1000037, 1).
-capacityAsst(z1000037, 1).
-preferTutorial(z1000037, 1).
+experience(z1000037, tute).
+experience(z1000037, asst).
+available(z1000037, online, m, 9).
+desire(z1000037, preferred, m, 9).
+available(z1000037, online, m, 10).
+desire(z1000037, preferred, m, 10).
+available(z1000037, online, m, 11).
+desire(z1000037, preferred, m, 11).
+available(z1000037, online, m, 17).
+desire(z1000037, possible, m, 17).
+available(z1000037, online, m, 18).
+desire(z1000037, possible, m, 18).
+available(z1000037, online, m, 19).
+desire(z1000037, possible, m, 19).
+available(z1000037, online, w, 15).
+desire(z1000037, dislike, w, 15).
+available(z1000037, online, w, 16).
+desire(z1000037, dislike, w, 16).
+available(z1000037, online, w, 17).
+desire(z1000037, dislike, w, 17).
+available(z1000037, online, h, 9).
+desire(z1000037, preferred, h, 9).
+available(z1000037, online, h, 10).
+desire(z1000037, preferred, h, 10).
+available(z1000037, online, h, 11).
+desire(z1000037, preferred, h, 11).
+available(z1000037, online, h, 12).
+desire(z1000037, preferred, h, 12).
+available(z1000037, online, h, 13).
+desire(z1000037, preferred, h, 13).
+available(z1000037, online, h, 14).
+desire(z1000037, preferred, h, 14).
+available(z1000037, online, h, 15).
+desire(z1000037, preferred, h, 15).
+available(z1000037, online, h, 16).
+desire(z1000037, preferred, h, 16).
+available(z1000037, online, h, 17).
+desire(z1000037, preferred, h, 17).
+available(z1000037, online, f, 9).
+desire(z1000037, preferred, f, 9).
+available(z1000037, online, f, 10).
+desire(z1000037, preferred, f, 10).
+available(z1000037, online, f, 16).
+desire(z1000037, preferred, f, 16).
+available(z1000037, online, f, 17).
+desire(z1000037, preferred, f, 17).
+available(z1000037, online, f, 18).
+desire(z1000037, preferred, f, 18).
+capacity(z1000037, tute, 1).
+capacity(z1000037, asst, 1).
+prefer(z1000037, tute).
