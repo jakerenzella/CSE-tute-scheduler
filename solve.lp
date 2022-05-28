@@ -27,4 +27,3 @@ satisfactionAggregate(X,C) :- desireLevel(X), C = #count { A,S,R : satisfaction(
 #show.
 #show task/3.
 #show satisfactionAggregate/2.
-#show task/3.
