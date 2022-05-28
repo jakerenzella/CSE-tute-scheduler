@@ -24,10 +24,7 @@ satisfactionAggregate(X,C) :- desireLevel(X), C = #count { A,S,R : satisfaction(
 
 :- satisfactionAggregate(X,C), upperSatisfactionBound(X,CT), C > CT. % as few teachers upset as required.
 
-strange(A,S,R) :- satisfaction(A,S,R,X1), satisfaction(A,S,R,X2), X1 != X2.
-
 #show.
 #show task/3.
 #show satisfactionAggregate/2.
-%#show availabilityRequired/4.
-#show strange/3.
+#show task/3.
