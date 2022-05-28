@@ -40,26 +40,33 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
 
     result = []
     result.append(fact_builder('teacher', preference_entry['zid']))
-    result.append(fact_builder('previousTuteExperience',
-                  z_id, "1511" in preference_entry['previous_experience']))
+    if "1511" in preference_entry['previous_experience']:
+        result.append(fact_builder('experience', z_id, 'tute'))
+        result.append(fact_builder('experience', z_id, 'asst'))
 
     # Go through each day and time
     # (M09) and then extract the preference
-    for key in DAY_TIMES:
-        pref = preference_entry[key[0] + key[1]]
+    for (day,time) in DAY_TIMES:
+        key = [day, time]
+        #pref = preference_entry[key[0] + key[1]]
         try:
             # Turn the preference entry (1.1) into a tuple (dislike, True)
-            pref = KEY_TO_PREF[preference_entry[''.join(key)]]
+            pref = KEY_TO_PREF[preference_entry[day+time]]
         except KeyError:
             # Seems as though there are more times available in CASTLE than the tutors complete,
             # so some preferences are not available. In this case return impossible
             pref = ('impossible', False)
-        result.append(fact_builder('preference', z_id, *key, *pref))
+        if pref[0] != 'impossible':
+            result.append(fact_builder('available', z_id, 'online', day, int(time)))
+            if pref[1] == 'onlineOrPerson':
+                result.append(fact_builder('available', z_id, 'inPerson', day, int(time)))
+            result.append(fact_builder('desire', z_id, pref[0], day, int(time)))
+        #result.append(fact_builder('preference', z_id, *key, *pref))
 
     # These are just stubbed for now
-    result.append(fact_builder('capacityTute', z_id, 1))
-    result.append(fact_builder('capacityAsst', z_id, 1))
-    result.append(fact_builder('preferTutorial', z_id, 1))
+    result.append(fact_builder('capacity', z_id, 'tute', 1))
+    result.append(fact_builder('capacity', z_id, 'asst', 1))
+    result.append(fact_builder('prefer', z_id, 'tute'))
     return result
 
 
@@ -76,7 +83,7 @@ def preferences_dict_to_lp(preferences: list) -> list:
     return list(chain.from_iterable([preference_entry_to_lps(x) for x in preferences]))
 
 
-def timetable_entry_to_lp(timetable_entry: dict) -> str:
+def timetable_entry_to_lps(timetable_entry: dict) -> list[str]:
     """Converts a single timetable entry to a .lp format
 
     Args:
@@ -85,11 +92,22 @@ def timetable_entry_to_lp(timetable_entry: dict) -> str:
     Returns:
         str: the lp format of the timetable entry
     """
-    keys_to_extract = ['Class Desc', 'In Person',
-                       'Room', 'Day', 'Time']
+    slot = timetable_entry['Class Desc']
+    mode = 'inPerson' if timetable_entry['In Person'] == 'true' else 'online'
+    day  = timetable_entry['Day'].lower()
+    time = timetable_entry['Time']
 
-    fact_builder_args = [timetable_entry[x].lower() for x in keys_to_extract]
-    return fact_builder('class', *fact_builder_args)
+    result = []
+    result.append(fact_builder('class', slot))
+    result.append(fact_builder('mode', slot, mode))
+    result.append(fact_builder('day', slot, day))
+    result.append(fact_builder('startTime', slot, int(time)))
+    return result
+#    keys_to_extract = ['Class Desc', 'In Person',
+#                       'Room', 'Day', 'Time']
+
+#    fact_builder_args = [timetable_entry[x].lower() for x in keys_to_extract]
+#    return fact_builder('class', *fact_builder_args)
 
 
 def timetable_dict_to_lp(timetable: list) -> list:
@@ -101,7 +119,8 @@ def timetable_dict_to_lp(timetable: list) -> list:
     Returns:
         list: the list of .lp formatted timetable entries
     """
-    return [timetable_entry_to_lp(x) for x in timetable]
+    return list(chain.from_iterable([timetable_entry_to_lps(x) for x in timetable]))
+#    return [timetable_entry_to_lp(x) for x in timetable]
 
 
 if __name__ == '__main__':
