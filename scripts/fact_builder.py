@@ -16,14 +16,14 @@ def clear_file(output_dir: str, filename: str):
         lpfile.truncate(0)  # clear file
 
 
-def csv_to_dict(input_path: str, filename: str) -> list[dict]:
+def csv_to_dict(input_filename: pathlib.Path) -> list[dict]:
     """Loads the timetable CSV into a dictionary
 
     Returns:
         List: A dictionary containing the CSV data
     """
     results = []
-    with open(pathlib.Path(input_path / filename), encoding='utf-8') as csvfile:
+    with open(input_filename, encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         # ignore the headers
         next(reader)
@@ -46,9 +46,9 @@ def fact_builder(functor: str, *args: list) -> str:
     return f"{functor}({', '.join(args)})."
 
 
-def save_lp(lp_list: list[str], output_dir: str, filename: str) -> None:
+def save_lp(lp_list: list[str], output_file: str) -> None:
     """Generates the .lp file from the timetable CSV, and saves it to a file
     """
-    output_dir.mkdir(exist_ok=True)
-    with open(pathlib.Path(output_dir / filename), 'a', encoding='utf-8') as lpfile:
+    output_file.mkdir(exist_ok=True)
+    with open(pathlib.Path(output_file), 'a', encoding='utf-8') as lpfile:
         lpfile.write('\n'.join(lp_list))
