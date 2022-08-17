@@ -13,4 +13,4 @@ badPairsLimit(5). % how many slots do we accept with a pair of inexperienced tea
 desireLevel(dislike). desireLevel(possible). desireLevel(preferred).
 lessDesired(dislike,possible). lessDesired(dislike,preferred). lessDesired(possible,preferred).
 upperSatisfactionBound(dislike,0). % no task should be disliked
-upperSatisfactionBound(possible,1). % no more than 1 task should be "possible"
+upperSatisfactionBound(possible,0). % no more than 1 task should be "possible"

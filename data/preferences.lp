@@ -131,8 +131,8 @@ available(z1000001, online, f, 19).
 desire(z1000001, dislike, f, 19).
 available(z1000001, online, f, 20).
 desire(z1000001, dislike, f, 20).
-capacity(z1000001, tute, 1).
-capacity(z1000001, asst, 1).
+capacity(z1000001, tute, 4).
+capacity(z1000001, asst, 4).
 prefer(z1000001, tute).
 teacher(z1000002).
 experience(z1000002, tute).
@@ -257,8 +257,8 @@ available(z1000002, online, f, 18).
 desire(z1000002, preferred, f, 18).
 available(z1000002, online, f, 19).
 desire(z1000002, preferred, f, 19).
-capacity(z1000002, tute, 1).
-capacity(z1000002, asst, 1).
+capacity(z1000002, tute, 4).
+capacity(z1000002, asst, 4).
 prefer(z1000002, tute).
 teacher(z1000003).
 experience(z1000003, tute).
@@ -379,8 +379,8 @@ available(z1000003, online, f, 19).
 desire(z1000003, possible, f, 19).
 available(z1000003, online, f, 20).
 desire(z1000003, possible, f, 20).
-capacity(z1000003, tute, 1).
-capacity(z1000003, asst, 1).
+capacity(z1000003, tute, 4).
+capacity(z1000003, asst, 4).
 prefer(z1000003, tute).
 teacher(z1000004).
 experience(z1000004, tute).
@@ -475,8 +475,8 @@ available(z1000004, online, f, 18).
 desire(z1000004, possible, f, 18).
 available(z1000004, online, f, 19).
 desire(z1000004, possible, f, 19).
-capacity(z1000004, tute, 1).
-capacity(z1000004, asst, 1).
+capacity(z1000004, tute, 4).
+capacity(z1000004, asst, 4).
 prefer(z1000004, tute).
 teacher(z1000005).
 experience(z1000005, tute).
@@ -557,8 +557,8 @@ desire(z1000005, preferred, f, 19).
 available(z1000005, online, f, 20).
 available(z1000005, inPerson, f, 20).
 desire(z1000005, preferred, f, 20).
-capacity(z1000005, tute, 1).
-capacity(z1000005, asst, 1).
+capacity(z1000005, tute, 4).
+capacity(z1000005, asst, 4).
 prefer(z1000005, tute).
 teacher(z1000006).
 experience(z1000006, tute).
@@ -640,8 +640,8 @@ desire(z1000006, possible, f, 18).
 available(z1000006, online, f, 19).
 available(z1000006, inPerson, f, 19).
 desire(z1000006, possible, f, 19).
-capacity(z1000006, tute, 1).
-capacity(z1000006, asst, 1).
+capacity(z1000006, tute, 4).
+capacity(z1000006, asst, 4).
 prefer(z1000006, tute).
 teacher(z1000007).
 experience(z1000007, tute).
@@ -756,8 +756,8 @@ available(z1000007, online, f, 19).
 desire(z1000007, preferred, f, 19).
 available(z1000007, online, f, 20).
 desire(z1000007, preferred, f, 20).
-capacity(z1000007, tute, 1).
-capacity(z1000007, asst, 1).
+capacity(z1000007, tute, 4).
+capacity(z1000007, asst, 4).
 prefer(z1000007, tute).
 teacher(z1000008).
 experience(z1000008, tute).
@@ -824,8 +824,8 @@ available(z1000008, online, f, 16).
 desire(z1000008, preferred, f, 16).
 available(z1000008, online, f, 17).
 desire(z1000008, preferred, f, 17).
-capacity(z1000008, tute, 1).
-capacity(z1000008, asst, 1).
+capacity(z1000008, tute, 4).
+capacity(z1000008, asst, 4).
 prefer(z1000008, tute).
 teacher(z1000009).
 experience(z1000009, tute).
@@ -930,8 +930,8 @@ available(z1000009, online, f, 13).
 desire(z1000009, preferred, f, 13).
 available(z1000009, online, f, 14).
 desire(z1000009, preferred, f, 14).
-capacity(z1000009, tute, 1).
-capacity(z1000009, asst, 1).
+capacity(z1000009, tute, 4).
+capacity(z1000009, asst, 4).
 prefer(z1000009, tute).
 teacher(z1000010).
 experience(z1000010, tute).
@@ -992,8 +992,8 @@ desire(z1000010, preferred, h, 18).
 available(z1000010, online, h, 19).
 available(z1000010, inPerson, h, 19).
 desire(z1000010, preferred, h, 19).
-capacity(z1000010, tute, 1).
-capacity(z1000010, asst, 1).
+capacity(z1000010, tute, 4).
+capacity(z1000010, asst, 4).
 prefer(z1000010, tute).
 teacher(z1000011).
 experience(z1000011, tute).
@@ -1025,8 +1025,8 @@ available(z1000011, online, h, 12).
 desire(z1000011, preferred, h, 12).
 available(z1000011, online, h, 13).
 desire(z1000011, preferred, h, 13).
-capacity(z1000011, tute, 1).
-capacity(z1000011, asst, 1).
+capacity(z1000011, tute, 4).
+capacity(z1000011, asst, 4).
 prefer(z1000011, tute).
 teacher(z1000012).
 experience(z1000012, tute).
@@ -1135,8 +1135,8 @@ desire(z1000012, dislike, f, 18).
 available(z1000012, online, f, 19).
 available(z1000012, inPerson, f, 19).
 desire(z1000012, dislike, f, 19).
-capacity(z1000012, tute, 1).
-capacity(z1000012, asst, 1).
+capacity(z1000012, tute, 4).
+capacity(z1000012, asst, 4).
 prefer(z1000012, tute).
 teacher(z1000013).
 experience(z1000013, tute).
@@ -1243,8 +1243,8 @@ available(z1000013, online, f, 19).
 desire(z1000013, dislike, f, 19).
 available(z1000013, online, f, 20).
 desire(z1000013, dislike, f, 20).
-capacity(z1000013, tute, 1).
-capacity(z1000013, asst, 1).
+capacity(z1000013, tute, 4).
+capacity(z1000013, asst, 4).
 prefer(z1000013, tute).
 teacher(z1000014).
 experience(z1000014, tute).
@@ -1309,8 +1309,8 @@ available(z1000014, online, f, 11).
 desire(z1000014, preferred, f, 11).
 available(z1000014, online, f, 12).
 desire(z1000014, dislike, f, 12).
-capacity(z1000014, tute, 1).
-capacity(z1000014, asst, 1).
+capacity(z1000014, tute, 4).
+capacity(z1000014, asst, 4).
 prefer(z1000014, tute).
 teacher(z1000015).
 experience(z1000015, tute).
@@ -1349,8 +1349,8 @@ available(z1000015, online, f, 18).
 desire(z1000015, preferred, f, 18).
 available(z1000015, online, f, 19).
 desire(z1000015, preferred, f, 19).
-capacity(z1000015, tute, 1).
-capacity(z1000015, asst, 1).
+capacity(z1000015, tute, 4).
+capacity(z1000015, asst, 4).
 prefer(z1000015, tute).
 teacher(z1000016).
 experience(z1000016, tute).
@@ -1465,8 +1465,8 @@ available(z1000016, online, f, 19).
 desire(z1000016, preferred, f, 19).
 available(z1000016, online, f, 20).
 desire(z1000016, preferred, f, 20).
-capacity(z1000016, tute, 1).
-capacity(z1000016, asst, 1).
+capacity(z1000016, tute, 4).
+capacity(z1000016, asst, 4).
 prefer(z1000016, tute).
 teacher(z1000017).
 experience(z1000017, tute).
@@ -1552,8 +1552,8 @@ desire(z1000017, preferred, f, 16).
 available(z1000017, online, f, 17).
 available(z1000017, inPerson, f, 17).
 desire(z1000017, preferred, f, 17).
-capacity(z1000017, tute, 1).
-capacity(z1000017, asst, 1).
+capacity(z1000017, tute, 4).
+capacity(z1000017, asst, 4).
 prefer(z1000017, tute).
 teacher(z1000018).
 experience(z1000018, tute).
@@ -1618,8 +1618,8 @@ available(z1000018, online, f, 16).
 desire(z1000018, possible, f, 16).
 available(z1000018, online, f, 17).
 desire(z1000018, possible, f, 17).
-capacity(z1000018, tute, 1).
-capacity(z1000018, asst, 1).
+capacity(z1000018, tute, 4).
+capacity(z1000018, asst, 4).
 prefer(z1000018, tute).
 teacher(z1000019).
 experience(z1000019, tute).
@@ -1754,8 +1754,8 @@ available(z1000019, online, f, 19).
 desire(z1000019, preferred, f, 19).
 available(z1000019, online, f, 20).
 desire(z1000019, preferred, f, 20).
-capacity(z1000019, tute, 1).
-capacity(z1000019, asst, 1).
+capacity(z1000019, tute, 4).
+capacity(z1000019, asst, 4).
 prefer(z1000019, tute).
 teacher(z1000020).
 experience(z1000020, tute).
@@ -1790,8 +1790,8 @@ available(z1000020, online, f, 16).
 desire(z1000020, preferred, f, 16).
 available(z1000020, online, f, 17).
 desire(z1000020, preferred, f, 17).
-capacity(z1000020, tute, 1).
-capacity(z1000020, asst, 1).
+capacity(z1000020, tute, 4).
+capacity(z1000020, asst, 4).
 prefer(z1000020, tute).
 teacher(z1000021).
 experience(z1000021, tute).
@@ -1890,8 +1890,8 @@ desire(z1000021, preferred, f, 14).
 available(z1000021, online, f, 15).
 available(z1000021, inPerson, f, 15).
 desire(z1000021, preferred, f, 15).
-capacity(z1000021, tute, 1).
-capacity(z1000021, asst, 1).
+capacity(z1000021, tute, 4).
+capacity(z1000021, asst, 4).
 prefer(z1000021, tute).
 teacher(z1000022).
 experience(z1000022, tute).
@@ -1984,8 +1984,8 @@ available(z1000022, online, h, 11).
 desire(z1000022, possible, h, 11).
 available(z1000022, online, h, 12).
 desire(z1000022, possible, h, 12).
-capacity(z1000022, tute, 1).
-capacity(z1000022, asst, 1).
+capacity(z1000022, tute, 4).
+capacity(z1000022, asst, 4).
 prefer(z1000022, tute).
 teacher(z1000023).
 experience(z1000023, tute).
@@ -2100,8 +2100,8 @@ available(z1000023, online, f, 18).
 desire(z1000023, possible, f, 18).
 available(z1000023, online, f, 19).
 desire(z1000023, possible, f, 19).
-capacity(z1000023, tute, 1).
-capacity(z1000023, asst, 1).
+capacity(z1000023, tute, 4).
+capacity(z1000023, asst, 4).
 prefer(z1000023, tute).
 teacher(z1000024).
 experience(z1000024, tute).
@@ -2156,8 +2156,8 @@ available(z1000024, online, f, 19).
 desire(z1000024, preferred, f, 19).
 available(z1000024, online, f, 20).
 desire(z1000024, dislike, f, 20).
-capacity(z1000024, tute, 1).
-capacity(z1000024, asst, 1).
+capacity(z1000024, tute, 4).
+capacity(z1000024, asst, 4).
 prefer(z1000024, tute).
 teacher(z1000025).
 experience(z1000025, tute).
@@ -2207,8 +2207,8 @@ desire(z1000025, preferred, f, 16).
 available(z1000025, online, f, 17).
 available(z1000025, inPerson, f, 17).
 desire(z1000025, preferred, f, 17).
-capacity(z1000025, tute, 1).
-capacity(z1000025, asst, 1).
+capacity(z1000025, tute, 4).
+capacity(z1000025, asst, 4).
 prefer(z1000025, tute).
 teacher(z1000026).
 available(z1000026, online, m, 10).
@@ -2315,8 +2315,8 @@ available(z1000026, online, f, 19).
 desire(z1000026, preferred, f, 19).
 available(z1000026, online, f, 20).
 desire(z1000026, preferred, f, 20).
-capacity(z1000026, tute, 1).
-capacity(z1000026, asst, 1).
+capacity(z1000026, tute, 4).
+capacity(z1000026, asst, 4).
 prefer(z1000026, tute).
 teacher(z1000027).
 available(z1000027, online, m, 8).
@@ -2386,8 +2386,8 @@ desire(z1000027, possible, w, 11).
 available(z1000027, online, w, 12).
 available(z1000027, inPerson, w, 12).
 desire(z1000027, possible, w, 12).
-capacity(z1000027, tute, 1).
-capacity(z1000027, asst, 1).
+capacity(z1000027, tute, 4).
+capacity(z1000027, asst, 4).
 prefer(z1000027, tute).
 teacher(z1000028).
 available(z1000028, online, m, 8).
@@ -2496,8 +2496,8 @@ available(z1000028, online, f, 19).
 desire(z1000028, possible, f, 19).
 available(z1000028, online, f, 20).
 desire(z1000028, possible, f, 20).
-capacity(z1000028, tute, 1).
-capacity(z1000028, asst, 1).
+capacity(z1000028, tute, 4).
+capacity(z1000028, asst, 4).
 prefer(z1000028, tute).
 teacher(z1000029).
 available(z1000029, online, m, 8).
@@ -2612,8 +2612,8 @@ available(z1000029, online, f, 19).
 desire(z1000029, preferred, f, 19).
 available(z1000029, online, f, 20).
 desire(z1000029, preferred, f, 20).
-capacity(z1000029, tute, 1).
-capacity(z1000029, asst, 1).
+capacity(z1000029, tute, 4).
+capacity(z1000029, asst, 4).
 prefer(z1000029, tute).
 teacher(z1000030).
 experience(z1000030, tute).
@@ -2664,8 +2664,8 @@ desire(z1000030, possible, w, 13).
 available(z1000030, online, w, 14).
 available(z1000030, inPerson, w, 14).
 desire(z1000030, possible, w, 14).
-capacity(z1000030, tute, 1).
-capacity(z1000030, asst, 1).
+capacity(z1000030, tute, 4).
+capacity(z1000030, asst, 4).
 prefer(z1000030, tute).
 teacher(z1000031).
 available(z1000031, online, m, 8).
@@ -2775,8 +2775,8 @@ available(z1000031, online, f, 19).
 desire(z1000031, preferred, f, 19).
 available(z1000031, online, f, 20).
 desire(z1000031, preferred, f, 20).
-capacity(z1000031, tute, 1).
-capacity(z1000031, asst, 1).
+capacity(z1000031, tute, 4).
+capacity(z1000031, asst, 4).
 prefer(z1000031, tute).
 teacher(z1000032).
 available(z1000032, online, m, 8).
@@ -2897,8 +2897,8 @@ available(z1000032, online, f, 19).
 desire(z1000032, preferred, f, 19).
 available(z1000032, online, f, 20).
 desire(z1000032, preferred, f, 20).
-capacity(z1000032, tute, 1).
-capacity(z1000032, asst, 1).
+capacity(z1000032, tute, 4).
+capacity(z1000032, asst, 4).
 prefer(z1000032, tute).
 teacher(z1000033).
 experience(z1000033, tute).
@@ -2984,8 +2984,8 @@ desire(z1000033, preferred, f, 16).
 available(z1000033, online, f, 17).
 available(z1000033, inPerson, f, 17).
 desire(z1000033, preferred, f, 17).
-capacity(z1000033, tute, 1).
-capacity(z1000033, asst, 1).
+capacity(z1000033, tute, 4).
+capacity(z1000033, asst, 4).
 prefer(z1000033, tute).
 teacher(z1000034).
 experience(z1000034, tute).
@@ -3107,8 +3107,8 @@ desire(z1000034, preferred, f, 19).
 available(z1000034, online, f, 20).
 available(z1000034, inPerson, f, 20).
 desire(z1000034, preferred, f, 20).
-capacity(z1000034, tute, 1).
-capacity(z1000034, asst, 1).
+capacity(z1000034, tute, 4).
+capacity(z1000034, asst, 4).
 prefer(z1000034, tute).
 teacher(z1000035).
 available(z1000035, online, m, 9).
@@ -3213,8 +3213,8 @@ available(z1000035, online, f, 18).
 desire(z1000035, possible, f, 18).
 available(z1000035, online, f, 19).
 desire(z1000035, possible, f, 19).
-capacity(z1000035, tute, 1).
-capacity(z1000035, asst, 1).
+capacity(z1000035, tute, 4).
+capacity(z1000035, asst, 4).
 prefer(z1000035, tute).
 teacher(z1000036).
 experience(z1000036, tute).
@@ -3295,8 +3295,8 @@ available(z1000036, online, f, 18).
 desire(z1000036, preferred, f, 18).
 available(z1000036, online, f, 19).
 desire(z1000036, preferred, f, 19).
-capacity(z1000036, tute, 1).
-capacity(z1000036, asst, 1).
+capacity(z1000036, tute, 4).
+capacity(z1000036, asst, 4).
 prefer(z1000036, tute).
 teacher(z1000037).
 experience(z1000037, tute).
@@ -3347,6 +3347,6 @@ available(z1000037, online, f, 17).
 desire(z1000037, preferred, f, 17).
 available(z1000037, online, f, 18).
 desire(z1000037, preferred, f, 18).
-capacity(z1000037, tute, 1).
-capacity(z1000037, asst, 1).
+capacity(z1000037, tute, 4).
+capacity(z1000037, asst, 4).
 prefer(z1000037, tute).
