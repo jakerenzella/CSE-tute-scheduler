@@ -64,8 +64,8 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
         #result.append(fact_builder('preference', z_id, *key, *pref))
 
     # These are just stubbed for now
-    result.append(fact_builder('capacity', z_id, 'tute', 1))
-    result.append(fact_builder('capacity', z_id, 'asst', 1))
+    result.append(fact_builder('capacity', z_id, 'tute', 4))
+    result.append(fact_builder('capacity', z_id, 'asst', 4))
     result.append(fact_builder('prefer', z_id, 'tute'))
     return result
 
@@ -93,7 +93,7 @@ def timetable_entry_to_lps(timetable_entry: dict) -> list[str]:
         str: the lp format of the timetable entry
     """
     slot = timetable_entry['Class Desc']
-    mode = 'inPerson' if timetable_entry['In Person'] == 'true' else 'online'
+    mode = 'inPerson' if timetable_entry['In Person'] == 'TRUE' else 'online'
     day  = timetable_entry['Day'].lower()
     time = timetable_entry['Time']
 
