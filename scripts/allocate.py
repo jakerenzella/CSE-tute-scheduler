@@ -5,10 +5,9 @@ from itertools import chain
 import pathlib
 from fact_builder import fact_builder, save_lp, csv_to_dict, clear_file
 import clingo
-import pathlib
 
 WORKING_DIR = pathlib.Path(__file__).parent.parent.absolute()
-DATA_DIR = WORKING_DIR / 'sample_data'
+DATA_DIR = WORKING_DIR / 'input_data'
 OUTPUT_DIR = WORKING_DIR / 'data'
 
 DAYS = ["M", "T", "W", "H", "F"]
@@ -49,8 +48,8 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
     # Go through each day and time
     # (M09) and then extract the preference
     for (day, time) in DAY_TIMES:
-        key = [day, time]
-        #pref = preference_entry[key[0] + key[1]]
+        # key = [day, time]
+        # pref = preference_entry[key[0] + key[1]]
         try:
             # Turn the preference entry (1.1) into a tuple (dislike, True)
             pref = KEY_TO_PREF[preference_entry[day+time]]
@@ -66,7 +65,7 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
                               'inPerson', day, int(time)))
             result.append(fact_builder(
                 'desire', z_id, pref[0], day, int(time)))
-        #result.append(fact_builder('preference', z_id, *key, *pref))
+        # result.append(fact_builder('preference', z_id, *key, *pref))
 
     # These are just stubbed for now
     result.append(fact_builder('capacity', z_id, 'tute', 4))
@@ -129,6 +128,9 @@ def timetable_dict_to_lp(timetable: list) -> list:
 
 
 def run_solver():
+    """Runs clingo on the generated lp files
+    """
+
     ctrl = clingo.Control()
 
     # load all the .lp files and save to array
