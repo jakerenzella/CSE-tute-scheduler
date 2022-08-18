@@ -4,6 +4,8 @@
 from itertools import chain
 import pathlib
 from fact_builder import fact_builder, save_lp, csv_to_dict, clear_file
+import clingo
+import pathlib
 
 WORKING_DIR = pathlib.Path(__file__).parent.parent.absolute()
 DATA_DIR = WORKING_DIR / 'sample_data'
@@ -46,7 +48,7 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
 
     # Go through each day and time
     # (M09) and then extract the preference
-    for (day,time) in DAY_TIMES:
+    for (day, time) in DAY_TIMES:
         key = [day, time]
         #pref = preference_entry[key[0] + key[1]]
         try:
@@ -57,10 +59,13 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
             # so some preferences are not available. In this case return impossible
             pref = ('impossible', False)
         if pref[0] != 'impossible':
-            result.append(fact_builder('available', z_id, 'online', day, int(time)))
+            result.append(fact_builder(
+                'available', z_id, 'online', day, int(time)))
             if pref[1] == 'onlineOrPerson':
-                result.append(fact_builder('available', z_id, 'inPerson', day, int(time)))
-            result.append(fact_builder('desire', z_id, pref[0], day, int(time)))
+                result.append(fact_builder('available', z_id,
+                              'inPerson', day, int(time)))
+            result.append(fact_builder(
+                'desire', z_id, pref[0], day, int(time)))
         #result.append(fact_builder('preference', z_id, *key, *pref))
 
     # These are just stubbed for now
@@ -94,7 +99,7 @@ def timetable_entry_to_lps(timetable_entry: dict) -> list[str]:
     """
     slot = timetable_entry['Class Desc']
     mode = 'inPerson' if timetable_entry['In Person'] == 'TRUE' else 'online'
-    day  = timetable_entry['Day'].lower()
+    day = timetable_entry['Day'].lower()
     time = timetable_entry['Time']
 
     result = []
@@ -123,6 +128,22 @@ def timetable_dict_to_lp(timetable: list) -> list:
 #    return [timetable_entry_to_lp(x) for x in timetable]
 
 
+def run_solver():
+    ctrl = clingo.Control()
+
+    # load all the .lp files and save to array
+    ctrl.load(str(WORKING_DIR / 'solve.lp'))
+
+    for file in OUTPUT_DIR.glob('*.lp'):
+        print(file)
+        ctrl.load(str(file))
+
+    ctrl.ground([('base', [])])
+    result = ctrl.solve(on_model=print)
+
+    print(result)
+
+
 if __name__ == '__main__':
     print("Converting timetable to .lp format")
     timetable_lps = timetable_dict_to_lp(
@@ -140,3 +161,5 @@ if __name__ == '__main__':
     save_lp(timetable_lps, OUTPUT_DIR, 'timetable.lp')
     print(f"Saving .lp files to {OUTPUT_DIR / 'preferences.lp'}")
     save_lp(preferences_lps, OUTPUT_DIR, 'preferences.lp')
+
+    run_solver()
