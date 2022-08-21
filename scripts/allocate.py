@@ -3,6 +3,7 @@
 
 from itertools import chain
 import pathlib
+import sys
 from fact_builder import fact_builder, save_lp, csv_to_dict, clear_file
 import clingo
 
@@ -147,6 +148,12 @@ def run_solver():
 
 
 if __name__ == '__main__':
+
+    if len(sys.argv) > 1 and sys.argv[1] == "--load":
+        print("Executing solve.lp with any lp files in input_data dir")
+        run_solver()
+        exit()
+
     print("Converting timetable to .lp format")
     timetable_lps = timetable_dict_to_lp(
         csv_to_dict(DATA_DIR, 'timetable.csv'))
@@ -161,6 +168,7 @@ if __name__ == '__main__':
 
     print(f"Saving .lp files to {OUTPUT_DIR / 'timetable.lp'}")
     save_lp(timetable_lps, OUTPUT_DIR, 'timetable.lp')
+
     print(f"Saving .lp files to {OUTPUT_DIR / 'preferences.lp'}")
     save_lp(preferences_lps, OUTPUT_DIR, 'preferences.lp')
 
