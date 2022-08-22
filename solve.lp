@@ -1,38 +1,38 @@
+availabilityRequired(SLOT,ROLE,DAY,TIME+OFFSET..TIME+OFFSET+LENGTH-1) :- day(SLOT,DAY), startTime(SLOT,TIME), offset(ROLE,OFFSET), duration(ROLE,LENGTH).
+intersect(SLOT1,SLOT2,ROLE1,ROLE2) :- availabilityRequired(SLOT1,ROLE1,DAY,TIME), availabilityRequired(SLOT2,ROLE2,DAY,TIME), SLOT1 < SLOT2.
+intersect(SLOT,SLOT,ROLE1,ROLE2)   :- availabilityRequired(SLOT ,ROLE1,DAY,TIME), availabilityRequired(SLOT ,ROLE2,DAY,TIME), ROLE1 < ROLE2.
 
-N { assign(A,S,R) : teacher(A) } N :- class(S), role(R), requirement(R,N).
+{ assign(A,SLOT,ROLE) : teacher(A) } NEEDED :- class(SLOT), role(ROLE), requirement(ROLE,NEEDED).
 
-:- assign(A,S,tute), not experience(A,asst). % tutors need to have lab assistant experience
-% make this a soft constraint (minimize)?
+badSign(sufficientlyStaffed(ROLE),SLOT,NEEDED-ASSIGNED) :- class(SLOT), requirement(ROLE,NEEDED), ASSIGNED = #count { A : assign(A,SLOT,ROLE) }, NEEDED > ASSIGNED.
 
-:- capacity(A,R,D), D+1 #count { S : assign(A,S,R) }. % do not go beyond workload capacity
+%badSign(roleCapacity,A,B-D) :- capacity(A,R,D), B = #count { S : assign(A,S,R) }, B > D.
+badSign(roleCapacity,A,1) :- capacity(A,ROLE,BOUND), BOUND+1 = #count { SLOT : assign(A,SLOT,ROLE) }.
 
-availabilityRequired(S,R,D,T+O..T+O+L-1) :- day(S,D), startTime(S,T), offset(R,O), duration(R,L).
+badSign(mode(MODE),task(SLOT),1) :- assign(A,SLOT,ROLE), availabilityRequired(SLOT,ROLE,DAY,TIME), mode(SLOT,MODE), not available(A,MODE,DAY,TIME).
 
-badMode(A,S,M) :- assign(A,S,R), availabilityRequired(S,R,D,T), mode(S,M), not available(A,M,D,T). % the teacher needs to be available online or in person at the right time.
-%:- badMode(A,S,M).
+badSign(ubiquity,overlap(A,SLOT1,ROLE1,SLOT2,ROLE2),1) :- assign(A,SLOT1,ROLE1), assign(A,SLOT2,ROLE2), intersect(SLOT1,SLOT2,ROLE1,ROLE2).
 
-intersect(S1,S2,R1,R2) :- availabilityRequired(S1,R1,D,T), availabilityRequired(S2,R2,D,T), S1 < S2.
-intersect(S,S,R1,R2)   :- availabilityRequired(S ,R1,D,T), availabilityRequired(S ,R2,D,T), R1 < R2.
-:- assign(A,S1,R1), assign(A,S2,R2), intersect(S1,S2,R1,R2). % avoid conflicting schedules
+roleExperienceCovered(SLOT,ROLE,SKILL) :- assign(A,SLOT,ROLE), experience(A,SKILL).
+badSign(roleExperience(ROLE,SKILL),SLOT,1) :- class(SLOT), role(ROLE), constraint(roleExperience(ROLE,SKILL),TYPE), not roleExperienceCovered(SLOT,ROLE,SKILL).
 
-badPair(S) :- assign(A1,S,R1), assign(A2,S,R2), not experience(A1,R1), not experience(A2,R2).
-:- badPairsLimit(L), L+1 #count { S : badPair(S)}. % try to avoid two people inexperienced people in class
+teamExperienceCovered(SLOT,SKILL) :- assign(A,SLOT,ROLE), experience(A,SKILL).
+badSign(teamExperience(SKILL),SLOT,1) :- class(SLOT), constraint(teamExperience(SKILL),TYPE), not teamExperienceCovered(SLOT,SKILL).
 
-individualSatisfactionBounded(A,S,R,X) :- assign(A,S,R), desire(A,X,D,T), availabilityRequired(S,R,D,T).
-satisfactionWorseThan(A,S,R,Y) :- individualSatisfactionBounded(A,S,R,X), individualSatisfactionBounded(A,S,R,Y), lessDesired(X,Y).
-satisfaction(A,S,R,X) :- individualSatisfactionBounded(A,S,R,X), not satisfactionWorseThan(A,S,R,X).
-satisfactionAggregate(X,C) :- desireLevel(X), C = #count { A,S,R : satisfaction(A,S,R,X) }.
+taskTimeSatisfaction(A,SLOT,ROLE,LEVEL) :- assign(A,SLOT,ROLE), LEVEL = #min { INTENSITY : desire(A,INTENSITY,DAY,TIME), availabilityRequired(SLOT,ROLE,DAY,TIME) }.
+badSign(desire(LEVEL),task(A,SLOT,ROLE),1) :- taskTimeSatisfaction(A,SLOT,ROLE,LEVEL).
 
-% higher priority number is higher priority
-#minimize { 1@4,S : badMode(A,S,inPerson) }.
-#minimize { 1@3,S : badMode(A,S,online) }.
-#minimize { 1@2,A,S : satisfaction(A,S,R,dislike) }.
-#minimize { 1@1,A,S : satisfaction(A,S,R,possible) }.
+constrained(CONSTRAINT) :- constraint(CONSTRAINT,TYPE), TYPE != none.
+unconstrained(CONSTRAINT) :- badSign(CONSTRAINT,A,WEIGHT), not constrained(CONSTRAINT), not constraint(CONSTRAINT,none).
+bad(CONSTRAINT,A) :- badSign(CONSTRAINT,A,WEIGHT), constrained(CONSTRAINT).
+
+badnessAggregate(CONSTRAINT,COUNT) :- constraint(CONSTRAINT,soft(PRIORITY)), COUNT = #sum { WEIGHT,A : badSign(CONSTRAINT,A,WEIGHT) }.
+
+constraint(CONSTRAINT,hardBound(0)) :- constraint(CONSTRAINT,hard).
+:- constraint(CONSTRAINT,hardBound(BOUND)), BOUND+1 #sum { WEIGHT,A : badSign(CONSTRAINT,A,WEIGHT) }.
+#minimize { COUNT@PRIORITY : constraint(CONSTRAINT,soft(PRIORITY)), badnessAggregate(CONSTRAINT,COUNT) }.
 
 #show.
 #show assign/3.
-#show satisfactionAggregate/2.
-%#show badMode/3.
-#show needMoreAvail(S) : badMode(A,S,M). %We need more tutors to be available for these times
-#show disatisfied(A,S,R) : satisfaction(A,S,R,X), X != preferred.
-%#show inexp(A,S) : assign(A,S,tute), not experience(A,asst).
+#show badnessAggregate/2.
+#show bad/2.

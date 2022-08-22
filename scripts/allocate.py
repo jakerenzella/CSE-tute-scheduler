@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 """Converts a timetable CSV to a .lp format for use with the solver
 """
 
@@ -17,14 +18,14 @@ TIMES = ["08", "09", "10", "11", "12", "13",
 DAY_TIMES = [(x, y) for x in DAYS for y in TIMES]
 
 KEY_TO_PREF = {
-    '0': ('impossible', 'onlineOrPerson'),
-    '0.1': ('impossible', 'onlineOnly'),
-    '1': ('dislike', 'onlineOrPerson'),
-    '1.1': ('dislike', 'onlineOnly'),
-    '2': ('possible', 'onlineOrPerson'),
-    '2.1': ('possible', 'onlineOnly'),
-    '3': ('preferred', 'onlineOrPerson'),
-    '3.1': ('preferred', 'onlineOnly'),
+    '0': ('impossible', 0, 'onlineOrPerson'),
+    '0.1': ('impossible', 0, 'onlineOnly'),
+    '1': ('dislike', 1, 'onlineOrPerson'),
+    '1.1': ('dislike', 1, 'onlineOnly'),
+    '2': ('possible', 2, 'onlineOrPerson'),
+    '2.1': ('possible', 2, 'onlineOnly'),
+    '3': ('preferred', 3, 'onlineOrPerson'),
+    '3.1': ('preferred', 3, 'onlineOnly'),
 }
 
 
@@ -42,9 +43,15 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
 
     result = []
     result.append(fact_builder('teacher', preference_entry['zid']))
-    if "1511" in preference_entry['previous_experience']:
-        result.append(fact_builder('experience', z_id, 'tute'))
-        result.append(fact_builder('experience', z_id, 'asst'))
+    previous_experiences = [course.strip().lower() for course in preference_entry['previous_experience'].split('|')] # This is a bit of a hack. Need to do something better some day.
+    previous_experiences = [(course[0:8], 'admin' in course) for course in previous_experiences]
+    for (course, admin) in previous_experiences:
+        result.append(fact_builder('experience', z_id, f'involved({course})'))
+        if admin:
+            result.append(fact_builder('experience', z_id, f'admin({course})'))
+    #if "1511" in preference_entry['previous_experience']:
+    #    result.append(fact_builder('experience', z_id, 'tute'))
+    #    result.append(fact_builder('experience', z_id, 'asst'))
 
     # Go through each day and time
     # (M09) and then extract the preference
@@ -57,21 +64,21 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
         except KeyError:
             # Seems as though there are more times available in CASTLE than the tutors complete,
             # so some preferences are not available. In this case return impossible
-            pref = ('impossible', False)
+            pref = ('impossible', 0, False)
         if pref[0] != 'impossible':
-            result.append(fact_builder(
-                'available', z_id, 'online', day, int(time)))
-            if pref[1] == 'onlineOrPerson':
-                result.append(fact_builder('available', z_id,
-                              'inPerson', day, int(time)))
-            result.append(fact_builder(
-                'desire', z_id, pref[0], day, int(time)))
+            if pref[2] == 'onlineOrPerson':
+                result.append(fact_builder('available', z_id, 'online', day, int(time)))
+                result.append(fact_builder('available', z_id, 'inPerson', day, int(time)))
+            else:
+                assert pref[2] == 'onlineOnly'
+                result.append(fact_builder('available', z_id, 'online', day, int(time)))
+        result.append(fact_builder('desire', z_id, pref[1], day, int(time)))
         # result.append(fact_builder('preference', z_id, *key, *pref))
 
     # These are just stubbed for now
     result.append(fact_builder('capacity', z_id, 'tute', 4))
     result.append(fact_builder('capacity', z_id, 'asst', 4))
-    result.append(fact_builder('prefer', z_id, 'tute'))
+    result.append(fact_builder('preferredRole', z_id, 'tute'))
     return result
 
 
