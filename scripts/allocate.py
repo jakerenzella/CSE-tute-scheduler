@@ -4,7 +4,8 @@
 
 from itertools import chain
 import pathlib
-import sys, time
+import sys
+import time
 from fact_builder import fact_builder, save_lp, csv_to_dict, clear_file
 import clingo
 
@@ -55,13 +56,16 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
 
     result = []
     result.append(fact_builder('teacher', preference_entry['zid']))
-    previous_experiences = [course.strip().lower() for course in preference_entry['previous_experience'].split('|')] # This is a bit of a hack. Need to do something better some day.
-    previous_experiences = [(course[0:8], 'admin' in course) for course in previous_experiences]
+    # This is a bit of a hack. Need to do something better some day.
+    previous_experiences = [course.strip().lower(
+    ) for course in preference_entry['previous_experience'].split('|')]
+    previous_experiences = [(course[0:8], 'admin' in course)
+                            for course in previous_experiences]
     for (course, admin) in previous_experiences:
         result.append(fact_builder('experience', z_id, f'involved({course})'))
         if admin:
             result.append(fact_builder('experience', z_id, f'admin({course})'))
-    #if "1511" in preference_entry['previous_experience']:
+    # if "1511" in preference_entry['previous_experience']:
     #    result.append(fact_builder('experience', z_id, 'tute'))
     #    result.append(fact_builder('experience', z_id, 'asst'))
 
@@ -79,11 +83,14 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
             pref = ('impossible', 0, False)
         if pref[0] != 'impossible':
             if pref[2] == 'onlineOrPerson':
-                result.append(fact_builder('available', z_id, 'online', day, int(time)))
-                result.append(fact_builder('available', z_id, 'inPerson', day, int(time)))
+                result.append(fact_builder(
+                    'available', z_id, 'online', day, int(time)))
+                result.append(fact_builder('available', z_id,
+                              'inPerson', day, int(time)))
             else:
                 assert pref[2] == 'onlineOnly'
-                result.append(fact_builder('available', z_id, 'online', day, int(time)))
+                result.append(fact_builder(
+                    'available', z_id, 'online', day, int(time)))
         result.append(fact_builder('desire', z_id, pref[1], day, int(time)))
         # result.append(fact_builder('preference', z_id, *key, *pref))
 
@@ -119,13 +126,13 @@ def timetable_entry_to_lps(timetable_entry: dict) -> list[str]:
     slot = timetable_entry['Class Desc']
     mode = 'inPerson' if timetable_entry['In Person'] == 'TRUE' else 'online'
     day = timetable_entry['Day'].lower()
-    time = timetable_entry['Time']
+    time_entry = timetable_entry['Time']
 
     result = []
     result.append(fact_builder('class', slot))
     result.append(fact_builder('mode', slot, mode))
     result.append(fact_builder('day', slot, day))
-    result.append(fact_builder('startTime', slot, int(time)))
+    result.append(fact_builder('startTime', slot, int(time_entry)))
     return result
 #    keys_to_extract = ['Class Desc', 'In Person',
 #                       'Room', 'Day', 'Time']
@@ -146,25 +153,27 @@ def timetable_dict_to_lp(timetable: list) -> list:
     return list(chain.from_iterable([timetable_entry_to_lps(x) for x in timetable]))
 #    return [timetable_entry_to_lp(x) for x in timetable]
 
-def clingoPatientOptimization(handle,total_timeout):
+
+def clingoPatientOptimization(handle, total_timeout):
     starttime = time.time()
     deadline = time.time()+total_timeout
-    bestModel = None
+    best_model = None
     while True:
         handle.resume()
         timeout = deadline-time.time()
-        #print(timeout,time.time()-starttime)
+        # print(timeout,time.time()-starttime)
         found = handle.wait(timeout)
         if not found:
-            return (bestModel, False)
+            return (best_model, False)
         model = handle.model()
         if model:
-            bestModel = model
+            best_model = model
         else:
-            #print(bestModel.number,bestModel.cost,bestModel.optimality_proven)
-            return (bestModel, True)
-        #print(time.time()-starttime,found)
-        #print(search,model.number,bestModel.cost,bestModel.optimality_proven)
+            # print(best_model.number,best_model.cost,best_model.optimality_proven)
+            return (best_model, True)
+        # print(time.time()-starttime,found)
+        # print(search,model.number,best_model.cost,best_model.optimality_proven)
+
 
 def run_solver():
     """Runs clingo on the generated lp files
@@ -182,22 +191,22 @@ def run_solver():
     ctrl.ground([('base', [])])
 
     with ctrl.solve(yield_=True, async_=True) as hnd:
-        bestModel = None
+        best_model = None
         while True:
-            (model,opt) = clingoPatientOptimization(hnd,LATENCY)
+            (model, opt) = clingoPatientOptimization(hnd, LATENCY)
             if model:
-                bestModel = model
-                #print(bestModel.number,bestModel.cost)
-                print(bestModel,bestModel.number,bestModel.cost)
+                best_model = model
+                # print(best_model.number,best_model.cost)
+                print(best_model, best_model.number, best_model.cost)
             else:
                 print('no improvement found')
             if opt:
                 break
         print(hnd.get())
-        print(bestModel)
+        print(best_model)
     #result = ctrl.solve(on_model=print)
 
-    #print(result)
+    # print(result)
 
 
 if __name__ == '__main__':
@@ -208,10 +217,12 @@ if __name__ == '__main__':
         exit()
 
     print("Converting timetable to .lp format")
-    timetable_lps = timetable_dict_to_lp(csv_to_dict(DATA_DIR, f'timetable.csv'))
+    timetable_lps = timetable_dict_to_lp(
+        csv_to_dict(DATA_DIR, f'timetable.csv'))
 
     print("Converting preferences to .lp format")
-    preferences_lps = preferences_dict_to_lp(csv_to_dict(DATA_DIR, f'preferences.csv'))
+    preferences_lps = preferences_dict_to_lp(
+        csv_to_dict(DATA_DIR, f'preferences.csv'))
 
     print("Clearing existing .lp files")
     clear_file(OUTPUT_DIR, 'preferences.lp')
