@@ -4,6 +4,7 @@
 
 from itertools import chain
 import pathlib
+import logging
 import sys
 import re
 import time
@@ -92,7 +93,8 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
                 assert pref[2] == 'onlineOnly'
                 result.append(fact_builder(
                     'available', z_id, 'online', day, int(daytime_time)))
-        result.append(fact_builder('desire', z_id, pref[1], day, int(daytime_time)))
+        result.append(fact_builder('desire', z_id,
+                      pref[1], day, int(daytime_time)))
         # result.append(fact_builder('preference', z_id, *key, *pref))
 
     result.append(fact_builder('capacity', z_id, 'tute', tt_max))
@@ -165,13 +167,13 @@ def clingo_patient_optimisation(handle, total_timeout):
     Returns:
         (model, boolean): the model and True if optimal
     """
-    # starttime = time.time()
+    start_time = time.time()
     deadline = time.time()+total_timeout
     best_model = None
     while True:
         handle.resume()
         timeout = deadline-time.time()
-        # print(timeout,time.time()-starttime)
+        logging.debug(timeout, time.time()-start_time)
         found = handle.wait(timeout)
         if not found:
             return (best_model, False)
@@ -181,7 +183,7 @@ def clingo_patient_optimisation(handle, total_timeout):
         else:
             # print(best_model.number,best_model.cost,best_model.optimality_proven)
             return (best_model, True)
-        # print(time.time()-starttime,found)
+        # print(time.time()-start_time,found)
         # print(search,model.number,best_model.cost,best_model.optimality_proven)
 
 
@@ -195,7 +197,6 @@ def run_solver():
     ctrl.load(str(WORKING_DIR / 'solve.lp'))
 
     for file in OUTPUT_DIR.glob('*.lp'):
-        print(file)
         ctrl.load(str(file))
 
     ctrl.ground([('base', [])])
@@ -206,9 +207,9 @@ def run_solver():
             (model, opt) = clingo_patient_optimisation(hnd, LATENCY)
             if model:
                 best_model = model
-                print(best_model, best_model.number, best_model.cost)
+                logging.debug(best_model, best_model.number, best_model.cost)
             else:
-                print('no improvement found')
+                logging.debug('no improvement found')
             if opt:
                 break
 
@@ -216,6 +217,30 @@ def run_solver():
         with open(str(OUTPUT_DIR / 'solution.txt'), 'w', encoding='utf-8') as output_file:
             print(best_model, file=output_file)
         format_output(str(OUTPUT_DIR / 'solution.txt'))
+
+
+def run_allocate(preferences_file, timetable_file):
+    """ Runs the allocate algorithm on the given files
+    """
+    logging.debug("Converting timetable to .lp format")
+    timetable_lps = timetable_dict_to_lp(
+        csv_to_dict(timetable_file))
+
+    logging.debug("Converting preferences to .lp format")
+    preferences_lps = preferences_dict_to_lp(
+        csv_to_dict(preferences_file))
+
+    logging.debug("Clearing existing .lp files")
+    clear_file(OUTPUT_DIR, 'preferences.lp')
+    clear_file(OUTPUT_DIR, 'timetable.lp')
+
+    logging.debug(f"Saving .lp files to {OUTPUT_DIR / 'timetable.lp'}")
+    save_lp(timetable_lps, OUTPUT_DIR, 'timetable.lp')
+
+    logging.debug(f"Saving .lp files to {OUTPUT_DIR / 'preferences.lp'}")
+    save_lp(preferences_lps, OUTPUT_DIR, 'preferences.lp')
+
+    run_solver()
 
 
 def format_output(output_file_name):
@@ -231,33 +256,17 @@ def format_output(output_file_name):
 
         # create csv from array and save
         with open(str(OUTPUT_DIR / 'solution.csv'), 'w', encoding='utf-8') as csvfile:
-            csvfile.write('zid, code, type\n')
-            csvfile.write('\n'.join(matches))
+            data = 'zid, code, type\n'
+            data += '\n'.join(matches)
+            print(data)
+            csvfile.write(data)
 
 
 if __name__ == '__main__':
 
     if len(sys.argv) > 1 and sys.argv[1] == "--load":
-        print("Executing solve.lp with any lp files in input_data dir")
+        logging.debug("Executing solve.lp with any lp files in input_data dir")
         run_solver()
         exit()
 
-    print("Converting timetable to .lp format")
-    timetable_lps = timetable_dict_to_lp(
-        csv_to_dict(DATA_DIR, 'timetable.csv'))
-
-    print("Converting preferences to .lp format")
-    preferences_lps = preferences_dict_to_lp(
-        csv_to_dict(DATA_DIR, 'preferences.csv'))
-
-    print("Clearing existing .lp files")
-    clear_file(OUTPUT_DIR, 'preferences.lp')
-    clear_file(OUTPUT_DIR, 'timetable.lp')
-
-    print(f"Saving .lp files to {OUTPUT_DIR / 'timetable.lp'}")
-    save_lp(timetable_lps, OUTPUT_DIR, 'timetable.lp')
-
-    print(f"Saving .lp files to {OUTPUT_DIR / 'preferences.lp'}")
-    save_lp(preferences_lps, OUTPUT_DIR, 'preferences.lp')
-
-    run_solver()
+    run_allocate(DATA_DIR / 'preferences.csv', DATA_DIR / 'timetable.csv')
