@@ -194,7 +194,7 @@ def run_solver():
             if opt:
                 break
         print(hnd.get())
-    print(bestModel)
+        print(bestModel)
     #result = ctrl.solve(on_model=print)
 
     #print(result)
