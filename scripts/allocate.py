@@ -52,6 +52,8 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
         str: the lp format of the preference entry
     """
 
+    # validate the preference entry
+
     z_id = preference_entry['zid']
     tt_max = preference_entry['TT'] if 'TT' in preference_entry else 4
     at_max = preference_entry['AT'] if 'AT' in preference_entry else 4
@@ -234,10 +236,10 @@ def run_allocate(preferences_file, timetable_file):
     clear_file(OUTPUT_DIR, 'preferences.lp')
     clear_file(OUTPUT_DIR, 'timetable.lp')
 
-    logging.debug(f"Saving .lp files to {OUTPUT_DIR / 'timetable.lp'}")
+    logging.debug("Saving .lp files to %s", {OUTPUT_DIR / 'timetable.lp'})
     save_lp(timetable_lps, OUTPUT_DIR, 'timetable.lp')
 
-    logging.debug(f"Saving .lp files to {OUTPUT_DIR / 'preferences.lp'}")
+    logging.debug("Saving .lp files to %s", {OUTPUT_DIR / 'preferences.lp'})
     save_lp(preferences_lps, OUTPUT_DIR, 'preferences.lp')
 
     run_solver()
