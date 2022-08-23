@@ -4,13 +4,15 @@
 
 from itertools import chain
 import pathlib
-import sys
+import sys, time
 from fact_builder import fact_builder, save_lp, csv_to_dict, clear_file
 import clingo
 
 WORKING_DIR = pathlib.Path(__file__).parent.parent.absolute()
-DATA_DIR = WORKING_DIR / 'input_data'
+#DATA_DIR = WORKING_DIR / 'data_1511'
+DATA_DIR = WORKING_DIR / 'data_sample'
 OUTPUT_DIR = WORKING_DIR / 'data'
+LATENCY = 1
 
 DAYS = ["M", "T", "W", "H", "F"]
 TIMES = ["08", "09", "10", "11", "12", "13",
@@ -26,6 +28,14 @@ KEY_TO_PREF = {
     '2.1': ('possible', 2, 'onlineOnly'),
     '3': ('preferred', 3, 'onlineOrPerson'),
     '3.1': ('preferred', 3, 'onlineOnly'),
+    'impossible': ('impossible', 0, 'onlineOrPerson'),
+    'impossible-online-only': ('impossible', 0, 'onlineOnly'),
+    'dislike': ('dislike', 1, 'onlineOrPerson'),
+    'dislike-online-only': ('dislike', 1, 'onlineOnly'),
+    'possible': ('possible', 2, 'onlineOrPerson'),
+    'possible-online-only': ('possible', 2, 'onlineOnly'),
+    'preferred': ('preferred', 3, 'onlineOrPerson'),
+    'preferred-online-only': ('preferred', 3, 'onlineOnly'),
 }
 
 
@@ -40,6 +50,8 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
     """
 
     z_id = preference_entry['zid']
+    tt_max = preference_entry['TT'] if 'TT' in preference_entry else 4
+    at_max = preference_entry['AT'] if 'AT' in preference_entry else 4
 
     result = []
     result.append(fact_builder('teacher', preference_entry['zid']))
@@ -75,9 +87,9 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
         result.append(fact_builder('desire', z_id, pref[1], day, int(time)))
         # result.append(fact_builder('preference', z_id, *key, *pref))
 
+    result.append(fact_builder('capacity', z_id, 'tute', tt_max))
+    result.append(fact_builder('capacity', z_id, 'asst', at_max))
     # These are just stubbed for now
-    result.append(fact_builder('capacity', z_id, 'tute', 4))
-    result.append(fact_builder('capacity', z_id, 'asst', 4))
     result.append(fact_builder('preferredRole', z_id, 'tute'))
     return result
 
@@ -134,6 +146,25 @@ def timetable_dict_to_lp(timetable: list) -> list:
     return list(chain.from_iterable([timetable_entry_to_lps(x) for x in timetable]))
 #    return [timetable_entry_to_lp(x) for x in timetable]
 
+def clingoPatientOptimization(handle,total_timeout):
+    starttime = time.time()
+    deadline = time.time()+total_timeout
+    bestModel = None
+    while True:
+        handle.resume()
+        timeout = deadline-time.time()
+        #print(timeout,time.time()-starttime)
+        found = handle.wait(timeout)
+        if not found:
+            return (bestModel, False)
+        model = handle.model()
+        if model:
+            bestModel = model
+        else:
+            #print(bestModel.number,bestModel.cost,bestModel.optimality_proven)
+            return (bestModel, True)
+        #print(time.time()-starttime,found)
+        #print(search,model.number,bestModel.cost,bestModel.optimality_proven)
 
 def run_solver():
     """Runs clingo on the generated lp files
@@ -149,9 +180,24 @@ def run_solver():
         ctrl.load(str(file))
 
     ctrl.ground([('base', [])])
-    result = ctrl.solve(on_model=print)
 
-    print(result)
+    with ctrl.solve(yield_=True, async_=True) as hnd:
+        bestModel = None
+        while True:
+            (model,opt) = clingoPatientOptimization(hnd,LATENCY)
+            if model:
+                bestModel = model
+                #print(bestModel.number,bestModel.cost)
+                print(bestModel,bestModel.number,bestModel.cost)
+            else:
+                print('no improvement found')
+            if opt:
+                break
+        print(hnd.get())
+    print(bestModel)
+    #result = ctrl.solve(on_model=print)
+
+    #print(result)
 
 
 if __name__ == '__main__':
@@ -162,12 +208,10 @@ if __name__ == '__main__':
         exit()
 
     print("Converting timetable to .lp format")
-    timetable_lps = timetable_dict_to_lp(
-        csv_to_dict(DATA_DIR, 'timetable.csv'))
+    timetable_lps = timetable_dict_to_lp(csv_to_dict(DATA_DIR, f'timetable.csv'))
 
     print("Converting preferences to .lp format")
-    preferences_lps = preferences_dict_to_lp(
-        csv_to_dict(DATA_DIR, 'preferences_castle.csv'))
+    preferences_lps = preferences_dict_to_lp(csv_to_dict(DATA_DIR, f'preferences.csv'))
 
     print("Clearing existing .lp files")
     clear_file(OUTPUT_DIR, 'preferences.lp')
