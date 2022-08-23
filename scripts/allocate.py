@@ -9,8 +9,8 @@ from fact_builder import fact_builder, save_lp, csv_to_dict, clear_file
 import clingo
 
 WORKING_DIR = pathlib.Path(__file__).parent.parent.absolute()
-#DATA_DIR = WORKING_DIR / 'data_1511'
-DATA_DIR = WORKING_DIR / 'data_sample'
+DATA_DIR = WORKING_DIR / 'data_1511'
+#DATA_DIR = WORKING_DIR / 'data_sample'
 OUTPUT_DIR = WORKING_DIR / 'data'
 LATENCY = 1
 
