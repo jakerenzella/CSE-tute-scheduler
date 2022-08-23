@@ -12,9 +12,9 @@ from fact_builder import fact_builder, save_lp, csv_to_dict, clear_file
 import clingo
 
 WORKING_DIR = pathlib.Path(__file__).parent.parent.absolute()
-DATA_DIR = WORKING_DIR / 'data_1511'
-#DATA_DIR = WORKING_DIR / 'data_sample'
-OUTPUT_DIR = WORKING_DIR / 'data'
+DATA_DIR = WORKING_DIR / 'data'
+FACTS_DIR = WORKING_DIR / 'facts'
+OUTPUT_DIR = WORKING_DIR / 'output'
 LATENCY = 1
 
 DAYS = ["M", "T", "W", "H", "F"]
@@ -196,9 +196,9 @@ def run_solver():
     ctrl = clingo.Control()
 
     # load all the .lp files and save to array
-    ctrl.load(str(WORKING_DIR / 'solve.lp'))
+    ctrl.load(str(WORKING_DIR / 'facts' / 'solve.lp'))
 
-    for file in OUTPUT_DIR.glob('*.lp'):
+    for file in FACTS_DIR.glob('*.lp'):
         ctrl.load(str(file))
 
     ctrl.ground([('base', [])])

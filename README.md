@@ -3,7 +3,7 @@ Allocates tutors to tutorials based on Talloc availability.
 
 ## Usage
 - Install Clingo and typer Python package `pip install clingo typer` or `pip install requirements.txt`
-- run the program `python scripts/cli.py preferences.csv, timetable.csv`
+- run the program `python app/cli.py preferences.csv, timetable.csv`
 
 Sample timetable and preferences can be found in data_sample/
 
