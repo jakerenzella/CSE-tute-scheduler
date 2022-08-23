@@ -2,9 +2,11 @@
 """Converts a timetable CSV to a .lp format for use with the solver
 """
 
+import csv
 from itertools import chain
 import pathlib
 import sys
+import re
 import time
 from fact_builder import fact_builder, save_lp, csv_to_dict, clear_file
 import clingo
@@ -202,11 +204,39 @@ def run_solver():
                 print('no improvement found')
             if opt:
                 break
-        print(hnd.get())
-        print(best_model)
+        result = best_model
+        print("PRINTING")
+
+        # create a temporary file-like object
+        # with tempfile.NamedTemporaryFile(mode='w', delete=False) as f:
+        #     print(best_model, file=f)
+        #     format_output(f.name)
+
+        with open(str(OUTPUT_DIR / 'solution.txt'), 'w') as f:
+            print(best_model, file=f)
+        # print("PRINTING")
+        format_output(str(OUTPUT_DIR / 'solution.txt'))
+        # return result
     #result = ctrl.solve(on_model=print)
 
     # print(result)
+
+
+def format_output(output_file_name):
+    """Formats the output of the solver into a list csv
+    """
+    with open(output_file_name, 'r') as f:
+        # read string from file into variable
+        output = f.read()
+
+        regex = re.compile(r'\((.*?)\)')
+        # find all matches of regex in output
+        matches = regex.findall(output)
+
+        # create csv from array and save
+        with open(str(OUTPUT_DIR / 'solution.csv'), 'w') as csvfile:
+            csvfile.write('zid, code, type\n')
+            csvfile.write('\n'.join(matches))
 
 
 if __name__ == '__main__':
