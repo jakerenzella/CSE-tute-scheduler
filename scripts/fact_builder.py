@@ -3,7 +3,18 @@
 import pathlib
 import csv
 
-lower_first =  lambda s: s[:1].lower() + s[1:] if s else ''
+
+def lower_first(to_lower: str):
+    """Lowercases the first character
+
+    Args:
+        s (string): The string to lower_first
+
+    Returns:
+        string: The lowercased string
+    """
+    return to_lower[:1].lower() + to_lower[1:] if to_lower else ''
+
 
 def clear_file(output_dir: str, filename: str):
     """Clears a given file
