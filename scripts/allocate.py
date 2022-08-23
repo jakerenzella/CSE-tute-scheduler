@@ -2,7 +2,6 @@
 """Converts a timetable CSV to a .lp format for use with the solver
 """
 
-import csv
 from itertools import chain
 import pathlib
 import sys
@@ -73,12 +72,12 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
 
     # Go through each day and time
     # (M09) and then extract the preference
-    for (day, time) in DAY_TIMES:
-        # key = [day, time]
+    for (day, daytime_time) in DAY_TIMES:
+        # key = [day, daytime_time]
         # pref = preference_entry[key[0] + key[1]]
         try:
             # Turn the preference entry (1.1) into a tuple (dislike, True)
-            pref = KEY_TO_PREF[preference_entry[day+time]]
+            pref = KEY_TO_PREF[preference_entry[day+daytime_time]]
         except KeyError:
             # Seems as though there are more times available in CASTLE than the tutors complete,
             # so some preferences are not available. In this case return impossible
@@ -86,14 +85,14 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
         if pref[0] != 'impossible':
             if pref[2] == 'onlineOrPerson':
                 result.append(fact_builder(
-                    'available', z_id, 'online', day, int(time)))
+                    'available', z_id, 'online', day, int(daytime_time)))
                 result.append(fact_builder('available', z_id,
-                              'inPerson', day, int(time)))
+                              'inPerson', day, int(daytime_time)))
             else:
                 assert pref[2] == 'onlineOnly'
                 result.append(fact_builder(
-                    'available', z_id, 'online', day, int(time)))
-        result.append(fact_builder('desire', z_id, pref[1], day, int(time)))
+                    'available', z_id, 'online', day, int(daytime_time)))
+        result.append(fact_builder('desire', z_id, pref[1], day, int(daytime_time)))
         # result.append(fact_builder('preference', z_id, *key, *pref))
 
     result.append(fact_builder('capacity', z_id, 'tute', tt_max))
@@ -156,8 +155,17 @@ def timetable_dict_to_lp(timetable: list) -> list:
 #    return [timetable_entry_to_lp(x) for x in timetable]
 
 
-def clingoPatientOptimization(handle, total_timeout):
-    starttime = time.time()
+def clingo_patient_optimisation(handle, total_timeout):
+    """Generated iterative clingo optimisation for the model
+
+    Args:
+        handle (_type_): The handle to the clingo process
+        total_timeout (_type_): the max time to wait
+
+    Returns:
+        (model, boolean): the model and True if optimal
+    """
+    # starttime = time.time()
     deadline = time.time()+total_timeout
     best_model = None
     while True:
@@ -195,46 +203,34 @@ def run_solver():
     with ctrl.solve(yield_=True, async_=True) as hnd:
         best_model = None
         while True:
-            (model, opt) = clingoPatientOptimization(hnd, LATENCY)
+            (model, opt) = clingo_patient_optimisation(hnd, LATENCY)
             if model:
                 best_model = model
-                # print(best_model.number,best_model.cost)
                 print(best_model, best_model.number, best_model.cost)
             else:
                 print('no improvement found')
             if opt:
                 break
-        result = best_model
-        print("PRINTING")
 
-        # create a temporary file-like object
-        # with tempfile.NamedTemporaryFile(mode='w', delete=False) as f:
-        #     print(best_model, file=f)
-        #     format_output(f.name)
-
-        with open(str(OUTPUT_DIR / 'solution.txt'), 'w') as f:
-            print(best_model, file=f)
-        # print("PRINTING")
+        # this is strange but necessary
+        with open(str(OUTPUT_DIR / 'solution.txt'), 'w', encoding='utf-8') as output_file:
+            print(best_model, file=output_file)
         format_output(str(OUTPUT_DIR / 'solution.txt'))
-        # return result
-    #result = ctrl.solve(on_model=print)
-
-    # print(result)
 
 
 def format_output(output_file_name):
     """Formats the output of the solver into a list csv
     """
-    with open(output_file_name, 'r') as f:
+    with open(output_file_name, 'r', encoding='utf-8') as output_file:
         # read string from file into variable
-        output = f.read()
+        output = output_file.read()
 
         regex = re.compile(r'\((.*?)\)')
         # find all matches of regex in output
         matches = regex.findall(output)
 
         # create csv from array and save
-        with open(str(OUTPUT_DIR / 'solution.csv'), 'w') as csvfile:
+        with open(str(OUTPUT_DIR / 'solution.csv'), 'w', encoding='utf-8') as csvfile:
             csvfile.write('zid, code, type\n')
             csvfile.write('\n'.join(matches))
 
@@ -248,11 +244,11 @@ if __name__ == '__main__':
 
     print("Converting timetable to .lp format")
     timetable_lps = timetable_dict_to_lp(
-        csv_to_dict(DATA_DIR, f'timetable.csv'))
+        csv_to_dict(DATA_DIR, 'timetable.csv'))
 
     print("Converting preferences to .lp format")
     preferences_lps = preferences_dict_to_lp(
-        csv_to_dict(DATA_DIR, f'preferences.csv'))
+        csv_to_dict(DATA_DIR, 'preferences.csv'))
 
     print("Clearing existing .lp files")
     clear_file(OUTPUT_DIR, 'preferences.lp')
