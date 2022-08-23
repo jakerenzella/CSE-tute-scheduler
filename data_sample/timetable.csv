@@ -1,37 +1,37 @@
-Class Desc,Times,In Person,"Room",Day,Time,Code,Tutor,Assistant
-M13A,"Mon 13 (w1-2,4-5,7-10, Quad G026); Mon 14-16 (w1-2,4-5,7-10, SitarME306)",TRUE,a,M,13,mon13a,,
-M17A,"Mon 17 (w1-2,4-5,7-10, Online); Mon 18-20 (w1-2,4-5,7-10, Online)",FALSE,a,M,17,mon17a,,
-M17B,,TRUE,b,M,17,mon17b,,
-T13A,"Tue 13 (w1-5,7-10, BUS 107); Tue 14-16 (w1-5,7-10, KoraME307)",TRUE,a,T,13,tue13a,,
-T13B,"Tue 13 (w1-5,7-10, BUS 219); Tue 14-16 (w1-5,7-10, SitarME306)",TRUE,b,T,13,tue13b,,
-T15A,"Tue 15 (w1-5,7-10, Gold G09); Tue 16-18 (w1-5,7-10, KoraME307)",TRUE,a,T,15,tue15a,,
-T15B,"Tue 15 (w1-5,7-10, BUS 114); Tue 16-18 (w1-5,7-10, SitarME306)",TRUE,b,T,15,tue15b,,
-T17A,"Tue 17 (w1-5,7-10, Online); Tue 18-20 (w1-5,7-10, Online)",FALSE,a,T,17,tue17a,,
-T17B,"Tue 17 (w1-5,7-10, Gold G02); Tue 18-20 (w1-5,7-10, KoraME307)",TRUE,b,T,17,tue17b,,
-W09A,"Wed 09 (w1-5,7-10, BUS 215); Wed 10-12 (w1-5,7-10, KoraME307)",TRUE,a,W,9,wed09a,,
-W09B,"Wed 09 (w1-5,7-10, Quad G025); Wed 10-12 (w1-5,7-10, SitarME306)",TRUE,b,W,9,wed09b,,
-W11A,"Wed 11 (w1-5,7-10, Law 302); Wed 12-14 (w1-5,7-10, KoraME307)",TRUE,a,W,11,wed11a,,
-W11B,"Wed 11 (w1-5,7-10, BUS 207); Wed 12-14 (w1-5,7-10, SitarME306)",TRUE,b,W,11,wed11b,,
-W17A,"Wed 17 (w1-5,7-10, Quad G054); Wed 18-20 (w1-5,7-10, FluteME303)",TRUE,a,W,17,wed17a,,
-W17B,"Wed 17 (w1-5,7-10, Online); Wed 18-20 (w1-5,7-10, Online)",FALSE,b,W,17,wed17b,,
-H09A,"Thu 09 (w1-5,7-10, BUS 107); Thu 10-12 (w1-5,7-10, KoraME307)",TRUE,a,H,9,thu09a,,
-H09B,"Thu 09 (w1-5,7-10, BUS 118); Thu 10-12 (w1-5,7-10, SitarME306)",TRUE,b,H,9,thu09b,,
-H11A,"Thu 11 (w1-5,7-10, BUS 215); Thu 12-14 (w1-5,7-10, KoraME307)",TRUE,a,H,11,thu11a,,
-H11B,"Thu 11 (w1-5,7-10, BUS 207); Thu 12-14 (w1-5,7-10, SitarME306)",TRUE,b,H,11,thu11b,,
-H13A,"Thu 13 (w1-5,7-10, BUS 118); Thu 14-16 (w1-5,7-10, KoraME307)",TRUE,a,H,13,thu13a,,
-H13B,"Thu 13 (w1-5,7-10, Gold G06); Thu 14-16 (w1-5,7-10, SitarME306)",TRUE,b,H,13,thu13b,,
-H13C,"Thu 13 (w1-5,7-10, Online); Thu 14-16 (w1-5,7-10, Online)",FALSE,c,H,13,thu13c,,
-H15A,"Thu 15 (w1-5,7-10, Webst 252); Thu 16-18 (w1-5,7-10, KoraME307)",TRUE,a,H,15,thu15a,,
-H15B,"Thu 15 (w1-5,7-10, BUS 114); Thu 16-18 (w1-5,7-10, SitarME306)",TRUE,b,H,15,thu15b,,
-H15C,"Thu 15 (w1-5,7-10, Online); Thu 16-18 (w1-5,7-10, Online)",FALSE,c,H,15,thu15c,,
-H17A,"Thu 17 (w1-5,7-10, Gold G07); Thu 18-20 (w1-5,7-10, SitarME306)",TRUE,a,H,17,thu17a,,
-H17B,"Thu 17 (w1-5,7-10, Online); Thu 18-20 (w1-5,7-10, Online)",FALSE,b,H,17,thu17b,,
-F09A,"Fri 09 (w1-5,7-10, Webst 252); Fri 10-12 (w1-5,7-10, KoraME307)",TRUE,a,F,9,fri09a,,
-F09B,"Fri 09 (w1-5,7-10, Quad G054); Fri 10-12 (w1-5,7-10, SitarME306)",TRUE,b,F,9,fri09b,,
-F11A,"Fri 11 (w1-5,7-10, BUS 219); Fri 12-14 (w1-5,7-10, KoraME307)",TRUE,a,F,11,fri11a,,
-F11B,"Fri 11 (w1-5,7-10, Webst 252); Fri 12-14 (w1-5,7-10, SitarME306)",TRUE,b,F,11,fri11b,,
-F11C,"Fri 11 (w1-5,7-10, Online); Fri 12-14 (w1-5,7-10, Online)",FALSE,c,F,11,fri11c,,
-F13A,"Fri 13 (w1-5,7-10, Quad G040); Fri 14-16 (w1-5,7-10, KoraME307)",TRUE,a,F,13,fri13a,,
-F13B,"Fri 13 (w1-5,7-10, Gold G05); Fri 14-16 (w1-5,7-10, SitarME306)",TRUE,b,F,13,fri13b,,
-F15A,"Fri 15 (w1-5,7-10, Online); Fri 16-18 (w1-5,7-10, Online)",FALSE,a,F,15,fri15a,,
-F15B,"Fri 15 (w1-5,7-10, Law 101); Fri 16-18 (w1-5,7-10, KoraME307)",TRUE,b,F,15,fri15b,,
+Class Desc,In Person,Day,Time
+M13A,TRUE,M,13
+M17A,FALSE,M,17
+M17B,TRUE,M,17
+T13A,TRUE,T,13
+T13B,TRUE,T,13
+T15A,TRUE,T,15
+T15B,TRUE,T,15
+T17A,FALSE,T,17
+T17B,TRUE,T,17
+W09A,TRUE,W,9
+W09B,TRUE,W,9
+W11A,TRUE,W,11
+W11B,TRUE,W,11
+W17A,TRUE,W,17
+W17B,FALSE,W,17
+H09A,TRUE,H,9
+H09B,TRUE,H,9
+H11A,TRUE,H,11
+H11B,TRUE,H,11
+H13A,TRUE,H,13
+H13B,TRUE,H,13
+H13C,FALSE,H,13
+H15A,TRUE,H,15
+H15B,TRUE,H,15
+H15C,FALSE,H,15
+H17A,TRUE,H,17
+H17B,FALSE,H,17
+F09A,TRUE,F,9
+F09B,TRUE,F,9
+F11A,TRUE,F,11
+F11B,TRUE,F,11
+F11C,FALSE,F,11
+F13A,TRUE,F,13
+F13B,TRUE,F,13
+F15A,FALSE,F,15
+F15B,TRUE,F,15
