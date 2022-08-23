@@ -27,14 +27,14 @@ def clear_file(output_dir: str, filename: str):
         lpfile.truncate(0)  # clear file
 
 
-def csv_to_dict(input_path: str, filename: str) -> list[dict]:
+def csv_to_dict(file_path: str) -> list[dict]:
     """Loads the timetable CSV into a dictionary
 
     Returns:
         List: A dictionary containing the CSV data
     """
     results = []
-    with open(pathlib.Path(input_path / filename), encoding='utf-8') as csvfile:
+    with open(file_path, encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         # ignore the headers
         next(reader)
