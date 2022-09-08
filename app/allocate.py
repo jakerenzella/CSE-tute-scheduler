@@ -175,7 +175,7 @@ def clingo_patient_optimisation(handle, total_timeout):
     while True:
         handle.resume()
         timeout = deadline-time.time()
-        logging.debug(timeout, time.time()-start_time)
+        logging.debug('time spent so far {}, time left available {}.'.format(time.time()-start_time, timeout))
         found = handle.wait(timeout)
         if not found:
             return (best_model, False)
@@ -199,6 +199,11 @@ def run_solver():
     ctrl.load(str(WORKING_DIR / 'facts' / 'solve.lp'))
 
     for file in FACTS_DIR.glob('*.lp'):
+        logging.debug("Load file %s", file)
+        ctrl.load(str(file))
+
+    for file in OUTPUT_DIR.glob('*.lp'):
+        logging.debug("Load file %s", file)
         ctrl.load(str(file))
 
     ctrl.ground([('base', [])])
@@ -209,7 +214,7 @@ def run_solver():
             (model, opt) = clingo_patient_optimisation(hnd, LATENCY)
             if model:
                 best_model = model
-                logging.debug(best_model, best_model.number, best_model.cost)
+                logging.debug('Model {} found. Cost {}. {}'.format(best_model.number, best_model.cost, best_model))
             else:
                 logging.debug('no improvement found')
             if opt:
@@ -252,7 +257,7 @@ def format_output(output_file_name):
         # read string from file into variable
         output = output_file.read()
 
-        regex = re.compile(r'\((.*?)\)')
+        regex = re.compile(r'assign\((.*?)\)')
         # find all matches of regex in output
         matches = regex.findall(output)
 
