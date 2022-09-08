@@ -11,9 +11,9 @@
 # Icon must end with two \r
 Icon
 
-facts/preferences.lp
-facts/timetable.lp
-facts/solution*
+output/preferences.lp
+output/timetable.lp
+output/solution*
 data_1*/
 data_2*/
 
