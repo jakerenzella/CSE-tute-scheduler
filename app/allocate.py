@@ -55,8 +55,8 @@ def preference_entry_to_lps(preference_entry: dict) -> list[str]:
     # validate the preference entry
 
     z_id = preference_entry['zid']
-    tt_max = preference_entry['TT'] if 'TT' in preference_entry else 4
-    at_max = preference_entry['AT'] if 'AT' in preference_entry else 4
+    tt_max = preference_entry['TT'] if 'TT' in preference_entry else 0
+    at_max = preference_entry['AT'] if 'AT' in preference_entry else 0
 
     result = []
     result.append(fact_builder('teacher', preference_entry['zid']))
@@ -197,6 +197,7 @@ def run_solver():
 
     # load all the .lp files and save to array
     ctrl.load(str(WORKING_DIR / 'facts' / 'solve.lp'))
+    ctrl.load(str(WORKING_DIR / 'facts' / 'cse_facts.lp'))
 
     for file in FACTS_DIR.glob('*.lp'):
         logging.debug("Load file %s", file)
