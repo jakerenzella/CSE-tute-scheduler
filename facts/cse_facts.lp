@@ -12,7 +12,7 @@ constraint(teamExperience(admin(comp1511)),none). % at least one person needs to
 constraint(roleExperience(tute,involved(comp1511)),soft(1)). % at least one person with role X needs to have experience in course Y for a class.
 constraint(teamExperience(involved(comp1511)),soft(1)). % at least one person needs to have experience in course Y in the team for a class.
 constraint(ubiquity,hard). % avoid conflicting schedules: we shouldn't assign multiple tasks with intersecting time range to the same person
-constraint(roleCapacity,soft(2)). % do not go beyond workload capacity
+constraint(roleCapacity,hard). % do not go beyond workload capacity
 constraint(desire(1),soft(2)). % people shouldn't hate the times of the class allocated to them.
 constraint(desire(2),soft(1)). % people should be enthousiastic about the times of the class allocated to them.
 constraint(desire(3),none).    % 3 is the maximum desire level in our data, so no constraints here.
