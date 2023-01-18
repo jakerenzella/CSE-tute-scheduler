@@ -5,7 +5,7 @@ Allocates tutors to tutorials based on Talloc availability.
 - `pip install -r requirements.txt`
 ## Usage
 
-- run the program: `python app/cli.py preferences.csv, timetable.csv`
+- run the program: `python comp1531 app/cli.py preferences.csv, timetable.csv`
 
 *Sample timetable and preferences can be found in data_sample/*
 
