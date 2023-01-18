@@ -37,7 +37,7 @@ def csv_to_dict(file_path: str) -> list[dict]:
     with open(file_path, encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         # ignore the headers
-        next(reader)
+        # next(reader)
 
         for row in reader:
             results.append(dict(row))  # pull in each row as a key-value pair
