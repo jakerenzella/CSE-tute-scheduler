@@ -178,12 +178,16 @@ def clingo_patient_optimisation(handle, total_timeout):
         logging.debug('time spent so far {}, time left available {}.'.format(time.time()-start_time, timeout))
         found = handle.wait(timeout)
         if not found:
+            print("best model not found")
+            print(best_model)
             return (best_model, False)
         model = handle.model()
         if model:
             best_model = model
+            print(best_model)
         else:
             # print(best_model.number,best_model.cost,best_model.optimality_proven)
+            print("best model found")
             return (best_model, True)
         # print(time.time()-start_time,found)
         # print(search,model.number,best_model.cost,best_model.optimality_proven)
