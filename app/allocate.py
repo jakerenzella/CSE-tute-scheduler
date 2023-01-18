@@ -201,7 +201,7 @@ def run_solver():
 
     # load all the .lp files and save to array
     ctrl.load(str(WORKING_DIR / 'facts' / 'solve.lp'))
-    ctrl.load(str(WORKING_DIR / 'facts' / 'cse_facts.lp'))
+    ctrl.load(str(WORKING_DIR / 'output' / 'cse_facts.lp'))
 
     for file in FACTS_DIR.glob('*.lp'):
         logging.debug("Load file %s", file)
@@ -212,6 +212,9 @@ def run_solver():
         ctrl.load(str(file))
 
     ctrl.ground([('base', [])])
+
+    timeout = 60 # 3 minutes in seconds
+    start_time = time.time()
 
     with ctrl.solve(yield_=True, async_=True) as hnd:
         best_model = None
@@ -224,16 +227,38 @@ def run_solver():
                 logging.debug('no improvement found')
             if opt:
                 break
+            if time.time() - start_time > timeout:
+                break
 
         # this is strange but necessary
         with open(str(OUTPUT_DIR / 'solution.txt'), 'w', encoding='utf-8') as output_file:
             print(best_model, file=output_file)
         format_output(str(OUTPUT_DIR / 'solution.txt'))
 
+def create_cse_facts(course_code):
+    """Creates the cse_facts.lp file
 
-def run_allocate(preferences_file, timetable_file):
+    Args:
+        course_code (str): the course code to generate facts for
+    """
+    with open( WORKING_DIR / 'facts' / 'cse_facts.tpl', 'r', encoding='utf-8') as cse_facts_template_file:
+        # read the file and replace all occurance of COURSE_CODE
+        cse_facts = cse_facts_template_file.read().replace('{COURSE_CODE}', course_code)
+
+        # create file in output dir if it doesn't exist
+
+        with open(OUTPUT_DIR / 'cse_facts.lp', 'w', encoding='utf-8') as cse_facts_file:
+            cse_facts_file.write(cse_facts)
+            logging.debug("Created cse_facts.lp file")
+
+def run_allocate(course_code, preferences_file, timetable_file):
     """ Runs the allocate algorithm on the given files
     """
+    logging.debug("Clearing existing .lp files")
+    clear_file(OUTPUT_DIR, 'preferences.lp')
+    clear_file(OUTPUT_DIR, 'cse_facts.lp')
+    clear_file(OUTPUT_DIR, 'timetable.lp')
+
     logging.debug("Converting timetable to .lp format")
     timetable_lps = timetable_dict_to_lp(
         csv_to_dict(timetable_file))
@@ -242,9 +267,8 @@ def run_allocate(preferences_file, timetable_file):
     preferences_lps = preferences_dict_to_lp(
         csv_to_dict(preferences_file))
 
-    logging.debug("Clearing existing .lp files")
-    clear_file(OUTPUT_DIR, 'preferences.lp')
-    clear_file(OUTPUT_DIR, 'timetable.lp')
+    logging.debug("Creating cse_facts.lp file")
+    create_cse_facts(course_code)
 
     logging.debug("Saving .lp files to %s", {OUTPUT_DIR / 'timetable.lp'})
     save_lp(timetable_lps, OUTPUT_DIR, 'timetable.lp')

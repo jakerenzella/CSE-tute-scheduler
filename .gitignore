@@ -11,11 +11,7 @@
 # Icon must end with two \r
 Icon
 
-output/preferences.lp
-output/timetable.lp
-output/solution*
-data_1*/
-data_2*/
+output/*
 
 # Thumbnails
 ._*
