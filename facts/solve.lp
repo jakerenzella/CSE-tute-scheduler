@@ -6,8 +6,8 @@ intersect(SLOT,SLOT,ROLE1,ROLE2)   :- availabilityRequired(SLOT ,ROLE1,DAY,TIME)
 
 badSign(sufficientlyStaffed(ROLE),SLOT,NEEDED-ASSIGNED) :- class(SLOT), requirement(ROLE,NEEDED), ASSIGNED = #count { A : assign(A,SLOT,ROLE) }, NEEDED > ASSIGNED.
 
-%badSign(roleCapacity,A,B-D) :- capacity(A,R,D), B = #count { S : assign(A,S,R) }, B > D.
-badSign(roleCapacity,A,1) :- capacity(A,ROLE,BOUND), BOUND+1 = #count { SLOT : assign(A,SLOT,ROLE) }.
+badSign(roleCapacity,A,B-D) :- capacity(A,R,D), B = #count { S : assign(A,S,R) }, B > D.
+%badSign(roleCapacity,A,5) :- capacity(A,ROLE,BOUND), BOUND+1 = #count { SLOT : assign(A,SLOT,ROLE) }.
 
 badSign(mode(MODE),task(SLOT),1) :- assign(A,SLOT,ROLE), availabilityRequired(SLOT,ROLE,DAY,TIME), mode(SLOT,MODE), not available(A,MODE,DAY,TIME).
 
