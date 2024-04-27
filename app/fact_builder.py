@@ -26,6 +26,17 @@ def clear_file(output_dir: str, filename: str):
     with open(pathlib.Path(output_dir / filename), 'a', encoding='utf-8') as lpfile:
         lpfile.truncate(0)  # clear file
 
+def json_to_dict(json_data: dict) -> list[dict]:
+    """Converts a JSON object to a list of dictionaries
+
+    Args:
+        json_data (dict): The JSON object
+
+    Returns:
+        list[dict]: A list of dictionaries
+    """
+    print(json_data)
+    return json_data
 
 def csv_to_dict(file_path: str) -> list[dict]:
     """Loads the timetable CSV into a dictionary
@@ -34,13 +45,16 @@ def csv_to_dict(file_path: str) -> list[dict]:
         List: A dictionary containing the CSV data
     """
     results = []
-    with open(file_path, encoding='utf-8') as csvfile:
+    with open(file_path, encoding='utf-8-sig') as csvfile:
         reader = csv.DictReader(csvfile)
         # ignore the headers
         # next(reader)
 
         for row in reader:
             results.append(dict(row))  # pull in each row as a key-value pair
+
+        print("Printing results")
+        print(results)
     return results
 
 
